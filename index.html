@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Latvijas pludmales volejbolistes ASV universitātēs: rezultāti, tuvākās spēles un spēlētāju kartītes, atjaunināti katru rītu.">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Latvietes ASV smiltīs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+/* Layout: a morning scoreboard — status strip, latest results feed, upcoming matches, then one card per player; one column on a phone, two on a desktop. */
+:root {
+  --bg: #edf0f3;
+  --surface: #ffffff;
+  --surface-2: #f5f7f9;
+  --fg: #16222c;
+  --muted: #5d6d7a;
+  --line: #d5dce3;
+  --accent: #9b1c2e;
+  --accent-ink: #ffffff;
+  --sand: #e9dfc9;
+  --sand-ink: #5a4a2a;
+  --sea: #1d5c7a;
+  --sea-bg: #e1eef5;
+  --win: #1d7a5a;
+  --win-bg: #dff3ea;
+  --loss: #b03838;
+  --loss-bg: #f9e4e4;
+  --display: "Barlow Condensed", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f171e; --surface: #18232c; --surface-2: #1f2c36; --fg: #e8edf1; --muted: #94a4b1; --line: #2b3842;
+    --accent: #e25a6e; --accent-ink: #16222c; --sand: #3b3428; --sand-ink: #e3d4b3; --sea: #7cbbd8; --sea-bg: #172d3a;
+    --win: #5ecb9d; --win-bg: #163327; --loss: #f08a8a; --loss-bg: #3e1f1f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f171e; --surface: #18232c; --surface-2: #1f2c36; --fg: #e8edf1; --muted: #94a4b1; --line: #2b3842;
+  --accent: #e25a6e; --accent-ink: #16222c; --sand: #3b3428; --sand-ink: #e3d4b3; --sea: #7cbbd8; --sea-bg: #172d3a;
+  --win: #5ecb9d; --win-bg: #163327; --loss: #f08a8a; --loss-bg: #3e1f1f; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.45; }
+.wrap { max-width: 1040px; margin: 0 auto; padding-inline: 16px; padding-block: 0 48px; }
+a { color: var(--sea); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* Header */
+.masthead { padding-block: 22px 14px; border-bottom: 3px solid var(--accent); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
+.eyebrow { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(40px, 8vw, 64px); line-height: 0.95; margin: 4px 0 0; letter-spacing: -0.01em; text-wrap: balance; }
+.status { font-size: 14px; color: var(--muted); display: grid; gap: 2px; text-align: right; }
+.status b { color: var(--fg); font-weight: 600; }
+@media (max-width: 560px) { .status { text-align: left; } }
+
+.summary { margin-top: 14px; background: var(--surface); border-left: 4px solid var(--accent); padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 17px; }
+.summary.empty { color: var(--muted); font-style: italic; }
+
+/* Sections */
+section { margin-top: 30px; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 26px; letter-spacing: 0.02em; text-transform: uppercase; margin: 0 0 10px; display: flex; align-items: baseline; gap: 10px; }
+h2 small { font-family: var(--body); font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 14px; color: var(--muted); }
+.note { color: var(--muted); font-size: 15px; margin: 0; }
+
+/* Feed rows */
+.feed { display: grid; gap: 6px; }
+.day { font-family: var(--display); font-weight: 600; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-top: 10px; }
+.day:first-child { margin-top: 0; }
+.row { display: grid; grid-template-columns: auto 1fr; gap: 10px 12px; align-items: start; background: var(--surface); border-radius: 8px; padding: 10px 12px; min-width: 0; }
+.row .who { font-weight: 600; }
+.row .who a { color: inherit; text-decoration: none; }
+.row .who a:hover { text-decoration: underline; }
+.row .what { font-size: 15px; min-width: 0; overflow-wrap: anywhere; }
+.row .meta { font-size: 13.5px; color: var(--muted); }
+.pill { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 6px; font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: 0.02em; }
+.pill.W { background: var(--win-bg); color: var(--win); }
+.pill.L { background: var(--loss-bg); color: var(--loss); }
+.pill.N { background: var(--surface-2); color: var(--muted); font-size: 14px; }
+.pill.cal { background: var(--sea-bg); color: var(--sea); width: auto; min-width: 54px; padding-inline: 6px; font-size: 14px; line-height: 1; text-align: center; height: auto; padding-block: 5px; }
+.score { font-variant-numeric: tabular-nums; }
+.chip { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 7px; border-radius: 999px; vertical-align: middle; }
+.chip.beach { background: var(--sand); color: var(--sand-ink); }
+.chip.indoor { background: var(--sea-bg); color: var(--sea); }
+.chip.class { background: var(--surface-2); color: var(--muted); }
+
+/* Player cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); gap: 14px; }
+.card { background: var(--surface); border-radius: 12px; padding: 16px; display: grid; gap: 12px; min-width: 0; border-top: 4px solid var(--sand); }
+.card.has-indoor { border-top-color: var(--sea); }
+.card .head { display: grid; grid-template-columns: 52px 1fr; gap: 12px; align-items: start; }
+.mono { width: 52px; height: 52px; border-radius: 50%; background: var(--sand); color: var(--sand-ink); display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: 0.02em; overflow: hidden; }
+.mono img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.card h3 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 26px; line-height: 1; letter-spacing: 0.01em; }
+.card .team { font-weight: 600; margin-top: 3px; }
+.card .school { color: var(--muted); font-size: 14px; }
+.card .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.facts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; background: var(--surface-2); border-radius: 8px; padding: 10px 12px; font-size: 14px; }
+.facts div { min-width: 0; }
+.facts dt { color: var(--muted); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+.facts dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+.lines { display: grid; gap: 8px; }
+.line { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; font-size: 15px; min-width: 0; }
+.line .lbl { font-family: var(--display); font-weight: 600; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding-top: 3px; width: 72px; }
+.line .val { min-width: 0; overflow-wrap: anywhere; }
+.line .val .sub { color: var(--muted); font-size: 13.5px; }
+details { border-top: 1px solid var(--line); padding-top: 8px; }
+summary { cursor: pointer; font-weight: 600; color: var(--sea); list-style: none; display: flex; align-items: center; gap: 6px; }
+summary::-webkit-details-marker { display: none; }
+summary::before { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(-45deg); transition: transform .15s; }
+details[open] summary::before { transform: rotate(45deg); }
+.rlist { display: grid; gap: 6px; margin-top: 8px; }
+.rlist .row { background: var(--surface-2); padding: 8px 10px; }
+.links { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 14px; }
+.card .note-sm { font-size: 13.5px; color: var(--muted); }
+
+.about p { margin: 6px 0 0; max-width: 72ch; }
+.credit { font-size: 12px; color: var(--muted); margin-top: 2px; }
+footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13.5px; display: grid; gap: 8px; }
+.loglist { display: grid; gap: 4px; margin-top: 6px; font-variant-numeric: tabular-nums; }
+.loading { color: var(--muted); font-style: italic; }
+.err { background: var(--loss-bg); color: var(--loss); padding: 10px 12px; border-radius: 8px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="masthead">
+    <div>
+      <div class="eyebrow">NCAA · Latvijas volejbolistes ASV augstskolās</div>
+      <h1>Latvietes ASV smiltīs</h1>
+    </div>
+    <div class="status" id="status">
+      <span class="loading">Ielādē datus…</span>
+    </div>
+  </header>
+
+  <div class="summary" id="summary">Šeit būs īss kopsavilkums par pēdējo nakti.</div>
+
+  <section id="latest">
+    <h2>Jaunākie rezultāti <small id="latest-sub">pēdējās 7 dienas</small></h2>
+    <div class="feed" id="feed"><p class="loading">Ielādē…</p></div>
+  </section>
+
+  <section id="upcoming">
+    <h2>Tuvākās spēles <small>nākamās 30 dienas</small></h2>
+    <div class="feed" id="upfeed"><p class="loading">Ielādē…</p></div>
+  </section>
+
+  <section id="players">
+    <h2>Spēlētājas <small id="players-sub">8 meitenes, 7 augstskolas</small></h2>
+    <div class="cards" id="cards"><p class="loading">Ielādē spēlētāju kartītes…</p></div>
+  </section>
+
+  <footer>
+    <div class="about">
+      <b>Par šo lapu</b>
+      <p>Šī ir neoficiāla, nekomerciāla fanu lapa, ko uztur privātpersona. Tā nav saistīta ar minētajām universitātēm, NCAA, Latvijas Volejbola federāciju vai pašām spēlētājām, un neviena no tām šo lapu nav apstiprinājusi.</p>
+      <p>Rezultāti, spēļu kalendāri un spēlētāju dati ir apkopoti no universitāšu oficiālajām sporta vietnēm un Latvijas sporta medijiem. Pie katra rezultāta ir saite uz avotu, un pilnā, oficiālā informācija ir pieejama tur. Datus katru rītu automātiski apkopo mākslīgā intelekta rīks, tāpēc iespējamas neprecizitātes.</p>
+      <p>Spēlētāju fotogrāfijas pieder to autoriem un attiecīgajām universitātēm; pie katra attēla norādīts tā avots. Ja esat attēla vai satura tiesību īpašnieks un vēlaties to noņemt vai labot, sazinieties ar lapas uzturētāju, un tas tiks izdarīts nekavējoties.</p>
+    </div>
+    <details id="logbox"><summary>Pēdējās pārbaudes</summary><div class="loglist" id="log"></div></details>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const MONTHS = ['janv.', 'febr.', 'marts', 'apr.', 'maijs', 'jūn.', 'jūl.', 'aug.', 'sept.', 'okt.', 'nov.', 'dec.'];
+  const DAYS = ['svētd.', 'pirmd.', 'otrd.', 'trešd.', 'ceturtd.', 'piektd.', 'sestd.'];
+  const CLASS = { Fr: '1. kurss', So: '2. kurss', Jr: '3. kurss', Sr: '4. kurss', Gr: 'maģistrantūra' };
+  const SPORT = { beach: 'pludmale', indoor: 'zāle' };
+  const RES = { W: 'U', L: 'Z' };
+  const RES_WORD = { W: 'uzvara', L: 'zaudējums' };
+
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const parseD = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+  const iso = (d) => d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0');
+  const fmtD = (s, withDay) => { const d = parseD(s); return (withDay ? DAYS[d.getDay()] + ', ' : '') + d.getDate() + '. ' + MONTHS[d.getMonth()]; };
+  const fmtRange = (a, b) => {
+    if (!b || b === a) return fmtD(a, true);
+    const da = parseD(a), db = parseD(b);
+    if (da.getMonth() === db.getMonth()) return da.getDate() + '.–' + db.getDate() + '. ' + MONTHS[da.getMonth()];
+    return da.getDate() + '. ' + MONTHS[da.getMonth()] + ' – ' + db.getDate() + '. ' + MONTHS[db.getMonth()];
+  };
+  const fmtStamp = (isoStr) => {
+    const d = new Date(isoStr); if (isNaN(d)) return isoStr || '';
+    return d.getDate() + '. ' + MONTHS[d.getMonth()] + ' ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+  };
+  const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
+  const chip = (sport) => '<span class="chip ' + esc(sport) + '">' + esc(SPORT[sport] || sport) + '</span>';
+
+  function render(data) {
+    const today = new Date(); today.setHours(0, 0, 0, 0);
+    const todayIso = iso(today);
+    const weekAgo = iso(addDays(today, -7));
+    const monthAhead = iso(addDays(today, 30));
+    const players = data.players || [];
+    const byId = Object.fromEntries(players.map((p) => [p.id, p]));
+    const order = Object.fromEntries(players.map((p, i) => [p.id, i]));
+    const results = (data.results || []).slice().sort((a, b) => (b.date.localeCompare(a.date)) || ((order[a.player] ?? 99) - (order[b.player] ?? 99)));
+    const upcoming = (data.upcoming || []).slice().sort((a, b) => a.date.localeCompare(b.date));
+    const meta = data.meta || {};
+    const seasonStart = meta.seasonStart || '2026-08-01';
+
+    // Status + summary
+    $('status').innerHTML =
+      '<span>Atjaunināts <b>' + esc(fmtStamp(meta.updatedAt)) + '</b> (Rīgas laiks)</span>' +
+      (meta.nextCheck ? '<span>Nākamā pārbaude ' + esc(meta.nextCheck) + '</span>' : '');
+    const sumEl = $('summary');
+    if (meta.summary) { sumEl.textContent = meta.summary; sumEl.classList.remove('empty'); }
+    else { sumEl.textContent = 'Šonakt jaunu rezultātu nebija.'; sumEl.classList.add('empty'); }
+
+    // Latest results (7 days)
+    const recent = results.filter((r) => r.date >= weekAgo && r.date <= todayIso);
+    $('latest-sub').textContent = fmtD(weekAgo, false) + ' – ' + fmtD(todayIso, false);
+    if (!recent.length) {
+      const next = upcoming.find((u) => (u.endDate || u.date) >= todayIso);
+      $('feed').innerHTML = '<p class="note">Pēdējās 7 dienās spēļu nebija.' + (next ? ' Nākamā: ' + esc(fmtRange(next.date, next.endDate)) + ', ' + esc(next.event) + (next.opponent ? ' pret ' + esc(next.opponent) : '') + '.' : '') + '</p>';
+    } else {
+      let html = '', lastDay = '';
+      for (const r of recent) {
+        if (r.date !== lastDay) { html += '<div class="day">' + esc(fmtD(r.date, true)) + '</div>'; lastDay = r.date; }
+        html += resultRow(r, byId[r.player], true);
+      }
+      $('feed').innerHTML = html;
+    }
+
+    // Upcoming (30 days)
+    const soon = upcoming.filter((u) => (u.endDate || u.date) >= todayIso && u.date <= monthAhead);
+    if (!soon.length) {
+      $('upfeed').innerHTML = '<p class="note">Nākamajās 30 dienās kalendāros spēļu nav.</p>';
+    } else {
+      let html = '', lastDay = '';
+      for (const u of soon) {
+        const key = fmtRange(u.date, u.endDate);
+        if (key !== lastDay) { html += '<div class="day">' + esc(key) + (u.date === todayIso ? ' · šodien' : '') + '</div>'; lastDay = key; }
+        const names = (u.players || []).map((id) => byId[id] ? '<a href="#p-' + esc(id) + '">' + esc(byId[id].name) + '</a>' : esc(id)).join(', ');
+        html += '<div class="row"><span class="pill cal">' + esc(DAYS[parseD(u.date).getDay()]) + '</span><div>' +
+          '<div class="who">' + names + ' <span class="meta">· ' + esc(u.team || '') + '</span></div>' +
+          '<div class="what">' + esc(u.event) + (u.opponent ? ' pret <b>' + esc(u.opponent) + '</b>' : '') + ' ' + chip(u.sport) + '</div>' +
+          '<div class="meta">' + esc(u.location || '') + '</div></div></div>';
+      }
+      $('upfeed').innerHTML = html;
+    }
+
+    // Player cards
+    const schools = new Set(players.map((p) => p.team));
+    $('players-sub').textContent = players.length + ' meitenes, ' + schools.size + ' augstskolas';
+    $('cards').innerHTML = players.map((p) => {
+      const mine = results.filter((r) => r.player === p.id && r.date >= seasonStart);
+      const w = mine.filter((r) => r.result === 'W').length, l = mine.filter((r) => r.result === 'L').length;
+      const last = mine[0];
+      const next = upcoming.find((u) => (u.players || []).includes(p.id) && (u.endDate || u.date) >= todayIso);
+      const hasIndoor = (p.sports || []).includes('indoor');
+      const chips = '<span class="chip class">' + esc(CLASS[p.class] || p.class || '') + '</span>' + (p.sports || []).map(chip).join('');
+      return '<article class="card' + (hasIndoor ? ' has-indoor' : '') + '" id="p-' + esc(p.id) + '">' +
+        '<div class="head"><div class="mono">' + (p.photo ? '<img src="' + esc(p.photo) + '" alt="' + esc(p.name) + '">' : esc(p.initials || '')) + '</div><div>' +
+          '<h3>' + esc(p.name) + '</h3>' +
+          '<div class="team">' + esc(p.team) + (p.number ? ' <span class="meta">· Nr. ' + esc(p.number) + '</span>' : '') + '</div>' +
+          '<div class="school">' + esc(p.school) + (p.city ? ' · ' + esc(p.city) : '') + '</div>' +
+          '<div class="chips">' + chips + '</div>' +
+          (p.photo && p.photoCredit ? '<div class="credit">Foto: ' + (p.photoSource ? '<a href="' + esc(p.photoSource) + '" target="_blank" rel="noopener">' + esc(p.photoCredit) + '</a>' : esc(p.photoCredit)) + '</div>' : '') +
+        '</div></div>' +
+        (p.classNote ? '<div class="note-sm">' + esc(p.classNote) + '</div>' : '') +
+        '<dl class="facts">' +
+          '<div><dt>Rudens sezona</dt><dd>' + (mine.length ? w + '-' + l + ' <span class="meta">(' + mine.length + ' ' + (mine.length === 1 ? 'mačs' : 'mači') + ')</span>' : '<span class="meta">vēl nav spēļu</span>') + '</dd></div>' +
+          '<div><dt>Iepriekš</dt><dd>' + (p.record ? esc(p.record) : '<span class="meta">—</span>') + '</dd></div>' +
+          '<div><dt>No</dt><dd>' + (p.hometown ? esc(p.hometown) : '<span class="meta">Latvija</span>') + '</dd></div>' +
+          '<div><dt>Augums</dt><dd>' + (p.height ? esc(p.height) : '<span class="meta">—</span>') + '</dd></div>' +
+        '</dl>' +
+        '<div class="lines">' +
+          '<div class="line"><span class="lbl">Pēdējais</span><span class="val">' + (last ? lastLine(last) : '<span class="sub">Rudens sezonā rezultātu vēl nav.</span>') + '</span></div>' +
+          '<div class="line"><span class="lbl">Nākamā</span><span class="val">' + (next ? esc(fmtRange(next.date, next.endDate)) + ' · ' + esc(next.event) + (next.opponent ? ' pret ' + esc(next.opponent) : '') + '<div class="sub">' + esc(next.location || '') + '</div>' : '<span class="sub">Kalendārā nākamā spēle vēl nav norādīta.</span>') + '</span></div>' +
+        '</div>' +
+        (mine.length ? '<details><summary>Visi rudens mači (' + mine.length + ')</summary><div class="rlist">' + mine.map((r) => resultRow(r, p, false)).join('') + '</div></details>' : '') +
+        (p.note ? '<div class="note-sm">' + esc(p.note) + '</div>' : '') +
+        '<div class="links">' + (p.links || []).map((k) => '<a href="' + esc(k.url) + '" target="_blank" rel="noopener">' + esc(k.label) + ' ↗</a>').join('') + '</div>' +
+      '</article>';
+    }).join('');
+
+    // Log
+    const log = (meta.log || []).slice(-10).reverse();
+    $('log').innerHTML = log.length ? log.map((e) => '<div>' + esc(fmtStamp(e.at)) + ' — ' + esc(e.text) + '</div>').join('') : '<div>Vēl nav ierakstu.</div>';
+  }
+
+  function lastLine(r) {
+    return '<b>' + esc(fmtD(r.date, false)) + '</b> · ' + (r.result ? esc(RES_WORD[r.result]) + ' ' : '') + 'pret ' + esc(r.opponent) + ' <span class="score">' + esc(r.score) + '</span>' +
+      '<div class="sub">' + esc(r.event) + (r.round ? ' · ' + esc(r.round) : '') + (r.partner ? ' · ar ' + esc(r.partner) : '') + (r.stats ? ' · ' + esc(r.stats) : '') + '</div>';
+  }
+
+  function resultRow(r, p, withName) {
+    const pill = r.result ? '<span class="pill ' + esc(r.result) + '" title="' + esc(RES_WORD[r.result]) + '">' + esc(RES[r.result]) + '</span>' : '<span class="pill N">—</span>';
+    return '<div class="row">' + pill + '<div>' +
+      (withName ? '<div class="who"><a href="#p-' + esc(r.player) + '">' + esc(p ? p.name : r.player) + '</a> <span class="meta">· ' + esc(p ? p.team : '') + '</span></div>' : '<div class="who">' + esc(fmtD(r.date, true)) + '</div>') +
+      '<div class="what">pret <b>' + esc(r.opponent) + '</b> <span class="score">' + esc(r.score) + '</span> ' + chip(r.sport) + '</div>' +
+      '<div class="meta">' + esc(r.event) + (r.round ? ' · ' + esc(r.round) : '') + (r.partner ? ' · ar ' + esc(r.partner) : '') + (r.stats ? ' · ' + esc(r.stats) : '') + (r.source ? ' · <a href="' + esc(r.source) + '" target="_blank" rel="noopener">avots</a>' : '') + '</div>' +
+      '</div></div>';
+  }
+
+  fetch('data.json', { cache: 'no-store' })
+    .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(render)
+    .catch((e) => {
+      $('status').innerHTML = '<span class="err">Datus neizdevās ielādēt (' + esc(e.message) + '). Mēģiniet pārlādēt lapu.</span>';
+      $('feed').innerHTML = ''; $('upfeed').innerHTML = ''; $('cards').innerHTML = '';
+    });
+})();
+</script>
+
+</body>
+</html>
