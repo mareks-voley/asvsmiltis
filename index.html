@@ -49,12 +49,14 @@ a { color: var(--sea); text-decoration-thickness: 1px; text-underline-offset: 2p
 a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 /* Header */
-.masthead { padding-block: 22px 14px; border-bottom: 3px solid var(--accent); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 8px 24px; }
+.masthead { padding-block: 22px 14px; border-bottom: 3px solid var(--accent); display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); align-items: end; gap: 10px 28px; }
+@media (max-width: 720px) { .masthead { grid-template-columns: 1fr; } }
 .eyebrow { font-family: var(--display); font-weight: 600; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
-h1 { font-family: var(--display); font-weight: 700; font-size: clamp(40px, 8vw, 64px); line-height: 0.95; margin: 4px 0 0; letter-spacing: -0.01em; text-wrap: balance; }
-.status { font-size: 14px; color: var(--muted); display: grid; gap: 2px; text-align: right; }
-.status b { color: var(--fg); font-weight: 600; }
-@media (max-width: 560px) { .status { text-align: left; } }
+h1 { font-family: var(--display); font-weight: 700; font-size: clamp(40px, 7vw, 60px); line-height: 0.95; margin: 4px 0 0; letter-spacing: -0.01em; text-wrap: balance; }
+.welcome { margin: 0; max-width: 40ch; font-size: 16px; line-height: 1.45; text-align: right; text-wrap: pretty; }
+@media (max-width: 720px) { .welcome { text-align: left; } }
+.flags { display: inline-flex; gap: 8px; vertical-align: middle; margin-left: 6px; }
+.flag { height: 0.42em; width: auto; border-radius: 2px; box-shadow: 0 0 0 1px var(--line); }
 
 .summary { margin-top: 14px; background: var(--surface); border-left: 4px solid var(--accent); padding: 12px 14px; border-radius: 0 8px 8px 0; font-size: 17px; }
 .summary.empty { color: var(--muted); font-style: italic; }
@@ -132,11 +134,9 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
   <header class="masthead">
     <div>
       <div class="eyebrow">NCAA · Latvijas volejbolistes ASV augstskolās</div>
-      <h1>Latvietes ASV smiltīs</h1>
+      <h1>Latvietes ASV smiltīs <span class="flags"><svg class="flag" viewBox="0 0 30 15" role="img" aria-label="Latvijas karogs"><rect width="30" height="15" fill="#9E3039"/><rect y="6" width="30" height="3" fill="#fff"/></svg><svg class="flag" viewBox="0 0 38 20" role="img" aria-label="ASV karogs"><rect width="38" height="20" fill="#fff"/><rect y="0.000" width="38" height="1.538" fill="#B22234"/><rect y="3.077" width="38" height="1.538" fill="#B22234"/><rect y="6.154" width="38" height="1.538" fill="#B22234"/><rect y="9.231" width="38" height="1.538" fill="#B22234"/><rect y="12.308" width="38" height="1.538" fill="#B22234"/><rect y="15.385" width="38" height="1.538" fill="#B22234"/><rect y="18.462" width="38" height="1.538" fill="#B22234"/><rect width="15.2" height="10.769" fill="#3C3B6E"/><circle cx="1.27" cy="1.08" r="0.42" fill="#fff"/><circle cx="3.80" cy="1.08" r="0.42" fill="#fff"/><circle cx="6.33" cy="1.08" r="0.42" fill="#fff"/><circle cx="8.87" cy="1.08" r="0.42" fill="#fff"/><circle cx="11.40" cy="1.08" r="0.42" fill="#fff"/><circle cx="13.93" cy="1.08" r="0.42" fill="#fff"/><circle cx="2.53" cy="2.15" r="0.42" fill="#fff"/><circle cx="5.07" cy="2.15" r="0.42" fill="#fff"/><circle cx="7.60" cy="2.15" r="0.42" fill="#fff"/><circle cx="10.13" cy="2.15" r="0.42" fill="#fff"/><circle cx="12.67" cy="2.15" r="0.42" fill="#fff"/><circle cx="1.27" cy="3.23" r="0.42" fill="#fff"/><circle cx="3.80" cy="3.23" r="0.42" fill="#fff"/><circle cx="6.33" cy="3.23" r="0.42" fill="#fff"/><circle cx="8.87" cy="3.23" r="0.42" fill="#fff"/><circle cx="11.40" cy="3.23" r="0.42" fill="#fff"/><circle cx="13.93" cy="3.23" r="0.42" fill="#fff"/><circle cx="2.53" cy="4.31" r="0.42" fill="#fff"/><circle cx="5.07" cy="4.31" r="0.42" fill="#fff"/><circle cx="7.60" cy="4.31" r="0.42" fill="#fff"/><circle cx="10.13" cy="4.31" r="0.42" fill="#fff"/><circle cx="12.67" cy="4.31" r="0.42" fill="#fff"/><circle cx="1.27" cy="5.38" r="0.42" fill="#fff"/><circle cx="3.80" cy="5.38" r="0.42" fill="#fff"/><circle cx="6.33" cy="5.38" r="0.42" fill="#fff"/><circle cx="8.87" cy="5.38" r="0.42" fill="#fff"/><circle cx="11.40" cy="5.38" r="0.42" fill="#fff"/><circle cx="13.93" cy="5.38" r="0.42" fill="#fff"/><circle cx="2.53" cy="6.46" r="0.42" fill="#fff"/><circle cx="5.07" cy="6.46" r="0.42" fill="#fff"/><circle cx="7.60" cy="6.46" r="0.42" fill="#fff"/><circle cx="10.13" cy="6.46" r="0.42" fill="#fff"/><circle cx="12.67" cy="6.46" r="0.42" fill="#fff"/><circle cx="1.27" cy="7.54" r="0.42" fill="#fff"/><circle cx="3.80" cy="7.54" r="0.42" fill="#fff"/><circle cx="6.33" cy="7.54" r="0.42" fill="#fff"/><circle cx="8.87" cy="7.54" r="0.42" fill="#fff"/><circle cx="11.40" cy="7.54" r="0.42" fill="#fff"/><circle cx="13.93" cy="7.54" r="0.42" fill="#fff"/><circle cx="2.53" cy="8.62" r="0.42" fill="#fff"/><circle cx="5.07" cy="8.62" r="0.42" fill="#fff"/><circle cx="7.60" cy="8.62" r="0.42" fill="#fff"/><circle cx="10.13" cy="8.62" r="0.42" fill="#fff"/><circle cx="12.67" cy="8.62" r="0.42" fill="#fff"/><circle cx="1.27" cy="9.69" r="0.42" fill="#fff"/><circle cx="3.80" cy="9.69" r="0.42" fill="#fff"/><circle cx="6.33" cy="9.69" r="0.42" fill="#fff"/><circle cx="8.87" cy="9.69" r="0.42" fill="#fff"/><circle cx="11.40" cy="9.69" r="0.42" fill="#fff"/><circle cx="13.93" cy="9.69" r="0.42" fill="#fff"/></svg></span></h1>
     </div>
-    <div class="status" id="status">
-      <span class="loading">Ielādē datus…</span>
-    </div>
+    <p class="welcome" id="status">Laipni lūgti! Šeit vienuviet tiek apkopots, kā iet mūsu foršajām pludmales volejbolistēm viņpus okeāna. Precīzāk – kāds ir spēļu kalendārs un kā veicies spēlēs.</p>
   </header>
 
   <div class="summary" id="summary">Šeit būs īss kopsavilkums par pēdējo nakti.</div>
@@ -163,7 +163,6 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
       <p>Rezultāti, spēļu kalendāri un spēlētāju dati ir apkopoti no universitāšu oficiālajām sporta vietnēm un Latvijas sporta medijiem. Pie katra rezultāta ir saite uz avotu, un pilnā, oficiālā informācija ir pieejama tur. Datus katru rītu automātiski apkopo mākslīgā intelekta rīks, tāpēc iespējamas neprecizitātes.</p>
       <p>Spēlētāju fotogrāfijas pieder to autoriem un attiecīgajām universitātēm; pie katra attēla norādīts tā avots. Ja esat attēla vai satura tiesību īpašnieks un vēlaties to noņemt vai labot, sazinieties ar lapas uzturētāju, un tas tiks izdarīts nekavējoties.</p>
     </div>
-    <details id="logbox"><summary>Pēdējās pārbaudes</summary><div class="loglist" id="log"></div></details>
   </footer>
 </div>
 
@@ -208,9 +207,6 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     const seasonStart = meta.seasonStart || '2026-08-01';
 
     // Status + summary
-    $('status').innerHTML =
-      '<span>Atjaunināts <b>' + esc(fmtStamp(meta.updatedAt)) + '</b> (Rīgas laiks)</span>' +
-      (meta.nextCheck ? '<span>Nākamā pārbaude ' + esc(meta.nextCheck) + '</span>' : '');
     const sumEl = $('summary');
     if (meta.summary) { sumEl.textContent = meta.summary; sumEl.classList.remove('empty'); }
     else { sumEl.textContent = 'Šonakt jaunu rezultātu nebija.'; sumEl.classList.add('empty'); }
@@ -284,8 +280,6 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     }).join('');
 
     // Log
-    const log = (meta.log || []).slice(-10).reverse();
-    $('log').innerHTML = log.length ? log.map((e) => '<div>' + esc(fmtStamp(e.at)) + ' — ' + esc(e.text) + '</div>').join('') : '<div>Vēl nav ierakstu.</div>';
   }
 
   function lastLine(r) {
@@ -306,7 +300,7 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
     .catch((e) => {
-      $('status').innerHTML = '<span class="err">Datus neizdevās ielādēt (' + esc(e.message) + '). Mēģiniet pārlādēt lapu.</span>';
+      $('summary').innerHTML = '<span class="err">Datus neizdevās ielādēt (' + esc(e.message) + '). Mēģiniet pārlādēt lapu.</span>';
       $('feed').innerHTML = ''; $('upfeed').innerHTML = ''; $('cards').innerHTML = '';
     });
 })();
