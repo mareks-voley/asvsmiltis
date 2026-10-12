@@ -18,6 +18,161 @@
  },
  "players": [
   {
+   "id": "anna-rita",
+   "name": "Anna Rīta",
+   "initials": "AR",
+   "team": "Coastal Carolina Chanticleers",
+   "school": "Coastal Carolina universitāte",
+   "city": "Konveja, Dienvidkarolīna",
+   "class": "Gr",
+   "classNote": "pludmales komandā maģistrante",
+   "number": "12",
+   "height": "183 cm",
+   "hometown": "Rīga",
+   "sports": [
+    "beach"
+   ],
+   "record": "2026. g. pavasarī 25-11",
+   "note": "",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://goccusports.com/sports/womens-beach-volleyball/roster/anna-rita/20470"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://goccusports.com/sports/womens-beach-volleyball/schedule"
+    }
+   ],
+   "photo": "photos/anna-rita.jpg",
+   "photoCredit": "Coastal Carolina Athletics",
+   "photoSource": "https://goccusports.com/sports/volleyball/roster/rita-anna/20344"
+  },
+  {
+   "id": "kitija-adamsone",
+   "name": "Kitija Martini Ādamsone",
+   "initials": "KĀ",
+   "team": "Southern Miss Golden Eagles",
+   "school": "Dienvidmisisipi universitāte",
+   "city": "Hetisburga, Misisipi",
+   "class": "Jr",
+   "classNote": "2026. gada sarakstā 2. kurss; jaunais saraksts vēl nav publicēts",
+   "number": "13",
+   "height": "178 cm",
+   "hometown": "Mārupe",
+   "sports": [
+    "beach"
+   ],
+   "record": "",
+   "note": "",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://southernmiss.com/sports/bvb/roster/kitija-martini-adamsone/10556"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://southernmiss.com/sports/bvb/schedule"
+    }
+   ],
+   "photo": "photos/kitija-adamsone.jpg",
+   "photoCredit": "Southern Miss Athletics",
+   "photoSource": "https://southernmiss.com/sports/bvb/roster/kitija-martini-adamsone/10556"
+  },
+  {
+   "id": "deniela-konstantinova",
+   "name": "Deniela Konstantinova",
+   "initials": "DK",
+   "team": "TCU Horned Frogs",
+   "school": "Teksasas Kristīgā universitāte",
+   "city": "Fortvērta, Teksasa",
+   "class": "Jr",
+   "classNote": "",
+   "number": "21",
+   "height": "183 cm",
+   "hometown": "Ikšķile",
+   "sports": [
+    "beach"
+   ],
+   "record": "2026. g. pavasarī 11-2",
+   "note": "",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://gofrogs.com/sports/womens-beach-volleyball/roster/deniela-konstantinova/18598"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
+    }
+   ],
+   "photo": "photos/deniela-konstantinova.jpg",
+   "photoCredit": "TCU Athletics",
+   "photoSource": "https://gofrogs.com/sports/womens-beach-volleyball/roster/deniela-konstantinova/18598"
+  },
+  {
+   "id": "marta-vildere",
+   "name": "Marta Vildere",
+   "initials": "MV",
+   "team": "FIU Panthers",
+   "school": "Floridas Starptautiskā universitāte",
+   "city": "Maiami, Florida",
+   "class": "Jr",
+   "classNote": "",
+   "number": "8",
+   "height": "178 cm",
+   "hometown": "Rīga",
+   "sports": [
+    "beach"
+   ],
+   "record": "",
+   "note": "Iepriekš studēja Pepperdine universitātē.",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://fiusports.com/sports/womens-beach-volleyball/roster/marta-vildere/13694"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
+    }
+   ],
+   "photo": "photos/marta-vildere.jpg",
+   "photoCredit": "FIU Athletics",
+   "photoSource": "https://fiusports.com/sports/womens-beach-volleyball/roster/marta-vildere/13694"
+  },
+  {
+   "id": "bonija-runce",
+   "name": "Bonija Runce",
+   "initials": "BR",
+   "team": "Southern Miss Golden Eagles",
+   "school": "Dienvidmisisipi universitāte",
+   "city": "Hetisburga, Misisipi",
+   "class": "So",
+   "classNote": "2026. gada sarakstā 1. kurss; jaunais saraksts vēl nav publicēts",
+   "number": "3",
+   "height": "175 cm",
+   "hometown": "Jūrmala",
+   "sports": [
+    "beach"
+   ],
+   "record": "",
+   "note": "",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://southernmiss.com/sports/bvb/roster/bonija-runce/10561"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://southernmiss.com/sports/bvb/schedule"
+    }
+   ],
+   "photo": "photos/bonija-runce.jpg",
+   "photoCredit": "Southern Miss Athletics",
+   "photoSource": "https://southernmiss.com/sports/bvb/roster/bonija-runce/10561"
+  },
+  {
    "id": "liva-ebere",
    "name": "Līva Ēbere",
    "initials": "LĒ",
@@ -113,161 +268,6 @@
    "photo": "photos/monika-mamaja-3.jpg",
    "photoCredit": "Stetson Athletics",
    "photoSource": "https://www.instagram.com/stetsonbeachvb/"
-  },
-  {
-   "id": "bonija-runce",
-   "name": "Bonija Runce",
-   "initials": "BR",
-   "team": "Southern Miss Golden Eagles",
-   "school": "Dienvidmisisipi universitāte",
-   "city": "Hetisburga, Misisipi",
-   "class": "So",
-   "classNote": "2026. gada sarakstā 1. kurss; jaunais saraksts vēl nav publicēts",
-   "number": "3",
-   "height": "175 cm",
-   "hometown": "Jūrmala",
-   "sports": [
-    "beach"
-   ],
-   "record": "",
-   "note": "",
-   "links": [
-    {
-     "label": "Rosteris",
-     "url": "https://southernmiss.com/sports/bvb/roster/bonija-runce/10561"
-    },
-    {
-     "label": "Kalendārs",
-     "url": "https://southernmiss.com/sports/bvb/schedule"
-    }
-   ],
-   "photo": "photos/bonija-runce.jpg",
-   "photoCredit": "Southern Miss Athletics",
-   "photoSource": "https://southernmiss.com/sports/bvb/roster/bonija-runce/10561"
-  },
-  {
-   "id": "kitija-adamsone",
-   "name": "Kitija Martini Ādamsone",
-   "initials": "KĀ",
-   "team": "Southern Miss Golden Eagles",
-   "school": "Dienvidmisisipi universitāte",
-   "city": "Hetisburga, Misisipi",
-   "class": "Jr",
-   "classNote": "2026. gada sarakstā 2. kurss; jaunais saraksts vēl nav publicēts",
-   "number": "13",
-   "height": "178 cm",
-   "hometown": "Mārupe",
-   "sports": [
-    "beach"
-   ],
-   "record": "",
-   "note": "",
-   "links": [
-    {
-     "label": "Rosteris",
-     "url": "https://southernmiss.com/sports/bvb/roster/kitija-martini-adamsone/10556"
-    },
-    {
-     "label": "Kalendārs",
-     "url": "https://southernmiss.com/sports/bvb/schedule"
-    }
-   ],
-   "photo": "photos/kitija-adamsone.jpg",
-   "photoCredit": "Southern Miss Athletics",
-   "photoSource": "https://southernmiss.com/sports/bvb/roster/kitija-martini-adamsone/10556"
-  },
-  {
-   "id": "marta-vildere",
-   "name": "Marta Vildere",
-   "initials": "MV",
-   "team": "FIU Panthers",
-   "school": "Floridas Starptautiskā universitāte",
-   "city": "Maiami, Florida",
-   "class": "Jr",
-   "classNote": "",
-   "number": "8",
-   "height": "178 cm",
-   "hometown": "Rīga",
-   "sports": [
-    "beach"
-   ],
-   "record": "",
-   "note": "Iepriekš studēja Pepperdine universitātē.",
-   "links": [
-    {
-     "label": "Rosteris",
-     "url": "https://fiusports.com/sports/womens-beach-volleyball/roster/marta-vildere/13694"
-    },
-    {
-     "label": "Kalendārs",
-     "url": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
-    }
-   ],
-   "photo": "photos/marta-vildere.jpg",
-   "photoCredit": "FIU Athletics",
-   "photoSource": "https://fiusports.com/sports/womens-beach-volleyball/roster/marta-vildere/13694"
-  },
-  {
-   "id": "deniela-konstantinova",
-   "name": "Deniela Konstantinova",
-   "initials": "DK",
-   "team": "TCU Horned Frogs",
-   "school": "Teksasas Kristīgā universitāte",
-   "city": "Fortvērta, Teksasa",
-   "class": "Jr",
-   "classNote": "",
-   "number": "21",
-   "height": "183 cm",
-   "hometown": "Ikšķile",
-   "sports": [
-    "beach"
-   ],
-   "record": "2026. g. pavasarī 11-2",
-   "note": "",
-   "links": [
-    {
-     "label": "Rosteris",
-     "url": "https://gofrogs.com/sports/womens-beach-volleyball/roster/deniela-konstantinova/18598"
-    },
-    {
-     "label": "Kalendārs",
-     "url": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
-    }
-   ],
-   "photo": "photos/deniela-konstantinova.jpg",
-   "photoCredit": "TCU Athletics",
-   "photoSource": "https://gofrogs.com/sports/womens-beach-volleyball/roster/deniela-konstantinova/18598"
-  },
-  {
-   "id": "anna-rita",
-   "name": "Anna Rīta",
-   "initials": "AR",
-   "team": "Coastal Carolina Chanticleers",
-   "school": "Coastal Carolina universitāte",
-   "city": "Konveja, Dienvidkarolīna",
-   "class": "Gr",
-   "classNote": "pludmales komandā maģistrante",
-   "number": "12",
-   "height": "183 cm",
-   "hometown": "Rīga",
-   "sports": [
-    "beach"
-   ],
-   "record": "2026. g. pavasarī 25-11",
-   "note": "",
-   "links": [
-    {
-     "label": "Rosteris",
-     "url": "https://goccusports.com/sports/womens-beach-volleyball/roster/anna-rita/20470"
-    },
-    {
-     "label": "Kalendārs",
-     "url": "https://goccusports.com/sports/womens-beach-volleyball/schedule"
-    }
-   ],
-   "photo": "photos/anna-rita.jpg",
-   "photoCredit": "Coastal Carolina Athletics",
-   "photoSource": "https://goccusports.com/sports/volleyball/roster/rita-anna/20344"
   }
  ],
  "results": [

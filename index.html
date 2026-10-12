@@ -139,7 +139,6 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     <p class="welcome" id="status">Laipni lūgti! Šeit vienuviet tiek apkopots, kā iet mūsu foršajām pludmales volejbolistēm viņpus okeāna. Precīzāk – kāds ir spēļu kalendārs un kā veicies spēlēs.</p>
   </header>
 
-  <div class="summary" id="summary">Šeit būs īss kopsavilkums par pēdējo nakti.</div>
 
   <section id="latest">
     <h2>Jaunākie rezultāti <small id="latest-sub">pēdējās 7 dienas</small></h2>
@@ -206,10 +205,6 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     const meta = data.meta || {};
     const seasonStart = meta.seasonStart || '2026-08-01';
 
-    // Status + summary
-    const sumEl = $('summary');
-    if (meta.summary) { sumEl.textContent = meta.summary; sumEl.classList.remove('empty'); }
-    else { sumEl.textContent = 'Šonakt jaunu rezultātu nebija.'; sumEl.classList.add('empty'); }
 
     // Latest results (7 days)
     const recent = results.filter((r) => r.date >= weekAgo && r.date <= todayIso);
@@ -300,8 +295,8 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(render)
     .catch((e) => {
-      $('summary').innerHTML = '<span class="err">Datus neizdevās ielādēt (' + esc(e.message) + '). Mēģiniet pārlādēt lapu.</span>';
-      $('feed').innerHTML = ''; $('upfeed').innerHTML = ''; $('cards').innerHTML = '';
+      $('feed').innerHTML = '<span class="err">Datus neizdevās ielādēt (' + esc(e.message) + '). Mēģiniet pārlādēt lapu.</span>';
+      $('upfeed').innerHTML = ''; $('cards').innerHTML = '';
     });
 })();
 </script>
