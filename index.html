@@ -234,7 +234,7 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
         html += '<div class="row"><span class="pill cal">' + esc(DAYS[parseD(u.date).getDay()]) + '</span><div>' +
           '<div class="who">' + names + ' <span class="meta">· ' + esc(u.team || '') + '</span></div>' +
           '<div class="what">' + esc(u.event) + (u.opponent ? ' pret <b>' + esc(u.opponent) + '</b>' : '') + ' ' + chip(u.sport) + '</div>' +
-          '<div class="meta">' + esc(u.location || '') + '</div></div></div>';
+          '<div class="meta">' + esc(u.location || '') + (u.source ? (u.location ? ' · ' : '') + '<a href="' + esc(u.source) + '" target="_blank" rel="noopener">avots</a>' : '') + '</div></div></div>';
       }
       $('upfeed').innerHTML = html;
     }
