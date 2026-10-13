@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-13T05:50+03:00",
+  "updatedAt": "2026-10-13T15:01+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Papildināts ar Loretas Cabules 10. oktobra mačiem Kennerā: trīs uzvaras trijos mačos (21-18, 21-7; 21-14, 25-23; 21-18, 21-15), kopā turnīrā 4 uzvaras un 1 zaudējums. Nākamās spēles: 16.–17. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie mači: 16. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -17,6 +17,10 @@
    {
     "at": "2026-10-13T05:50+03:00",
     "text": "Pārbaudīti visu 7 augstskolu kalendāri, ziņas un Sportacentrs. Pievienoti 3 Cabules 10.10. rezultāti un 3 Stetson (Mamaja) turnīri kalendārā. Stetson (FAU turnīrs 10.–11.10.) un FIU (3.10., 10.–11.10.) pāru rezultāti nav publicēti; Southern Miss, Coastal Carolina un USC rudens kalendāru lapās nav; Southern Miss saraksts joprojām 2026. gada."
+   },
+   {
+    "at": "2026-10-13T15:01+03:00",
+    "text": "Skolu mājaslapas (visas 8) šonakt nebija pieejamas (DNS kļūda), meklēšana neko jaunu neatrada; dati nemainīti."
    }
   ]
  },
