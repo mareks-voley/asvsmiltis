@@ -181,6 +181,37 @@
    "photoSource": "https://southernmiss.com/sports/bvb/roster/bonija-runce/10561"
   },
   {
+   "id": "evelina-krieva",
+   "name": "Evelīna Krieva",
+   "initials": "EK",
+   "team": "UTEP Miners",
+   "school": "Teksasas Universitāte Elpaso",
+   "city": "Elpaso, Teksasa",
+   "class": "So",
+   "classNote": "",
+   "number": "5",
+   "height": "183 cm",
+   "hometown": "Mārupe",
+   "sports": [
+    "beach"
+   ],
+   "record": "2026. g. pavasarī 5-8",
+   "note": "Studē biznesa vadību (starptautiskais bizness).",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://utepminers.com/sports/bvolleyball/roster/evelina-krieva/12331"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://utepminers.com/sports/bvolleyball/schedule"
+    }
+   ],
+   "photo": "photos/evelina-krieva.jpg",
+   "photoCredit": "UTEP Athletics",
+   "photoSource": "https://utepminers.com/sports/bvolleyball/roster/evelina-krieva/12331"
+  },
+  {
    "id": "liva-ebere",
    "name": "Līva Ēbere",
    "initials": "LĒ",
@@ -276,6 +307,37 @@
    "photo": "photos/monika-mamaja-3.jpg",
    "photoCredit": "Stetson Athletics",
    "photoSource": "https://www.instagram.com/stetsonbeachvb/"
+  },
+  {
+   "id": "karlina-kazaka",
+   "name": "Karlīna Kazaka",
+   "initials": "KK",
+   "team": "UTEP Miners",
+   "school": "Teksasas Universitāte Elpaso",
+   "city": "Elpaso, Teksasa",
+   "class": "Fr",
+   "classNote": "",
+   "number": "8",
+   "height": "175 cm",
+   "hometown": "Jelgava",
+   "sports": [
+    "beach"
+   ],
+   "record": "",
+   "note": "",
+   "links": [
+    {
+     "label": "Rosteris",
+     "url": "https://utepminers.com/sports/bvolleyball/roster/karlina-kazaka/12343"
+    },
+    {
+     "label": "Kalendārs",
+     "url": "https://utepminers.com/sports/bvolleyball/schedule"
+    }
+   ],
+   "photo": "photos/karlina-kazaka.jpg",
+   "photoCredit": "",
+   "photoSource": ""
   }
  ],
  "results": [
