@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-13T15:01+03:00",
+  "updatedAt": "2026-10-13T15:18+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie mači: 16. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie mači: 16.–17. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -21,6 +21,10 @@
    {
     "at": "2026-10-13T15:01+03:00",
     "text": "Skolu mājaslapas (visas 8) šonakt nebija pieejamas (DNS kļūda), meklēšana neko jaunu neatrada; dati nemainīti."
+   },
+   {
+    "at": "2026-10-13T15:18+03:00",
+    "text": "Ārpuskārtas pārbaude pēc Krievas un Kazakas (UTEP) pievienošanas: pārbaudīti visu 8 augstskolu kalendāri, ziņas un Sportacentrs (lapas šoreiz bija pieejamas). Jaunu rezultātu un kalendāra ierakstu nav. UTEP 2027. gada saraksts apstiprina Krieva Nr. 5 (2. kurss) un Kazaka Nr. 8 (1. kurss); UTEP rudens kalendārs nav publicēts, ziņu arhīvs saturu neatdeva. Stetson un FIU FAU turnīra (10.–11.10.) pāru rezultāti joprojām nav publicēti; USC, Southern Miss un Coastal Carolina rudens kalendāru nav; Southern Miss saraksts joprojām 2026. gada."
    }
   ]
  },
