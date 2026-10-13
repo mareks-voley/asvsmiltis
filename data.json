@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-12T13:41:00+03:00",
+  "updatedAt": "2026-10-13T05:50+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Ēbere/Vuda Manhetenbīčā: 6 uzvaras, 3 zaudējumi, 1/8 fināls. Cabule AVCA kvalifikācijā Kennerā: 1 uzvara, 1 zaudējums.",
+  "summary": "Šonakt jaunu rezultātu nebija. Papildināts ar Loretas Cabules 10. oktobra mačiem Kennerā: trīs uzvaras trijos mačos (21-18, 21-7; 21-14, 25-23; 21-18, 21-15), kopā turnīrā 4 uzvaras un 1 zaudējums. Nākamās spēles: 16.–17. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -13,6 +13,10 @@
    {
     "at": "2026-10-12T16:31+03:00",
     "text": "Lapā atstāts tikai pludmales volejbols; zāles spēles izņemtas."
+   },
+   {
+    "at": "2026-10-13T05:50+03:00",
+    "text": "Pārbaudīti visu 7 augstskolu kalendāri, ziņas un Sportacentrs. Pievienoti 3 Cabules 10.10. rezultāti un 3 Stetson (Mamaja) turnīri kalendārā. Stetson (FAU turnīrs 10.–11.10.) un FIU (3.10., 10.–11.10.) pāru rezultāti nav publicēti; Southern Miss, Coastal Carolina un USC rudens kalendāru lapās nav; Southern Miss saraksts joprojām 2026. gada."
    }
   ]
  },
@@ -424,6 +428,48 @@
    "result": "W",
    "stats": "",
    "source": "https://tulanegreenwave.com/news/2026/10/11/womens-beach-volleyball-tulane-earns-second-bid-to-avca-pairs-national-championships"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-10-ulm",
+   "player": "loreta-cabule",
+   "date": "2026-10-10",
+   "sport": "beach",
+   "event": "AVCA Centrālā reģiona pāru kvalifikācija, Kennera",
+   "round": "Blue divīzija, 1. grupa",
+   "opponent": "ULM pāris",
+   "partner": "Lauren Mann",
+   "score": "21-18, 21-7",
+   "result": "W",
+   "stats": "",
+   "source": "https://tulanegreenwave.com/news/2026/10/10/womens-beach-volleyball-green-wave-delivers-strong-showing-on-day-one-of-avca-qualifier"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-10-uno",
+   "player": "loreta-cabule",
+   "date": "2026-10-10",
+   "sport": "beach",
+   "event": "AVCA Centrālā reģiona pāru kvalifikācija, Kennera",
+   "round": "Pink divīzija, 3. grupa",
+   "opponent": "New Orleans (UNO) pāris",
+   "partner": "Liz Selinger",
+   "score": "21-14, 25-23",
+   "result": "W",
+   "stats": "",
+   "source": "https://tulanegreenwave.com/news/2026/10/10/womens-beach-volleyball-green-wave-delivers-strong-showing-on-day-one-of-avca-qualifier"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-10-tamucc",
+   "player": "loreta-cabule",
+   "date": "2026-10-10",
+   "sport": "beach",
+   "event": "AVCA Centrālā reģiona pāru kvalifikācija, Kennera",
+   "round": "Pink divīzija, 3. grupa",
+   "opponent": "Texas A&M–Corpus Christi pāris",
+   "partner": "Gigi Gallegos",
+   "score": "21-18, 21-15",
+   "result": "W",
+   "stats": "Pirmajā dienā 3 uzvaras 3 mačos",
+   "source": "https://tulanegreenwave.com/news/2026/10/10/womens-beach-volleyball-green-wave-delivers-strong-showing-on-day-one-of-avca-qualifier"
   }
  ],
  "upcoming": [
@@ -440,6 +486,20 @@
    "opponent": "",
    "location": "Fortvērta, Teksasa",
    "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-stetson-2026-10-16",
+   "players": [
+    "monika-mamaja"
+   ],
+   "team": "Stetson",
+   "date": "2026-10-16",
+   "endDate": "2026-10-17",
+   "sport": "beach",
+   "event": "Stetson rudens turnīrs",
+   "opponent": "",
+   "location": "Delenda, Florida (mājās)",
+   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
   },
   {
    "id": "u-tulane-2026-10-24",
@@ -470,6 +530,20 @@
    "source": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
   },
   {
+   "id": "u-stetson-2026-10-24",
+   "players": [
+    "monika-mamaja"
+   ],
+   "team": "Stetson",
+   "date": "2026-10-24",
+   "endDate": "2026-10-25",
+   "sport": "beach",
+   "event": "AVCA East kvalifikācijas turnīrs (pāriem)",
+   "opponent": "",
+   "location": "Tavaresa, Florida",
+   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
    "id": "u-tcu-2026-11-06",
    "players": [
     "deniela-konstantinova"
@@ -498,6 +572,20 @@
    "opponent": "",
    "location": "Hantsvila, Alabama",
    "source": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-stetson-2026-11-06",
+   "players": [
+    "monika-mamaja"
+   ],
+   "team": "Stetson",
+   "date": "2026-11-06",
+   "endDate": "2026-11-07",
+   "sport": "beach",
+   "event": "North Florida rudens turnīrs",
+   "opponent": "",
+   "location": "Džeksonvila, Florida",
+   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
   },
   {
    "id": "u-tulane-2026-11-20",
