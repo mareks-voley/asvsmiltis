@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-14T08:59+03:00",
+  "updatedAt": "2026-10-15T05:48+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie mači: 16.–17. oktobrī Monika Mamaja Stetson rudens turnīrā un Deniela Konstantinova TCU iekšējā turnīrā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamā spēle: 16. oktobrī (TCU un Stetson).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -33,6 +33,10 @@
    {
     "at": "2026-10-14T08:59+03:00",
     "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), pārbaudīts tikai ar meklēšanu — jaunu rezultātu neatrada."
+   },
+   {
+    "at": "2026-10-15T05:48+03:00",
+    "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), tāpēc jauni rezultāti netika pārbaudīti; meklēšana jaunu beach rezultātu neatrada."
    }
   ]
  },
