@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-15T05:48+03:00",
+  "updatedAt": "2026-10-16T05:48+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamā spēle: 16. oktobrī (TCU un Stetson).",
+  "summary": "Šonakt jaunu rezultātu nebija. Šodien, 16. oktobrī, sākas TCU (Konstantinova) un Stetson (Mamaja) turnīri.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -37,6 +37,10 @@
    {
     "at": "2026-10-15T05:48+03:00",
     "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), tāpēc jauni rezultāti netika pārbaudīti; meklēšana jaunu beach rezultātu neatrada."
+   },
+   {
+    "at": "2026-10-16T05:48+03:00",
+    "text": "Visas skolu mājaslapas un Sportacentrs šorīt nebija pieejamas (DNS kļūda); meklēšana jaunu beach rezultātu neatrada; dati nemainīti."
    }
   ]
  },
