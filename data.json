@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-17T05:48+03:00",
+  "updatedAt": "2026-10-18T05:47+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu datu nebija (avoti šoreiz nebija pieejami). Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
+  "summary": "Šonakt jaunu rezultātu datu nebija (skolu vietnes šoreiz nebija pieejamas). Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -45,6 +45,10 @@
    {
     "at": "2026-10-17T05:48+03:00",
     "text": "Visi skolu un Sportacentrs avoti nebija sasniedzami (DNS kļūda), meklēšana jaunu rezultātu neatrada; nekas nav pievienots."
+   },
+   {
+    "at": "2026-10-18T05:47+03:00",
+    "text": "Pārbaudītas visas 10 skolu vietnes un Sportacentrs: visas nepieejamas (DNS kļūda), WebSearch jaunu rezultātu neatrada. Nekas nav pievienots."
    }
   ]
  },
