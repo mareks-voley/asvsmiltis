@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-18T05:47+03:00",
+  "updatedAt": "2026-10-19T05:48+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu datu nebija (skolu vietnes šoreiz nebija pieejamas). Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -49,6 +49,10 @@
    {
     "at": "2026-10-18T05:47+03:00",
     "text": "Pārbaudītas visas 10 skolu vietnes un Sportacentrs: visas nepieejamas (DNS kļūda), WebSearch jaunu rezultātu neatrada. Nekas nav pievienots."
+   },
+   {
+    "at": "2026-10-19T05:48+03:00",
+    "text": "Skolu vietnes (visi avoti) nebija pieejamas (DNS kļūda), WebSearch jaunus rezultātus neatrada; nekas nav pievienots."
    }
   ]
  },
@@ -567,34 +571,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "u-tcu-2026-10-16",
-   "players": [
-    "deniela-konstantinova"
-   ],
-   "team": "TCU",
-   "date": "2026-10-16",
-   "endDate": "2026-10-17",
-   "sport": "beach",
-   "event": "Purple & White komandas iekšējais turnīrs",
-   "opponent": "",
-   "location": "Fortvērta, Teksasa",
-   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-stetson-2026-10-16",
-   "players": [
-    "monika-mamaja"
-   ],
-   "team": "Stetson",
-   "date": "2026-10-16",
-   "endDate": "2026-10-17",
-   "sport": "beach",
-   "event": "Stetson rudens turnīrs",
-   "opponent": "",
-   "location": "Delenda, Florida (mājās)",
-   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
-  },
   {
    "id": "u-tulane-2026-10-24",
    "players": [
