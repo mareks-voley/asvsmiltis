@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updatedAt": "2026-10-20T05:48+03:00",
+  "updatedAt": "2026-10-20T19:43+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija (skolu mājaslapas šorīt nebija pieejamas, tāpēc dati nav pārbaudīti). Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
@@ -57,6 +57,10 @@
    {
     "at": "2026-10-20T05:48+03:00",
     "text": "Visi avoti (skolu mājaslapas, Sportacentrs) nebija pieejami (DNS kļūda); tīmekļa meklēšana jaunumus neatrada. Nekas nav pievienots."
+   },
+   {
+    "at": "2026-10-20T19:43+03:00",
+    "text": "Ārpuskārtas atjauninājums: ieslēgta tīkla piekļuve; no VolleyballLife pievienotas rudens gala vietas (Martini Ādamsone 6. un 11. vieta, Krieva/Kazaka 14. vieta). Runces un Cabules pāri Coconut Beach turnīrā nav nosakāmi (pieteikta visa komanda); Mamajas Stetson turnīra rezultāts vēl nav ievadīts."
    }
   ]
  },
@@ -572,6 +576,62 @@
    "result": "W",
    "stats": "Pirmajā dienā 3 uzvaras 3 mačos",
    "source": "https://tulanegreenwave.com/news/2026/10/10/womens-beach-volleyball-green-wave-delivers-strong-showing-on-day-one-of-avca-qualifier"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-03-vbl-40190-147059",
+   "player": "kitija-adamsone",
+   "date": "2026-10-03",
+   "sport": "beach",
+   "event": "AVCA Central BID Qualifier and Midwest Open",
+   "round": "BID divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Y-Nhu Do",
+   "score": "6. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40190"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-11-vbl-39682-145357",
+   "player": "kitija-adamsone",
+   "date": "2026-10-11",
+   "sport": "beach",
+   "event": "Fall Coconut Beach 2026, Kenera, Luiziāna",
+   "round": "AVCA Bid divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Laurel Dennis",
+   "score": "11. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39682"
+  },
+  {
+   "id": "r-evelina-krieva-2026-10-18-vbl-40898-149667",
+   "player": "evelina-krieva",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026",
+   "round": "Womens Open divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Karlīna Kazaka",
+   "score": "14. vieta",
+   "result": "",
+   "stats": "UTEP 3. pāris",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-karlina-kazaka-2026-10-18-vbl-40898-149667",
+   "player": "karlina-kazaka",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026",
+   "round": "Womens Open divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Evelīna Krieva",
+   "score": "14. vieta",
+   "result": "",
+   "stats": "UTEP 3. pāris",
+   "source": "https://volleyballlife.com/event/40898"
   }
  ],
  "upcoming": [

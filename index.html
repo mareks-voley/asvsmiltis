@@ -278,7 +278,7 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
   }
 
   function lastLine(r) {
-    return '<b>' + esc(fmtD(r.date, false)) + '</b> · ' + (r.result ? esc(RES_WORD[r.result]) + ' ' : '') + 'pret ' + esc(r.opponent) + ' <span class="score">' + esc(r.score) + '</span>' +
+    return '<b>' + esc(fmtD(r.date, false)) + '</b> · ' + (r.result ? esc(RES_WORD[r.result]) + ' ' : '') + (r.opponent ? 'pret ' + esc(r.opponent) : 'gala vieta') + ' <span class="score">' + esc(r.score) + '</span>' +
       '<div class="sub">' + esc(r.event) + (r.round ? ' · ' + esc(r.round) : '') + (r.partner ? ' · ar ' + esc(r.partner) : '') + (r.stats ? ' · ' + esc(r.stats) : '') + '</div>';
   }
 
@@ -286,7 +286,7 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     const pill = r.result ? '<span class="pill ' + esc(r.result) + '" title="' + esc(RES_WORD[r.result]) + '">' + esc(RES[r.result]) + '</span>' : '<span class="pill N">—</span>';
     return '<div class="row">' + pill + '<div>' +
       (withName ? '<div class="who"><a href="#p-' + esc(r.player) + '">' + esc(p ? p.name : r.player) + '</a> <span class="meta">· ' + esc(p ? p.team : '') + '</span></div>' : '<div class="who">' + esc(fmtD(r.date, true)) + '</div>') +
-      '<div class="what">pret <b>' + esc(r.opponent) + '</b> <span class="score">' + esc(r.score) + '</span> ' + chip(r.sport) + '</div>' +
+      '<div class="what">' + (r.opponent ? 'pret <b>' + esc(r.opponent) + '</b>' : 'Gala vieta') + ' <span class="score">' + esc(r.score) + '</span> ' + chip(r.sport) + '</div>' +
       '<div class="meta">' + esc(r.event) + (r.round ? ' · ' + esc(r.round) : '') + (r.partner ? ' · ar ' + esc(r.partner) : '') + (r.stats ? ' · ' + esc(r.stats) : '') + (r.source ? ' · <a href="' + esc(r.source) + '" target="_blank" rel="noopener">avots</a>' : '') + '</div>' +
       '</div></div>';
   }
