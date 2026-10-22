@@ -177,6 +177,17 @@ def main():
         if not u.get("source"):
             W(f"Nākamajai spēlei {uid} nav avota saites")
 
+    # --- spēlētājas bez neviena tuvākā turnīra (30 dienas) ---
+    # 2026-10-22: USC rudens turnīri (Surf City, BVNE) bija skolas kalendārā, bet ne data.json.
+    horizon = (today + datetime.timedelta(days=30)).isoformat()
+    covered = set()
+    for u in d.get("upcoming", []):
+        if (u.get("date") or "9999") <= horizon:
+            covered.update(u.get("players", []))
+    missing = [EXPECTED[p] for p in EXPECTED if p not in covered and p != "anna-rita"]
+    if missing:
+        W("Nav neviena tuvākā turnīra 30 dienās: " + ", ".join(missing) + " — pārbaudi skolu kalendārus")
+
     # --- publicētā lapa ---
     if live:
         try:

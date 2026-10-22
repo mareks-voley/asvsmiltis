@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updatedAt": "2026-10-22T16:49+03:00",
+  "updatedAt": "2026-10-22T17:39+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi",
@@ -69,6 +69,10 @@
    {
     "at": "2026-10-22T16:49+03:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-10-22T17:39+03:00",
+    "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions (šodien manuāli palaists, veiksmīgi; plānotais 02:15 UTC sāks darboties no 23.10.), update.py atkārtoti – nekā jauna; skolu kalendāri (USC, Stetson, TCU, FIU, UTEP, Coastal nolasīti; Tulane, Southern Miss un FIU/Stetson ziņu arhīvi nebija pieejami) un Sportacentrs. Pievienoti trūkstošie USC (Ēbere) turnīri: Surf City 24.–25.10., BVNE 7.–8.11.; Ēbere un Mamaja pievienotas AVCA čempionātam 6.–8.11. Atvērts: FIU (Vildere) Tavaresas turnīrs 24.10. FIU kalendārā vairs nav redzams; Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
    }
   ]
  },
@@ -770,20 +774,6 @@
  ],
  "upcoming": [
   {
-   "id": "u-tulane-2026-10-24",
-   "players": [
-    "loreta-cabule"
-   ],
-   "team": "Tulane",
-   "date": "2026-10-24",
-   "endDate": "2026-10-25",
-   "sport": "beach",
-   "event": "AVCA komandu turnīrs",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
    "id": "u-fiu-2026-10-24",
    "players": [
     "marta-vildere"
@@ -812,27 +802,43 @@
    "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
   },
   {
-   "id": "u-tcu-2026-11-06",
+   "id": "u-tulane-2026-10-24",
    "players": [
-    "deniela-konstantinova"
+    "loreta-cabule"
    ],
-   "team": "TCU",
-   "date": "2026-11-06",
-   "endDate": "2026-11-07",
+   "team": "Tulane",
+   "date": "2026-10-24",
+   "endDate": "2026-10-25",
    "sport": "beach",
-   "event": "Rudens mači",
-   "opponent": "Texas",
-   "location": "Fortvērta, Teksasa (mājās)",
-   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
+   "event": "AVCA komandu turnīrs",
+   "opponent": "",
+   "location": "Hantsvila, Alabama",
+   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-usc-2026-10-24",
+   "players": [
+    "liva-ebere"
+   ],
+   "team": "USC",
+   "date": "2026-10-24",
+   "endDate": "2026-10-25",
+   "sport": "beach",
+   "event": "13. Surf City Collegiate Challenge",
+   "opponent": "",
+   "location": "Hantingtonbīča, Kalifornija (Huntington Beach Pier)",
+   "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
   },
   {
    "id": "u-avca-pairs-2026-11-06",
    "players": [
     "loreta-cabule",
     "marta-vildere",
-    "deniela-konstantinova"
+    "deniela-konstantinova",
+    "liva-ebere",
+    "monika-mamaja"
    ],
-   "team": "Tulane, FIU, TCU",
+   "team": "Tulane, FIU, TCU, USC, Stetson",
    "date": "2026-11-06",
    "endDate": "2026-11-08",
    "sport": "beach",
@@ -854,6 +860,34 @@
    "opponent": "",
    "location": "Džeksonvila, Florida",
    "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-tcu-2026-11-06",
+   "players": [
+    "deniela-konstantinova"
+   ],
+   "team": "TCU",
+   "date": "2026-11-06",
+   "endDate": "2026-11-07",
+   "sport": "beach",
+   "event": "Rudens mači",
+   "opponent": "Texas",
+   "location": "Fortvērta, Teksasa (mājās)",
+   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-usc-2026-11-07",
+   "players": [
+    "liva-ebere"
+   ],
+   "team": "USC",
+   "date": "2026-11-07",
+   "endDate": "2026-11-08",
+   "sport": "beach",
+   "event": "BVNE Collegiate Preseason",
+   "opponent": "",
+   "location": "Santa Monika, Kalifornija (North Beach)",
+   "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
   },
   {
    "id": "u-tulane-2026-11-20",

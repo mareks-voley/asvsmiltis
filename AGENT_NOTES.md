@@ -17,5 +17,10 @@
 - Lapa ir tikai par pludmales volejbolu. Anna Rīta rudenī spēlē zāles volejbolu – to neliekam.
 - Vārdu rakstība: Marta Vildere, Loreta Cabule, Kitija Martini Ādamsone, Evelīna Krieva, Karlīna Kazaka, Līva Ēbere, Anna Rīta.
 
+- WebFetch nedarbina JavaScript: asvsmiltis.com rāda "Ielādē…" – tas ir normāli; datus pārbaudīt ar `check.py --live`.
+- Tulane un Southern Miss lapas WebFetch reizēm atgriež client_error; FIU kalendārs 2026-10-22 rādīja tikai pavasara 2026 sezonu; UTEP un Coastal rudens kalendāru nepublicē.
+- data.json formāts: `json.dump(d, f, ensure_ascii=False, indent=1)` (kā update.py), citādi diff ir milzīgs.
+
 ## Labojumu žurnāls
+- 2026-10-22 (pārbaude) — Problēma: USC rudens turnīri (Surf City 24.–25.10., BVNE 7.–8.11., AVCA 6.–8.11.) bija usctrojans.com kalendārā, bet ne data.json; Ēberei nebija neviena tuvākā turnīra. Cēlonis: rīta uzdevums pievienoja tikai "jaunus" ierakstus, nesalīdzināja visu kalendāru ar `upcoming`. Labojums: ieraksti pievienoti. Procesa izmaiņa: check.py brīdina par spēlētājām bez turnīra 30 dienās; rīta uzdevuma promptā 5. solis prasa salīdzināt VISUS 30 dienu kalendāra ierakstus, 6. solis – palaist check.py pirms push un ziņot git kļūdu. Piezīme: rīta uzdevums 21.–22.10. beidzās "SUCCEEDED", bet push nebija; 22.10. 14:23 UTC prompts jau pārrakstīts – 23.10. pārbaudīt, vai ir commit "Rīta atjauninājums 2026-10-23". GitHub Actions plānotais palaidums pirmo reizi 23.10. 02:15 UTC.
 - 2026-10-22 — Izveidots `update.py` (VolleyballLife) + GitHub Actions grafiks, `check.py` pārbaudes, šis aģents. Iemesls: Claude rīta uzdevums vairākas dienas pēc kārtas nepublicēja datus (tīkla iestatījums, nepilns User-Agent, 21.–22.10. nav push).
