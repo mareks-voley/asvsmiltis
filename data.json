@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-20T19:43+03:00",
+  "updatedAt": "2026-10-22T16:47+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija (skolu mājaslapas šorīt nebija pieejamas, tāpēc dati nav pārbaudīti). Nākamie turnīri: 24. oktobrī (Tulane, FIU, Stetson).",
+  "summary": "Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -61,6 +61,10 @@
    {
     "at": "2026-10-20T19:43+03:00",
     "text": "Ārpuskārtas atjauninājums: ieslēgta tīkla piekļuve; no VolleyballLife pievienotas rudens gala vietas (Martini Ādamsone 6. un 11. vieta, Krieva/Kazaka 14. vieta). Runces un Cabules pāri Coconut Beach turnīrā nav nosakāmi (pieteikta visa komanda); Mamajas Stetson turnīra rezultāts vēl nav ievadīts."
+   },
+   {
+    "at": "2026-10-22T16:47+03:00",
+    "text": "VolleyballLife: pievienoti 9 ieraksti (Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi); nākamie turnīri: 0"
    }
   ]
  },
@@ -631,6 +635,132 @@
    "score": "14. vieta",
    "result": "",
    "stats": "UTEP 3. pāris",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-11-vbl-39263-144138",
+   "player": "liva-ebere",
+   "date": "2026-10-11",
+   "sport": "beach",
+   "event": "2026 SCE West Coast Championship, Manhattan Beach Pier",
+   "round": "Gold Open divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Sarah Wood",
+   "score": "9. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39263"
+  },
+  {
+   "id": "r-evelina-krieva-2026-10-17-vbl-m1711035",
+   "player": "evelina-krieva",
+   "date": "2026-10-17",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "GCU 2. pāris",
+   "partner": "Karlīna Kazaka",
+   "score": "14-21, 11-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-evelina-krieva-2026-10-17-vbl-m1709179",
+   "player": "evelina-krieva",
+   "date": "2026-10-17",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "GCU 5. pāris",
+   "partner": "Karlīna Kazaka",
+   "score": "21-17, 21-15",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-evelina-krieva-2026-10-18-vbl-m441393",
+   "player": "evelina-krieva",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · Bronze izslēgšanas spēles",
+   "opponent": "Arizona 2. pāris",
+   "partner": "Karlīna Kazaka",
+   "score": "19-21, 17-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-evelina-krieva-2026-10-18-vbl-m441399",
+   "player": "evelina-krieva",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · Bronze izslēgšanas spēles",
+   "opponent": "ASU 4. pāris",
+   "partner": "Karlīna Kazaka",
+   "score": "21-23, 16-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-karlina-kazaka-2026-10-17-vbl-m1711035",
+   "player": "karlina-kazaka",
+   "date": "2026-10-17",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "GCU 2. pāris",
+   "partner": "Evelīna Krieva",
+   "score": "14-21, 11-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-karlina-kazaka-2026-10-17-vbl-m1709179",
+   "player": "karlina-kazaka",
+   "date": "2026-10-17",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "GCU 5. pāris",
+   "partner": "Evelīna Krieva",
+   "score": "21-17, 21-15",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-karlina-kazaka-2026-10-18-vbl-m441393",
+   "player": "karlina-kazaka",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · Bronze izslēgšanas spēles",
+   "opponent": "Arizona 2. pāris",
+   "partner": "Evelīna Krieva",
+   "score": "19-21, 17-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/40898"
+  },
+  {
+   "id": "r-karlina-kazaka-2026-10-18-vbl-m441399",
+   "player": "karlina-kazaka",
+   "date": "2026-10-18",
+   "sport": "beach",
+   "event": "Arizona Fall Classic 2026, University of Arizona",
+   "round": "Womens Open divīzija · Bronze izslēgšanas spēles",
+   "opponent": "ASU 4. pāris",
+   "partner": "Evelīna Krieva",
+   "score": "21-23, 16-21",
+   "result": "L",
+   "stats": "",
    "source": "https://volleyballlife.com/event/40898"
   }
  ],
