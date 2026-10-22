@@ -32,3 +32,5 @@ jobs:
           git commit -m "Automātisks atjauninājums $(date -u +%Y-%m-%d)"
           git pull --rebase origin main
           git push origin HEAD:main
+      - name: Pārbaudīt datus (check.py)
+        run: python3 check.py data.json
