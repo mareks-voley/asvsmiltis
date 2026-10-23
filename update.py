@@ -101,6 +101,20 @@ def team_id(side):
     return side.get("teamId") if isinstance(side, dict) else None
 
 
+def next_event_text(d, names, today):
+    fut = [u for u in d.get("upcoming", []) if (u.get("endDate") or u.get("date", "")) >= today]
+    if not fut:
+        return ""
+    first = min(u["date"] for u in fut)
+    evs = [u for u in fut if u["date"] == first]
+    y, m, dd = first.split("-")
+    bits = []
+    for u in evs:
+        who = ", ".join(names.get(p, p) for p in u.get("players", []))
+        bits.append(f"{who} ({u.get('event', '')}, {u.get('location', '')})")
+    return f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
+
+
 def main():
     path = sys.argv[1] if len(sys.argv) > 1 else "data.json"
     d = json.load(open(path, encoding="utf-8"))
@@ -245,11 +259,18 @@ def main():
     text += f"; nākamie turnīri: {len(new_up)}"
     if errors:
         text += "; kļūdas: " + "; ".join(errors[:3])
+    today = now.date().isoformat()
+    # vai šodien datus jau labojis kāds cits (Claude rīta uzdevums / pārbaude)?
+    touched_today = any(str(l.get("at", ""))[:10] == today and not str(l.get("text", "")).startswith("VolleyballLife")
+                        for l in meta.get("log", []))
     meta["updatedAt"] = now.isoformat(timespec="minutes")
     meta.setdefault("log", []).append({"at": meta["updatedAt"], "text": text})
     meta["log"] = meta["log"][-30:]
     if added:
         meta["summary"] = "; ".join(parts)
+    elif not touched_today:
+        # neatstāj vakardienas kopsavilkumu: ieliek "nekā jauna" + nākamo turnīru
+        meta["summary"] = "Šonakt jaunu rezultātu nebija." + next_event_text(d, names, today)
     json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(text)
     for n in notes:

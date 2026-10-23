@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-23T05:45+03:00",
+  "updatedAt": "2026-10-23T17:17+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi",
+  "summary": "Šonakt jaunu rezultātu nebija. Rīt, 24.–25.10., spēlē četras latvietes: Līva Ēbere (USC) Surf City Collegiate Challenge Hantingtonbīčā, Marta Vildere (FIU) un Monika Mamaja (Stetson) AVCA Austrumu kvalifikācijas turnīrā Tavaresā, Loreta Cabule (Tulane) AVCA komandu turnīrā Hantsvilā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -77,6 +77,14 @@
    {
     "at": "2026-10-23T05:45+03:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-10-23T05:52+03:00",
+    "text": "Rīta atjauninājums: update.py – jaunu VBL rezultātu nav. Nolasīti: USC kalendārs+ziņas, Stetson kalendārs, Southern Miss kalendārs (rāda tikai pavasara 2026 sezonu)+arhīvs (jaunākā ziņa 23.07.), FIU kalendārs (Tavaresa 24.–25.10. apstiprināta), TCU kalendārs+ziņas, Coastal kalendārs (rāda 2025 sezonu), UTEP kalendārs (rāda pavasara 2026 sezonu), Sportacentrs. Visi 30 dienu kalendāra ieraksti jau bija `upcoming`; nekas jauns nepievienots. Neizdevās (WebFetch client_error, atkārtots mēģinājums neizdevās): tulanegreenwave.com schedule un archives, gohatters.com archives, fiusports.com archives, goccusports.com archives, utepminers.com archives. Southern Miss un UTEP rudens kalendāri nav publicēti (arī WebSearch neatrada) – Ādamsonei, Runcei, Krievai, Kazakai nav tuvāko turnīru."
+   },
+   {
+    "at": "2026-10-23T17:17+03:00",
+    "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions 02:45 UTC veiksmīgi, update.py atkārtoti – nekā jauna, Southern Miss kalendārs (tikai pavasara sezona), meklēšana pēc Southern Miss/UTEP/Stetson rudens turnīriem – nekas jauns. Problēma: Claude rīta uzdevums jau 3. dienu (21.–23.10.) atjaunināja tikai priekšskatījumu, bet nepublicēja uz GitHub; lapā bija vakardienas kopsavilkums. Labots: rīta kopsavilkums un žurnāla ieraksts pārnesti lapā; update.py vairs neatstāj vakardienas kopsavilkumu; check.py brīdina, ja nav rīta publikācijas; rīta uzdevuma prompts – obligāts push ar pārbaudi un rezerves ceļu. Atvērts: Ādamsonei, Runcei, Krievai, Kazakai nav publicētu rudens turnīru; Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
    }
   ]
  },
