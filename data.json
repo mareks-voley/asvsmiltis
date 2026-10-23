@@ -1,6 +1,6 @@
 {
  "meta": {
-  "updatedAt": "2026-10-22T17:39+03:00",
+  "updatedAt": "2026-10-23T05:45+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi",
@@ -73,6 +73,10 @@
    {
     "at": "2026-10-22T17:39+03:00",
     "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions (šodien manuāli palaists, veiksmīgi; plānotais 02:15 UTC sāks darboties no 23.10.), update.py atkārtoti – nekā jauna; skolu kalendāri (USC, Stetson, TCU, FIU, UTEP, Coastal nolasīti; Tulane, Southern Miss un FIU/Stetson ziņu arhīvi nebija pieejami) un Sportacentrs. Pievienoti trūkstošie USC (Ēbere) turnīri: Surf City 24.–25.10., BVNE 7.–8.11.; Ēbere un Mamaja pievienotas AVCA čempionātam 6.–8.11. Atvērts: Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
+   },
+   {
+    "at": "2026-10-23T05:45+03:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
    }
   ]
  },
