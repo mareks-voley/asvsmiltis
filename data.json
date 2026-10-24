@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-24T23:36+03:00",
+  "updatedAt": "2026-10-25T02:33+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 0 uzvaras, 1 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 1 uzvaras, 0 zaudējumi, gala vieta 29. vieta; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi",
+  "summary": "Līva Ēbere: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -109,6 +109,10 @@
    {
     "at": "2026-10-24T23:36+03:00",
     "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 1 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 1 uzvaras, 0 zaudējumi, gala vieta 29. vieta; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-25T02:33+03:00",
+    "text": "VolleyballLife: pievienoti 3 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1044,6 +1048,48 @@
    "result": "L",
    "stats": "",
    "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-24-vbl-m1717341",
+   "player": "liva-ebere",
+   "date": "2026-10-24",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija · grupu turnīrs",
+   "opponent": "Boise State 1. pāris",
+   "partner": "Kennedy Coakley",
+   "score": "21-12, 21-14",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-24-vbl-m442653",
+   "player": "kitija-adamsone",
+   "date": "2026-10-24",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Bid divīzija · izslēgšanas spēles",
+   "opponent": "UNA 4. pāris",
+   "partner": "Giovan Gurgel Bahia",
+   "score": "18-21, 21-19, 9-15",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-marta-vildere-2026-10-24-vbl-m1713891",
+   "player": "marta-vildere",
+   "date": "2026-10-24",
+   "sport": "beach",
+   "event": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs), Hickory Point",
+   "round": "Silver Open divīzija · grupu turnīrs",
+   "opponent": "USF 1. pāris",
+   "partner": "Annelise Alvarez",
+   "score": "20-22, 10-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39262"
   }
  ],
  "upcoming": [
