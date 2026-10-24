@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-23T17:17+03:00",
+  "updatedAt": "2026-10-24T05:44+03:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Rīt, 24.–25.10., spēlē četras latvietes: Līva Ēbere (USC) Surf City Collegiate Challenge Hantingtonbīčā, Marta Vildere (FIU) un Monika Mamaja (Stetson) AVCA Austrumu kvalifikācijas turnīrā Tavaresā, Loreta Cabule (Tulane) AVCA komandu turnīrā Hantsvilā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 24.10.: Marta Vildere (AVCA East kvalifikācijas turnīrs (pāriem), Tavaresa, Florida); Monika Mamaja (AVCA East kvalifikācijas turnīrs (pāriem), Tavaresa, Florida); Loreta Cabule (AVCA komandu turnīrs, Hantsvila, Alabama); Līva Ēbere (13. Surf City Collegiate Challenge, Hantingtonbīča, Kalifornija (Huntington Beach Pier)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -85,6 +85,10 @@
    {
     "at": "2026-10-23T17:17+03:00",
     "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions 02:45 UTC veiksmīgi, update.py atkārtoti – nekā jauna, Southern Miss kalendārs (tikai pavasara sezona), meklēšana pēc Southern Miss/UTEP/Stetson rudens turnīriem – nekas jauns. Problēma: Claude rīta uzdevums jau 3. dienu (21.–23.10.) atjaunināja tikai priekšskatījumu, bet nepublicēja uz GitHub; lapā bija vakardienas kopsavilkums. Labots: rīta kopsavilkums un žurnāla ieraksts pārnesti lapā; update.py vairs neatstāj vakardienas kopsavilkumu; check.py brīdina, ja nav rīta publikācijas; rīta uzdevuma prompts – obligāts push ar pārbaudi un rezerves ceļu. Atvērts: Ādamsonei, Runcei, Krievai, Kazakai nav publicētu rudens turnīru; Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
+   },
+   {
+    "at": "2026-10-24T05:44+03:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
    }
   ]
  },
