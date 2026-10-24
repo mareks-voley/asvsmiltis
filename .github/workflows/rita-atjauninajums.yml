@@ -3,6 +3,7 @@ name: Rīta atjauninājums (VolleyballLife)
 on:
   schedule:
     - cron: "15 2 * * *"   # katru dienu 02:15 UTC (05:15 Rīgā vasaras laikā, 04:15 ziemā)
+    - cron: "15 14-23/3,5 * * 5,6,0,1"   # turnīru dienās (pk–sv, pirmd. rīts): ik pēc 3 h ASV dienā, lai rezultāti parādās jau spēļu laikā
   workflow_dispatch: {}     # poga "Run workflow" GitHub lapā
 
 permissions:

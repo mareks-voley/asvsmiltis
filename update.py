@@ -81,9 +81,19 @@ def lv_team(n):
     return n or ""
 
 
-def round_name(day_name):
+def round_name(day_name, day=None):
     k = (day_name or "").strip()
+    if day is not None:
+        if day.get("poolPlay") and not day.get("bracketPlay"):
+            return "grupu turnīrs"
+        if day.get("bracketPlay"):
+            return "izslēgšanas spēles"
     return DAY_LV.get(k.lower(), f"{k} izslēgšanas spēles" if k else "")
+
+
+def div_name(division):
+    dv = re.sub(r"\s*(Division|Div\.?)\s*$", "", (division or "").strip(), flags=re.I)
+    return f"{dv} divīzija" if dv else ""
 
 
 def walk_matches(o):
@@ -123,6 +133,7 @@ def main():
     now = datetime.datetime.now(TZ)
     today = now.date().isoformat()
     names = {p["id"]: p["name"] for p in d["players"]}
+    up_before = json.dumps(sorted(u["id"] for u in d.get("upcoming", [])))
 
     res_ids = {r["id"] for r in d["results"]}
     added, new_up, notes, errors = [], {}, [], []
@@ -155,48 +166,60 @@ def main():
             end = max((x.get("date") or date)[:10] for x in days) if days else date
             loc = (((h or {}).get("location") or {}).get("name")) or ""
             ev_url = f"https://volleyballlife.com/event/{t['id']}"
-            event = t.get("tournament", "")
+            event = re.sub(r"\s+", " ", t.get("tournament", "")).strip()
             division = t.get("division", "")
 
-            # --- nākamais turnīrs ---
-            if end >= today and t.get("finish") is None:
+            my_name = f"{prof.get('firstName', '')} {prof.get('lastName', '')}".strip().lower()
+            finished = t.get("finish") is not None or end < today
+
+            # --- nākamais / notiekošs turnīrs ---
+            if not finished:
                 uid = f"u-vbl-{t['id']}"
                 u = new_up.get(uid) or {
                     "id": uid, "players": [], "team": "", "date": start,
                     "endDate": end if end != start else "", "sport": "beach",
-                    "event": event + (f" ({division} divīzija)" if division else ""),
+                    "event": event + (f" ({div_name(division)})" if division else ""),
                     "opponent": "", "location": loc, "source": ev_url,
                 }
                 if pid not in u["players"]:
                     u["players"].append(pid)
                 u["team"] = ", ".join(sorted({x for x in (u["team"].split(", ") if u["team"] else [])} | {lv_team(t.get("teamName", ""))}))
                 new_up[uid] = u
-                continue
+                if start > today:
+                    continue  # vēl nav sācies – mačus nav ko ņemt
 
             # jau ir citu avotu mači šim turnīram šai spēlētājai?
             covered = any(r["player"] == pid and start <= r["date"] <= end and "volleyballlife.com" not in (r.get("source") or "")
                           for r in d["results"])
 
-            if not single:
-                note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi)"
-                if note not in notes:
-                    notes.append(note)
-                continue
-
-            partner = partners[0]
-            # --- mači ---
+            # --- mači (partneri nosaka pēc katra mača sastāva "lineups") ---
+            match_partners = []
             if h and not covered:
                 tid = t.get("teamId")
                 teams = {x["id"]: x for x in h.get("teams", [])}
-                day_of = {}
-                for day in days:
-                    for m in walk_matches(day):
-                        day_of[id(m)] = day
+                me = teams.get(tid, {})
+                pl_by_id = {x.get("id"): (x.get("name") or f"{x.get('firstName', '')} {x.get('lastName', '')}").strip()
+                            for x in me.get("players", [])}
+                my_ids = {i for i, n in pl_by_id.items() if n.lower() == my_name}
                 for day in days:
                     for m in walk_matches(day):
                         hid, aid = team_id(m["homeTeam"]), team_id(m["awayTeam"])
                         if tid not in (hid, aid) or not m.get("isMatch", True) or m.get("isBye"):
                             continue
+                        lineup = None
+                        for lu in m.get("lineups") or []:
+                            if lu.get("teamId") == tid:
+                                for pos in lu.get("positions") or []:
+                                    lineup = set(pos.get("players") or [])
+                        if lineup is not None and my_ids:
+                            if not (lineup & my_ids):
+                                continue  # šo maču spēlēja citas komandas biedrenes
+                            others = [pl_by_id.get(i, "") for i in lineup - my_ids]
+                            partner = lv_name(others[0]) if others else ""
+                        elif len(partners) == 1:
+                            partner = partners[0]
+                        else:
+                            continue  # nav zināms, vai viņa spēlēja
                         home = hid == tid
                         games = [(g.get("home"), g.get("away")) if home else (g.get("away"), g.get("home"))
                                  for g in m.get("games", [])]
@@ -205,8 +228,10 @@ def main():
                             continue
                         won = sum(1 for a, b in games if a > b)
                         lost = sum(1 for a, b in games if b > a)
-                        if won == lost:
+                        need = 2 if len(m.get("games", [])) >= 3 else 1
+                        if max(won, lost) < need:
                             continue  # mačs vēl nav pabeigts
+                        match_partners.append(partner)
                         opp = teams.get(aid if home else hid, {}).get("name", "")
                         mdate = (day.get("date") or date)[:10]
                         rid = f"r-{pid}-{mdate}-vbl-m{m.get('id')}"
@@ -215,7 +240,7 @@ def main():
                         r = {
                             "id": rid, "player": pid, "date": mdate, "sport": "beach",
                             "event": event + (f", {loc}" if loc else ""),
-                            "round": " · ".join(x for x in [f"{division} divīzija" if division else "", round_name(day.get("name"))] if x),
+                            "round": " · ".join(x for x in [div_name(division), round_name(day.get("name"), day)] if x),
                             "opponent": lv_team(opp), "partner": partner,
                             "score": ", ".join(f"{a}-{b}" for a, b in games),
                             "result": "W" if won > lost else "L", "stats": "", "source": ev_url,
@@ -224,12 +249,23 @@ def main():
 
             # --- gala vieta ---
             fin = t.get("finish")
+            if len(partners) == 1:
+                partner = partners[0]
+            elif match_partners:
+                partner = max(set(match_partners), key=match_partners.count)
+            else:
+                partner = None
             pl_id = f"r-{pid}-{date}-vbl-{t['id']}-{t['tdId']}"
             if isinstance(fin, int) and pl_id not in res_ids:
+                if partner is None:
+                    note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi, nav mača sastāvu)"
+                    if note not in notes:
+                        notes.append(note)
+                    continue
                 r = {
                     "id": pl_id, "player": pid, "date": date, "sport": "beach",
                     "event": event + (f", {loc}" if loc else ""),
-                    "round": (f"{division} divīzija, " if division else "") + "gala vieta",
+                    "round": (div_name(division) + ", " if division else "") + "gala vieta",
                     "opponent": "", "partner": partner, "score": f"{fin}. vieta", "result": "",
                     "stats": "", "source": ev_url,
                 }
@@ -260,6 +296,12 @@ def main():
     if errors:
         text += "; kļūdas: " + "; ".join(errors[:3])
     today = now.date().isoformat()
+    vbl_logged_today = any(str(l.get("at", ""))[:10] == today and str(l.get("text", "")).startswith("VolleyballLife")
+                           for l in meta.get("log", []))
+    up_after = json.dumps(sorted(u["id"] for u in d.get("upcoming", [])))
+    if not added and vbl_logged_today and "--force" not in sys.argv and up_after == up_before:
+        print(text + " (bez izmaiņām, fails netiek mainīts)")
+        return
     # vai šodien datus jau labojis kāds cits (Claude rīta uzdevums / pārbaude)?
     touched_today = any(str(l.get("at", ""))[:10] == today and not str(l.get("text", "")).startswith("VolleyballLife")
                         for l in meta.get("log", []))
