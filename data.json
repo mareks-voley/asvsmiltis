@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-25T15:28+02:00",
+  "updatedAt": "2026-10-25T16:37+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Monika Mamaja: 1 uzvaras, 0 zaudējumi",
+  "summary": "Marta Vildere: 0 uzvaras, 1 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -121,6 +121,10 @@
    {
     "at": "2026-10-25T15:28+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-10-25T16:37+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
    }
   ]
  },
@@ -1110,6 +1114,20 @@
    "partner": "Lucie Nosalkova",
    "score": "21-19, 21-19",
    "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39262"
+  },
+  {
+   "id": "r-marta-vildere-2026-10-25-vbl-m1717421",
+   "player": "marta-vildere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs), Hickory Point",
+   "round": "Silver Open divīzija · grupu turnīrs",
+   "opponent": "Tampa 6. pāris",
+   "partner": "Elizabeth Nye",
+   "score": "13-21, 19-21",
+   "result": "L",
    "stats": "",
    "source": "https://volleyballlife.com/event/39262"
   }
