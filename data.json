@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-25T19:37+02:00",
+  "updatedAt": "2026-10-25T22:36+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 0 uzvaras, 2 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi",
+  "summary": "Līva Ēbere: 2 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi, gala vieta 1. vieta; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi, gala vieta 13. vieta",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-12T16:31+03:00",
-    "text": "Lapā atstāts tikai pludmales volejbols; zāles spēles izņemtas."
-   },
    {
     "at": "2026-10-13T05:50+03:00",
     "text": "Pārbaudīti visu 7 augstskolu kalendāri, ziņas un Sportacentrs. Pievienoti 3 Cabules 10.10. rezultāti un 3 Stetson (Mamaja) turnīri kalendārā. Stetson (FAU turnīrs 10.–11.10.) un FIU (3.10., 10.–11.10.) pāru rezultāti nav publicēti; Southern Miss, Coastal Carolina un USC rudens kalendāru lapās nav; Southern Miss saraksts joprojām 2026. gada."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-25T19:37+02:00",
     "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 2 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-10-25T22:36+02:00",
+    "text": "VolleyballLife: pievienoti 7 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi, gala vieta 1. vieta; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi, gala vieta 13. vieta); nākamie turnīri: 3"
    }
   ]
  },
@@ -1198,6 +1198,104 @@
    "partner": "Giovan Gurgel Bahia",
    "score": "19-21, 21-15, 16-14",
    "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-25-vbl-m444473",
+   "player": "liva-ebere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
+   "opponent": "Hawaii 1. pāris",
+   "partner": "Kennedy Coakley",
+   "score": "1-0",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-25-vbl-m442930",
+   "player": "liva-ebere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
+   "opponent": "Hawaii 1. pāris",
+   "partner": "Kennedy Coakley",
+   "score": "21-17, 19-21, 15-13",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-25-vbl-39204-143886",
+   "player": "loreta-cabule",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Open Division A divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Lauren Mann",
+   "score": "1. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-25-vbl-m1713162",
+   "player": "loreta-cabule",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Open Division A divīzija · grupu turnīrs",
+   "opponent": "Austin Peay 4. pāris",
+   "partner": "Liv Johnson",
+   "score": "21-12, 21-11",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-25-vbl-39204-143887",
+   "player": "loreta-cabule",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Open Division B divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Liv Johnson",
+   "score": "1. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-24-vbl-m442688",
+   "player": "kitija-adamsone",
+   "date": "2026-10-24",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Bid divīzija · izslēgšanas spēles",
+   "opponent": "Mercer 1. pāris",
+   "partner": "Giovan Gurgel Bahia",
+   "score": "15-21, 21-11, 15-9",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-25-vbl-39204-143885",
+   "player": "kitija-adamsone",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Bid divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Giovan Gurgel Bahia",
+   "score": "13. vieta",
+   "result": "",
    "stats": "",
    "source": "https://volleyballlife.com/event/39204"
   }
