@@ -170,7 +170,12 @@ def main():
             division = t.get("division", "")
 
             my_name = f"{prof.get('firstName', '')} {prof.get('lastName', '')}".strip().lower()
-            finished = t.get("finish") is not None or end < today
+            # turnīrs ir beidzies tikai tad, ja VolleyballLife to atzīmējis kā pabeigtu ("complete").
+            # Turnīra laikā "finish" ir tikai pagaidu vieta (piem. 29.), to nedrīkst rādīt kā gala vietu.
+            complete = t.get("complete")
+            if complete is None:
+                complete = end < today and t.get("finish") is not None
+            finished = bool(complete)
 
             # --- nākamais / notiekošs turnīrs ---
             if not finished:
@@ -256,7 +261,7 @@ def main():
             else:
                 partner = None
             pl_id = f"r-{pid}-{date}-vbl-{t['id']}-{t['tdId']}"
-            if isinstance(fin, int) and pl_id not in res_ids:
+            if isinstance(fin, int) and finished and pl_id not in res_ids:
                 if partner is None:
                     note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi, nav mača sastāvu)"
                     if note not in notes:
