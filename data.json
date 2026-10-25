@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-25T22:36+02:00",
+  "updatedAt": "2026-10-26T01:33+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 2 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi, gala vieta 1. vieta; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi, gala vieta 13. vieta",
+  "summary": "Līva Ēbere: 2 uzvaras, 0 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-13T05:50+03:00",
-    "text": "Pārbaudīti visu 7 augstskolu kalendāri, ziņas un Sportacentrs. Pievienoti 3 Cabules 10.10. rezultāti un 3 Stetson (Mamaja) turnīri kalendārā. Stetson (FAU turnīrs 10.–11.10.) un FIU (3.10., 10.–11.10.) pāru rezultāti nav publicēti; Southern Miss, Coastal Carolina un USC rudens kalendāru lapās nav; Southern Miss saraksts joprojām 2026. gada."
-   },
    {
     "at": "2026-10-13T15:01+03:00",
     "text": "Skolu mājaslapas (visas 8) šonakt nebija pieejamas (DNS kļūda), meklēšana neko jaunu neatrada; dati nemainīti."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-25T22:36+02:00",
     "text": "VolleyballLife: pievienoti 7 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi, gala vieta 1. vieta; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi, gala vieta 13. vieta); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-26T01:33+02:00",
+    "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1298,6 +1298,34 @@
    "result": "",
    "stats": "",
    "source": "https://volleyballlife.com/event/39204"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-25-vbl-m444587",
+   "player": "liva-ebere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
+   "opponent": "Cal 2. pāris",
+   "partner": "Kennedy Coakley",
+   "score": "1-0",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-25-vbl-m442932",
+   "player": "liva-ebere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
+   "opponent": "Cal 2. pāris",
+   "partner": "Kennedy Coakley",
+   "score": "21-18, 21-9",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962"
   }
  ],
  "upcoming": [
