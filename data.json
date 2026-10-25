@@ -1,9 +1,9 @@
 {
  "meta": {
-  "updatedAt": "2026-10-25T02:33+03:00",
+  "updatedAt": "2026-10-25T04:44+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi",
+  "summary": "Loreta Cabule: 1 uzvaras, 0 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
@@ -113,6 +113,10 @@
    {
     "at": "2026-10-25T02:33+03:00",
     "text": "VolleyballLife: pievienoti 3 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-25T04:44+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Loreta Cabule: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1090,6 +1094,20 @@
    "result": "L",
    "stats": "",
    "source": "https://volleyballlife.com/event/39262"
+  },
+  {
+   "id": "r-loreta-cabule-2026-10-24-vbl-m1717459",
+   "player": "loreta-cabule",
+   "date": "2026-10-24",
+   "sport": "beach",
+   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
+   "round": "Open Division A divīzija · grupu turnīrs",
+   "opponent": "UTC 5. pāris",
+   "partner": "Elly Beshears",
+   "score": "21-14, 21-16",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39204"
   }
  ],
  "upcoming": [
