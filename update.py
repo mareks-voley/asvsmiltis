@@ -178,17 +178,14 @@ def main():
 
             # --- nākamais / notiekošs turnīrs ---
             if not finished:
-                uid = f"u-vbl-{t['id']}"
-                u = new_up.get(uid) or {
-                    "id": uid, "players": [], "team": "", "date": start,
+                # katrai meitenei savs ieraksts (savs avots/saite), nekad vairākas kopā
+                uid = f"u-vbl-{t['id']}-{pid}"
+                new_up[uid] = {
+                    "id": uid, "players": [pid], "team": lv_team(t.get("teamName", "")), "date": start,
                     "endDate": end if end != start else "", "sport": "beach",
                     "event": event + (f" ({div_name(division)})" if division else ""),
                     "opponent": "", "location": loc, "source": ev_url,
                 }
-                if pid not in u["players"]:
-                    u["players"].append(pid)
-                u["team"] = ", ".join(sorted({x for x in (u["team"].split(", ") if u["team"] else [])} | {lv_team(t.get("teamName", ""))}))
-                new_up[uid] = u
                 if start > today:
                     continue  # vēl nav sācies – mačus nav ko ņemt
 

@@ -1330,15 +1330,25 @@
    "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
   },
   {
-   "id": "u-avca-pairs-2026-11-06",
+   "id": "u-avca-pairs-2026-11-06-loreta-cabule",
    "players": [
-    "loreta-cabule",
-    "marta-vildere",
-    "deniela-konstantinova",
-    "liva-ebere",
-    "monika-mamaja"
+    "loreta-cabule"
    ],
-   "team": "Tulane, FIU, TCU, USC, Stetson",
+   "team": "Tulane",
+   "date": "2026-11-06",
+   "endDate": "2026-11-08",
+   "sport": "beach",
+   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
+   "opponent": "",
+   "location": "Hantsvila, Alabama",
+   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-avca-pairs-2026-11-06-marta-vildere",
+   "players": [
+    "marta-vildere"
+   ],
+   "team": "FIU",
    "date": "2026-11-06",
    "endDate": "2026-11-08",
    "sport": "beach",
@@ -1346,6 +1356,48 @@
    "opponent": "",
    "location": "Hantsvila, Alabama",
    "source": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-avca-pairs-2026-11-06-deniela-konstantinova",
+   "players": [
+    "deniela-konstantinova"
+   ],
+   "team": "TCU",
+   "date": "2026-11-06",
+   "endDate": "2026-11-08",
+   "sport": "beach",
+   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
+   "opponent": "",
+   "location": "Hantsvila, Alabama",
+   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-avca-pairs-2026-11-06-liva-ebere",
+   "players": [
+    "liva-ebere"
+   ],
+   "team": "USC",
+   "date": "2026-11-06",
+   "endDate": "2026-11-08",
+   "sport": "beach",
+   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
+   "opponent": "",
+   "location": "Hantsvila, Alabama",
+   "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-avca-pairs-2026-11-06-monika-mamaja",
+   "players": [
+    "monika-mamaja"
+   ],
+   "team": "Stetson",
+   "date": "2026-11-06",
+   "endDate": "2026-11-08",
+   "sport": "beach",
+   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
+   "opponent": "",
+   "location": "Hantsvila, Alabama",
+   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
   },
   {
    "id": "u-stetson-2026-11-06",

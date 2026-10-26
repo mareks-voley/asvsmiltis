@@ -168,6 +168,8 @@ def main():
                 E(f"Nākamajai spēlei {uid} trūkst '{k}'")
         if u.get("sport") != "beach":
             E(f"Nākamā spēle {uid}: sport='{u.get('sport')}'")
+        if len(u.get("players", [])) != 1:
+            E(f"Nākamā spēle {uid}: jābūt tieši vienai spēlētājai (katrai meitenei savs ieraksts ar savas skolas saiti), ir {len(u.get('players', []))}")
         for pid in u.get("players", []):
             if pid not in EXPECTED:
                 E(f"Nākamā spēle {uid}: nezināma spēlētāja '{pid}'")
