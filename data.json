@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-26T01:33+02:00",
+  "updatedAt": "2026-10-26T02:17+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 2 uzvaras, 0 zaudējumi",
+  "summary": "Marta Vildere: 1 uzvaras, 0 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-13T15:01+03:00",
-    "text": "Skolu mājaslapas (visas 8) šonakt nebija pieejamas (DNS kļūda), meklēšana neko jaunu neatrada; dati nemainīti."
-   },
    {
     "at": "2026-10-13T15:18+03:00",
     "text": "Ārpuskārtas pārbaude pēc Krievas un Kazakas (UTEP) pievienošanas: pārbaudīti visu 8 augstskolu kalendāri, ziņas un Sportacentrs (lapas šoreiz bija pieejamas). Jaunu rezultātu un kalendāra ierakstu nav. UTEP 2027. gada saraksts apstiprina Krieva Nr. 5 (2. kurss) un Kazaka Nr. 8 (1. kurss); UTEP rudens kalendārs nav publicēts, ziņu arhīvs saturu neatdeva. Stetson un FIU FAU turnīra (10.–11.10.) pāru rezultāti joprojām nav publicēti; USC, Southern Miss un Coastal Carolina rudens kalendāru nav; Southern Miss saraksts joprojām 2026. gada."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-26T01:33+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-26T02:17+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Marta Vildere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1132,27 +1132,13 @@
    "source": "https://volleyballlife.com/event/39262"
   },
   {
-   "id": "r-liva-ebere-2026-10-25-vbl-m444229",
-   "player": "liva-ebere",
-   "date": "2026-10-25",
-   "sport": "beach",
-   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
-   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
-   "opponent": "Long Beach State 1. pāris Bid",
-   "partner": "Kennedy Coakley",
-   "score": "0-1",
-   "result": "L",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/38962"
-  },
-  {
    "id": "r-liva-ebere-2026-10-25-vbl-m442883",
    "player": "liva-ebere",
    "date": "2026-10-25",
    "sport": "beach",
    "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
    "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
-   "opponent": "Long Beach State 1. pāris Bid",
+   "opponent": "Long Beach State 1. pāris",
    "partner": "Kennedy Coakley",
    "score": "17-21, 16-21",
    "result": "L",
@@ -1202,20 +1188,6 @@
    "source": "https://volleyballlife.com/event/39204"
   },
   {
-   "id": "r-liva-ebere-2026-10-25-vbl-m444473",
-   "player": "liva-ebere",
-   "date": "2026-10-25",
-   "sport": "beach",
-   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
-   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
-   "opponent": "Hawaii 1. pāris",
-   "partner": "Kennedy Coakley",
-   "score": "1-0",
-   "result": "W",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/38962"
-  },
-  {
    "id": "r-liva-ebere-2026-10-25-vbl-m442930",
    "player": "liva-ebere",
    "date": "2026-10-25",
@@ -1230,20 +1202,6 @@
    "source": "https://volleyballlife.com/event/38962"
   },
   {
-   "id": "r-loreta-cabule-2026-10-25-vbl-39204-143886",
-   "player": "loreta-cabule",
-   "date": "2026-10-25",
-   "sport": "beach",
-   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
-   "round": "Open Division A divīzija, gala vieta",
-   "opponent": "",
-   "partner": "Lauren Mann",
-   "score": "1. vieta",
-   "result": "",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/39204"
-  },
-  {
    "id": "r-loreta-cabule-2026-10-25-vbl-m1713162",
    "player": "loreta-cabule",
    "date": "2026-10-25",
@@ -1254,20 +1212,6 @@
    "partner": "Liv Johnson",
    "score": "21-12, 21-11",
    "result": "W",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/39204"
-  },
-  {
-   "id": "r-loreta-cabule-2026-10-25-vbl-39204-143887",
-   "player": "loreta-cabule",
-   "date": "2026-10-25",
-   "sport": "beach",
-   "event": "2026 AVCA Collegiate Beach Central Qualification Tournament hosted by Rally Volleyball (Women's Collegiate Pairs) '26, John Hunt Sand Volleyball Courts",
-   "round": "Open Division B divīzija, gala vieta",
-   "opponent": "",
-   "partner": "Liv Johnson",
-   "score": "1. vieta",
-   "result": "",
    "stats": "",
    "source": "https://volleyballlife.com/event/39204"
   },
@@ -1300,20 +1244,6 @@
    "source": "https://volleyballlife.com/event/39204"
   },
   {
-   "id": "r-liva-ebere-2026-10-25-vbl-m444587",
-   "player": "liva-ebere",
-   "date": "2026-10-25",
-   "sport": "beach",
-   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
-   "round": "AVCA Bid / Championship divīzija · izslēgšanas spēles",
-   "opponent": "Cal 2. pāris",
-   "partner": "Kennedy Coakley",
-   "score": "1-0",
-   "result": "W",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/38962"
-  },
-  {
    "id": "r-liva-ebere-2026-10-25-vbl-m442932",
    "player": "liva-ebere",
    "date": "2026-10-25",
@@ -1326,6 +1256,20 @@
    "result": "W",
    "stats": "",
    "source": "https://volleyballlife.com/event/38962"
+  },
+  {
+   "id": "r-marta-vildere-2026-10-25-vbl-m1717422",
+   "player": "marta-vildere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs), Hickory Point",
+   "round": "Silver Open divīzija · grupu turnīrs",
+   "opponent": "Jacksonville 3. pāris",
+   "partner": "Elizabeth Nye",
+   "score": "21-15, 17-21, 15-7",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39262"
   }
  ],
  "upcoming": [

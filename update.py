@@ -76,7 +76,7 @@ def lv_name(n):
 def lv_team(n):
     m = re.match(r"^(.*?)\s+Pair\s+(\d+)\s*(.*)$", n or "")
     if m:
-        rest = (" " + m.group(3)) if m.group(3) else ""
+        rest = (" " + m.group(3)) if m.group(3) and m.group(3).strip().lower() not in ("bid",) else ""
         return f"{m.group(1)} {m.group(2)}. pāris{rest}"
     return n or ""
 
@@ -173,8 +173,10 @@ def main():
             # turnīrs ir beidzies tikai tad, ja VolleyballLife to atzīmējis kā pabeigtu ("complete").
             # Turnīra laikā "finish" ir tikai pagaidu vieta (piem. 29.), to nedrīkst rādīt kā gala vietu.
             complete = t.get("complete")
-            if complete is None:
-                complete = end < today and t.get("finish") is not None
+            if not complete:
+                # VolleyballLife reizēm turnīru neatzīmē kā pabeigtu; pēc 2 dienām pieņem, ka vieta ir gala
+                us_today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).date()
+                complete = t.get("finish") is not None and end <= (us_today - datetime.timedelta(days=2)).isoformat()
             finished = bool(complete)
 
             # --- nākamais / notiekošs turnīrs ---
@@ -206,6 +208,18 @@ def main():
                 pl_by_id = {x.get("id"): (x.get("name") or f"{x.get('firstName', '')} {x.get('lastName', '')}").strip()
                             for x in me.get("players", [])}
                 my_ids = {i for i, n in pl_by_id.items() if n.lower() == my_name}
+                first = my_name.split(" ")[0] if my_name else ""
+                core = bool(first) and first in (t.get("teamName") or "").lower()  # piem. "FIU Marta Liz"
+                lu_partners = []
+                for day0 in days:
+                    for m0 in walk_matches(day0):
+                        for lu in m0.get("lineups") or []:
+                            if lu.get("teamId") == tid:
+                                for pos in lu.get("positions") or []:
+                                    ps = set(pos.get("players") or [])
+                                    if ps & my_ids:
+                                        lu_partners += [lv_name(pl_by_id.get(i, "")) for i in ps - my_ids if pl_by_id.get(i)]
+                common_partner = max(set(lu_partners), key=lu_partners.count) if lu_partners else ""
                 for day in days:
                     for m in walk_matches(day):
                         hid, aid = team_id(m["homeTeam"]), team_id(m["awayTeam"])
@@ -223,12 +237,16 @@ def main():
                             partner = lv_name(others[0]) if others else ""
                         elif len(partners) == 1:
                             partner = partners[0]
+                        elif core:
+                            partner = common_partner  # komandas nosaukumā ir viņas vārds – viņa ir pamatsastāvā
                         else:
                             continue  # nav zināms, vai viņa spēlēja
                         home = hid == tid
                         games = [(g.get("home"), g.get("away")) if home else (g.get("away"), g.get("home"))
                                  for g in m.get("games", [])]
                         games = [g for g in games if g[0] is not None and g[1] is not None and (g[0] or g[1])]
+                        if games and max(max(a, b) for a, b in games) < 7:
+                            continue  # tehnisks ieraksts (piem. "Bid" 1-0), nevis īsts mačs
                         if not games:
                             continue
                         won = sum(1 for a, b in games if a > b)
@@ -254,9 +272,10 @@ def main():
 
             # --- gala vieta ---
             fin = t.get("finish")
+            core_team = bool(my_name) and my_name.split(" ")[0] in (t.get("teamName") or "").lower()
             if len(partners) == 1:
                 partner = partners[0]
-            elif match_partners:
+            elif match_partners and core_team:
                 partner = max(set(match_partners), key=match_partners.count)
             else:
                 partner = None

@@ -148,7 +148,7 @@ def main():
                     E(f"Rezultāts {rid}: result='{res}', bet seti '{sc}' rāda '{calc}'")
                 if not r.get("opponent"):
                     E(f"Rezultāts {rid}: mačam nav pretinieka")
-        key = (r.get("player"), r.get("date"), (r.get("opponent") or "").lower(), sc)
+        key = (r.get("player"), r.get("date"), (r.get("opponent") or "").lower(), sc, r.get("round") if PLACE_RE.match(sc) else "")
         if key in seen_keys:
             E(f"Dublikāts: {rid} un {seen_keys[key]} (viens un tas pats mačs)")
         seen_keys[key] = rid
