@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-26T02:19+02:00",
+  "updatedAt": "2026-10-26T06:50+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere: 4 uzvaras, 2 zaudējumi; Loreta Cabule: 6 uzvaras, 0 zaudējumi; Monika Mamaja: 3 uzvaras, 2 zaudējumi; Kitija Martini Ādamsone: 3 uzvaras, 2 zaudējumi; Marta Vildere: 2 uzvaras, 3 zaudējumi",
+  "summary": "Nedēļas nogalē (24.–25.10.): Līva Ēbere (pārī ar Kennedy Coakley) Surf City turnīrā 4 uzvaras, 2 zaudējumi; Loreta Cabule AVCA komandu turnīrā Hantsvilā 6 uzvaras no 6; Monika Mamaja un Kitija Martini Ādamsone pa 3 uzvarām un 2 zaudējumiem (Ādamsonei 13. vieta), Marta Vildere 2 uzvaras, 3 zaudējumi. Nākamie turnīri – 6.–8.11. (AVCA pāru čempionāts, BVNE, North Florida, TCU mājās).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-14T05:48+03:00",
-    "text": "Skolu un Sportacentrs lapas nebija pieejamas (DNS kļūda), meklēšana jaunumus neatrada; dati nemainīti."
-   },
    {
     "at": "2026-10-14T08:59+03:00",
     "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), pārbaudīts tikai ar meklēšanu — jaunu rezultātu neatrada."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-26T02:19+02:00",
     "text": "VolleyballLife: pievienoti 27 ieraksti (Līva Ēbere: 4 uzvaras, 2 zaudējumi; Loreta Cabule: 6 uzvaras, 0 zaudējumi; Monika Mamaja: 3 uzvaras, 2 zaudējumi; Kitija Martini Ādamsone: 3 uzvaras, 2 zaudējumi; Marta Vildere: 2 uzvaras, 3 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-26T06:50+02:00",
+    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:47 UTC veiksmīgs (VBL jaunu datu nav, update.py atkārtoti – nekas jauns); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 6. dienu pēc kārtas nav push (un 25.–26.10. arī priekšskatījums nav atjaunots). Kopsavilkums uzrakstīts no VBL rezultātiem. Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP, Coastal) neatrada. Atvērts: rīta uzdevuma prompta labojums (aģentam liegts to mainīt), gala vietas Ēberei/Mamajai/Vilderei – kad VBL atzīmēs turnīru kā pabeigtu."
    }
   ]
  },

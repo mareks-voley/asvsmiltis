@@ -77,6 +77,8 @@ def main():
         W("Šodien žurnālā nav ieraksta \"Rīta atjauninājums…\" – Claude rīta uzdevums nav publicējis (nav push uz main)")
     for l in today_logs:
         t = l.get("text", "")
+        if str(t).startswith("Pārbaude:"):
+            continue  # pārbaudes aģenta paša kopsavilkums, ne avota kļūda
         if re.search(r"DNS|nebija pieejam|nav pieejam|403|429|kļūd", t, re.I):
             W(f"Šodienas žurnālā minēta kļūda: {t[:200]}")
 
