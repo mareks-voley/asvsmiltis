@@ -200,7 +200,11 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     const players = data.players || [];
     const byId = Object.fromEntries(players.map((p) => [p.id, p]));
     const order = Object.fromEntries(players.map((p, i) => [p.id, i]));
-    const results = (data.results || []).slice().sort((a, b) => (b.date.localeCompare(a.date)) || ((order[a.player] ?? 99) - (order[b.player] ?? 99)));
+    // Secība: jaunākā diena augšā; dienas ietvaros katrai meitenei mači spēlēšanas secībā (pēc laika, tad pēc ieraksta secības)
+    (data.results || []).forEach((r, i) => { r._i = i; });
+    const tm = (r) => r.time || '';
+    const chrono = (a, b) => a.date.localeCompare(b.date) || tm(a).localeCompare(tm(b)) || (a._i - b._i);
+    const results = (data.results || []).slice().sort((a, b) => (b.date.localeCompare(a.date)) || ((order[a.player] ?? 99) - (order[b.player] ?? 99)) || tm(a).localeCompare(tm(b)) || (a._i - b._i));
     const upcoming = (data.upcoming || []).slice().sort((a, b) => a.date.localeCompare(b.date));
     const meta = data.meta || {};
     const seasonStart = meta.seasonStart || '2026-08-01';
@@ -243,9 +247,9 @@ footer { margin-top: 40px; padding-top: 14px; border-top: 1px solid var(--line);
     const schools = new Set(players.map((p) => p.team));
     $('players-sub').textContent = players.length + ' meitenes, ' + schools.size + ' augstskolas';
     $('cards').innerHTML = players.map((p) => {
-      const mine = results.filter((r) => r.player === p.id && r.date >= seasonStart);
+      const mine = results.filter((r) => r.player === p.id && r.date >= seasonStart).sort(chrono);
       const w = mine.filter((r) => r.result === 'W').length, l = mine.filter((r) => r.result === 'L').length;
-      const last = mine[0];
+      const last = mine[mine.length - 1];
       const next = upcoming.find((u) => (u.players || []).includes(p.id) && (u.endDate || u.date) >= todayIso);
       const hasIndoor = (p.sports || []).includes('indoor');
       const chips = '<span class="chip class">' + esc(CLASS[p.class] || p.class || '') + '</span>' + (p.sports || []).map(chip).join('');

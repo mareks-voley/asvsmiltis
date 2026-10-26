@@ -263,6 +263,7 @@ def main():
                             "opponent": lv_team(opp), "partner": partner,
                             "score": ", ".join(f"{a}-{b}" for a, b in games),
                             "result": "W" if won > lost else "L", "stats": "", "source": ev_url,
+                            "time": st[11:16] if len(st) >= 16 else "",
                         }
                         d["results"].append(r); res_ids.add(rid); added.append(r)
 
@@ -289,7 +290,7 @@ def main():
                     "event": event + (f", {loc}" if loc else ""),
                     "round": (div_name(division) + ", " if division else "") + "gala vieta",
                     "opponent": "", "partner": partner, "score": f"{fin}. vieta", "result": "",
-                    "stats": "", "source": ev_url,
+                    "stats": "", "source": ev_url, "time": "23:59",
                 }
                 d["results"].append(r); res_ids.add(pl_id); added.append(r)
 

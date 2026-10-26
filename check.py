@@ -148,6 +148,11 @@ def main():
                     E(f"Rezultāts {rid}: result='{res}', bet seti '{sc}' rāda '{calc}'")
                 if not r.get("opponent"):
                     E(f"Rezultāts {rid}: mačam nav pretinieka")
+        tmv = r.get("time", "")
+        if tmv and not re.match(r"^\d{2}:\d{2}$", tmv):
+            E(f"Rezultāts {rid}: nederīgs laiks '{tmv}' (jābūt HH:MM)")
+        if "-vbl-m" in rid and not tmv and r.get("date", "") >= "2026-10-26":
+            W(f"Rezultātam {rid} nav mača laika (time) – secība dienas ietvaros var būt nepareiza")
         key = (r.get("player"), r.get("date"), (r.get("opponent") or "").lower(), sc, r.get("round") if PLACE_RE.match(sc) else "")
         if key in seen_keys:
             E(f"Dublikāts: {rid} un {seen_keys[key]} (viens un tas pats mačs)")
