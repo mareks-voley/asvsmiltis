@@ -279,6 +279,8 @@ def main():
             else:
                 partner = None
             pl_id = f"r-{pid}-{date}-vbl-{t['id']}-{t['tdId']}"
+            if isinstance(fin, int) and h and sum(1 for x in h.get("teams", []) if x.get("finish") == fin) > 1:
+                fin = None  # vairākām komandām tā pati vieta (turnīrs bez kopvērtējuma) – vietu nerādām
             if isinstance(fin, int) and finished and pl_id not in res_ids:
                 if partner is None:
                     note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi, nav mača sastāvu)"

@@ -12,6 +12,7 @@
 - Profili: Ēbere 410021, Cabule 403848, Mamaja 360060, Runce 332711, Martini Ādamsone 259411 (VBL: "Ki Martini Adamsone"), Vildere 261353, Konstantinova 258656, Rīta 170656, Krieva 333617, Kazaka 410830.
 - SVARĪGI: nekad nedzēs VolleyballLife ierakstus, lai tos "pārģenerētu": vecākiem turnīriem `division/<tdId>/hydrate` vēlāk atgriež tukšus datus (days=[], teams=[]), tāpēc mačus vairs nevar atjaunot. Labo esošos ierakstus vietā.
 - Mača datums = mača `startTime` (pirmie 10 simboli), nevis VBL dienas `date` – izslēgšanas tabulas "diena" var aptvert sestdienu un svētdienu.
+- Ja VBL divīzijā vairākām komandām ir viena un tā pati `finish` (piem. visām "1" – tikai grupu spēles bez kopvērtējuma, kā Tulane 24.–25.10. Hantsvilā), tā NAV gala vieta; update.py to izlaiž.
 - VolleyballLife profila turnīra ierakstā `finish` turnīra laikā ir pagaidu vieta; īstā gala vieta ir tikai tad, ja `complete: true`.
 - VolleyballLife `division/<tdId>/hydrate` mačiem ir `lineups` (teamId → positions[].players = spēlētāju id no teams[].players). Tā var noteikt īsto partneri arī tad, ja komanda pieteikta ar 3+ vārdiem. Ja lineup satur tikai viņu, partneris nav zināms (atstāj tukšu).
 - Tulane un Southern Miss piesaka visu komandu kā "Pair N" ar 4–10 vārdiem → pāris nav nosakāms; rezultātus meklēt skolas ziņās.
