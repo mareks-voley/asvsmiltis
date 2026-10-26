@@ -173,11 +173,7 @@ def main():
             my_name = f"{prof.get('firstName', '')} {prof.get('lastName', '')}".strip().lower()
             # turnīrs ir beidzies tikai tad, ja VolleyballLife to atzīmējis kā pabeigtu ("complete").
             # Turnīra laikā "finish" ir tikai pagaidu vieta (piem. 29.), to nedrīkst rādīt kā gala vietu.
-            complete = t.get("complete")
-            if not complete:
-                # VolleyballLife reizēm turnīru neatzīmē kā pabeigtu; pēc 2 dienām pieņem, ka vieta ir gala
-                us_today = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=-5))).date()
-                complete = t.get("finish") is not None and end <= (us_today - datetime.timedelta(days=2)).isoformat()
+            complete = t.get("complete") is True  # tikai VolleyballLife apstiprināta gala vieta
             finished = bool(complete)
 
             # --- nākamais / notiekošs turnīrs ---
