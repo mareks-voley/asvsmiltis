@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-26T06:50+02:00",
+  "updatedAt": "2026-10-27T01:37+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Nedēļas nogalē (24.–25.10.): Līva Ēbere (pārī ar Kennedy Coakley) Surf City turnīrā 4 uzvaras, 2 zaudējumi; Loreta Cabule AVCA komandu turnīrā Hantsvilā 6 uzvaras no 6; Monika Mamaja un Kitija Martini Ādamsone pa 3 uzvarām un 2 zaudējumiem (Ādamsonei 13. vieta), Marta Vildere 2 uzvaras, 3 zaudējumi. Nākamie turnīri – 6.–8.11. (AVCA pāru čempionāts, BVNE, North Florida, TCU mājās).",
+  "summary": "Līva Ēbere: gala vieta 13. vieta",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-14T08:59+03:00",
-    "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), pārbaudīts tikai ar meklēšanu — jaunu rezultātu neatrada."
-   },
    {
     "at": "2026-10-15T05:48+03:00",
     "text": "Skolu mājaslapas šorīt nebija pieejamas (tīkla kļūda), tāpēc jauni rezultāti netika pārbaudīti; meklēšana jaunu beach rezultātu neatrada."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-26T06:50+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:47 UTC veiksmīgs (VBL jaunu datu nav, update.py atkārtoti – nekas jauns); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 6. dienu pēc kārtas nav push (un 25.–26.10. arī priekšskatījums nav atjaunots). Kopsavilkums uzrakstīts no VBL rezultātiem. Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP, Coastal) neatrada. Atvērts: rīta uzdevuma prompta labojums (aģentam liegts to mainīt), gala vietas Ēberei/Mamajai/Vilderei – kad VBL atzīmēs turnīru kā pabeigtu."
+   },
+   {
+    "at": "2026-10-27T01:37+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: gala vieta 13. vieta); nākamie turnīri: 3"
    }
   ]
  },
@@ -1303,65 +1303,24 @@
    "result": "L",
    "stats": "",
    "source": "https://volleyballlife.com/event/41912"
+  },
+  {
+   "id": "r-liva-ebere-2026-10-25-vbl-38962-142960",
+   "player": "liva-ebere",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 Surf City/AVCA Southern California Collegiate Challenge, Huntington Beach Pier",
+   "round": "AVCA Bid / Championship divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Kennedy Coakley",
+   "score": "13. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/38962",
+   "time": "23:59"
   }
  ],
  "upcoming": [
-  {
-   "id": "u-fiu-2026-10-24",
-   "players": [
-    "marta-vildere"
-   ],
-   "team": "FIU",
-   "date": "2026-10-24",
-   "endDate": "2026-10-25",
-   "sport": "beach",
-   "event": "AVCA East kvalifikācijas turnīrs (pāriem)",
-   "opponent": "",
-   "location": "Tavaresa, Florida",
-   "source": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-stetson-2026-10-24",
-   "players": [
-    "monika-mamaja"
-   ],
-   "team": "Stetson",
-   "date": "2026-10-24",
-   "endDate": "2026-10-25",
-   "sport": "beach",
-   "event": "AVCA East kvalifikācijas turnīrs (pāriem)",
-   "opponent": "",
-   "location": "Tavaresa, Florida",
-   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-tulane-2026-10-24",
-   "players": [
-    "loreta-cabule"
-   ],
-   "team": "Tulane",
-   "date": "2026-10-24",
-   "endDate": "2026-10-25",
-   "sport": "beach",
-   "event": "AVCA komandu turnīrs",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-usc-2026-10-24",
-   "players": [
-    "liva-ebere"
-   ],
-   "team": "USC",
-   "date": "2026-10-24",
-   "endDate": "2026-10-25",
-   "sport": "beach",
-   "event": "13. Surf City Collegiate Challenge",
-   "opponent": "",
-   "location": "Hantingtonbīča, Kalifornija (Huntington Beach Pier)",
-   "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
-  },
   {
    "id": "u-avca-pairs-2026-11-06-loreta-cabule",
    "players": [
