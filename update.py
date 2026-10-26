@@ -54,6 +54,7 @@ LV_NAMES = {
     "anna rita": "Anna Rīta",
 }
 DAY_LV = {"pools": "grupu turnīrs"}
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 def get(path, tries=3):
@@ -256,7 +257,9 @@ def main():
                             continue  # mačs vēl nav pabeigts
                         match_partners.append(partner)
                         opp = teams.get(aid if home else hid, {}).get("name", "")
-                        mdate = (day.get("date") or date)[:10]
+                        # mača īstais datums: startTime (VBL dienas nosaukums var būt "sestdiena", bet spēle notiek svētdienā)
+                        st = m.get("startTime") or ""
+                        mdate = st[:10] if DATE_RE.match(st[:10]) else (day.get("date") or date)[:10]
                         rid = f"r-{pid}-{mdate}-vbl-m{m.get('id')}"
                         if rid in res_ids:
                             continue
