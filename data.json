@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-27T06:55+02:00",
+  "updatedAt": "2026-10-28T04:56+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere ar Kenediju Koukliju (USC) Surf City/AVCA turnīrā Hantingtonbīčā ieguva 13. vietu (4 uzvaras, 2 zaudējumi). Nākamie turnīri – 6.–8. novembrī: AVCA pāru čempionāts Hantsvilā, USC – BVNE Santa Monikā, Stetson – Džeksonvilā, TCU – mājas mači Fortvērtā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-16T05:48+03:00",
-    "text": "Visas skolu mājaslapas un Sportacentrs šorīt nebija pieejamas (DNS kļūda); meklēšana jaunu beach rezultātu neatrada; dati nemainīti."
-   },
    {
     "at": "2026-10-17T05:48+03:00",
     "text": "Visi skolu un Sportacentrs avoti nebija sasniedzami (DNS kļūda), meklēšana jaunu rezultātu neatrada; nekas nav pievienots."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-27T06:55+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:45 UTC veiksmīgs (VBL jaunu datu nav; nakts palaidumā pievienota Ēberes 13. vieta Surf City); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 7. dienu pēc kārtas nav push (priekšskatījums joprojām 24.10.). Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP) neatrada. Labots: kopsavilkums; rīta uzdevuma prompts pārrakstīts (push uzreiz pēc update.py, skolu lapas tikai caur WebSearch); check.py brīdina par apstājušos rīta uzdevumu. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
+   },
+   {
+    "at": "2026-10-28T04:56+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
    }
   ]
  },
