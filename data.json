@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-29T09:01+02:00",
+  "updatedAt": "2026-10-29T09:06+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-20T05:48+03:00",
-    "text": "Visi avoti (skolu mājaslapas, Sportacentrs) nebija pieejami (DNS kļūda); tīmekļa meklēšana jaunumus neatrada. Nekas nav pievienots."
-   },
    {
     "at": "2026-10-20T19:43+03:00",
     "text": "Ārpuskārtas atjauninājums: ieslēgta tīkla piekļuve; no VolleyballLife pievienotas rudens gala vietas (Martini Ādamsone 6. un 11. vieta, Krieva/Kazaka 14. vieta). Runces un Cabules pāri Coconut Beach turnīrā nav nosakāmi (pieteikta visa komanda); Mamajas Stetson turnīra rezultāts vēl nav ievadīts."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-29T09:01+02:00",
     "text": "Pārbaude: otrā rīta pārbaude (vienotais rīta uzdevums) – check.py --live bez kļūdām; GitHub Actions 02:57 UTC veiksmīgs; update.py – nekas jauns; Southern Miss kalendārs rāda tikai pavasara sezonu, LSU rudens turnīrs 31.10.–1.11. bez komandu saraksta (nav pievienots); UTEP rudens turnīru nav atrasts. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
+   },
+   {
+    "at": "2026-10-29T09:06+02:00",
+    "text": "Pārbaude: īpašnieka testa palaidums (viens Claude uzdevums) – check.py --live bez kļūdām; GitHub Actions šodien veiksmīgs; update.py – nekas jauns; USC un TCU kalendāri WebFetch nav nolasāmi (client_error), WebSearch jaunu rezultātu neuzrāda. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
    }
   ]
  },
