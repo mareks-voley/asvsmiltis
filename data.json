@@ -7,10 +7,6 @@
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
    {
-    "at": "2026-10-18T05:47+03:00",
-    "text": "Pārbaudītas visas 10 skolu vietnes un Sportacentrs: visas nepieejamas (DNS kļūda), WebSearch jaunu rezultātu neatrada. Nekas nav pievienots."
-   },
-   {
     "at": "2026-10-19T05:48+03:00",
     "text": "Skolu vietnes (visi avoti) nebija pieejamas (DNS kļūda), WebSearch jaunus rezultātus neatrada; nekas nav pievienots."
    },
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-29T04:57+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-29T08:40+02:00",
+    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:57 UTC veiksmīgs, update.py atkārtoti – nekas jauns; VBL un skolu avoti (WebSearch, LSU kalendārs) jaunu rezultātu/turnīru neuzrāda. Rīta Claude uzdevums 05:47 'SUCCEEDED', bet 9. dienu nav push un šodien arī priekšskatījums nav atjaunots. Cēlonis atrasts (rīta uzdevuma 28.10. žurnāls): tā sesijai nav piekļuves repo (git proxy 403 'not in this session's authorized repository set'). Rīta prompts pārrakstīts: ja push bloķēts – obligāti priekšskatījums, ko pārbaude pārnes uz main. Atvērts: īpašniekam jāpiešķir rīta uzdevumam piekļuve repo; Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
    }
   ]
  },
