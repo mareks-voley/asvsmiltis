@@ -72,13 +72,9 @@ def main():
     today_logs = [l for l in meta.get("log", []) if str(l.get("at", "")).startswith(today.isoformat())]
     if not any("VolleyballLife" in l.get("text", "") for l in today_logs):
         W("Šodien žurnālā nav VolleyballLife skripta ieraksta (GitHub Actions varēja nenostrādāt)")
-    if now.hour * 60 + now.minute >= 6 * 60 + 5 and not any(
-            str(l.get("text", "")).startswith("Rīta atjauninājums") for l in today_logs):
-        W("Šodien žurnālā nav ieraksta \"Rīta atjauninājums…\" – Claude rīta uzdevums nav publicējis (nav push uz main)")
-    elif now.hour * 60 + now.minute >= 6 * 60 + 5 and not any(
-            str(l.get("text", "")).startswith("Rīta atjauninājums")
-            and not str(l.get("text", "")).startswith("Rīta atjauninājums: sākums") for l in today_logs):
-        W("Rīta uzdevums šodien nopušoja tikai sākuma ierakstu (\"Rīta atjauninājums: sākums\"), bet ne gala atjauninājumu – tas apstājās pusceļā (skolu lapas/WebFetch)")
+    if now.hour * 60 + now.minute >= 8 * 60 and not any(
+            str(l.get("text", "")).startswith("Pārbaude:") for l in today_logs):
+        W("Šodien žurnālā nav rīta pārbaudes ieraksta (\"Pārbaude: …\") – Claude rīta pārbaude nav publicējusi")
     for l in today_logs:
         t = l.get("text", "")
         if str(t).startswith("Pārbaude:"):
