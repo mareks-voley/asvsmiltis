@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-28T04:56+02:00",
+  "updatedAt": "2026-10-29T04:57+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-17T05:48+03:00",
-    "text": "Visi skolu un Sportacentrs avoti nebija sasniedzami (DNS kļūda), meklēšana jaunu rezultātu neatrada; nekas nav pievienots."
-   },
    {
     "at": "2026-10-18T05:47+03:00",
     "text": "Pārbaudītas visas 10 skolu vietnes un Sportacentrs: visas nepieejamas (DNS kļūda), WebSearch jaunu rezultātu neatrada. Nekas nav pievienots."
@@ -124,6 +120,10 @@
    },
    {
     "at": "2026-10-28T04:56+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-29T04:57+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
    }
   ]
