@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-30T04:58+02:00",
+  "updatedAt": "2026-10-30T05:14+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri: 6.–8.11. AVCA pāru čempionāts Hantsvilā (Ēbere, Cabule, Mamaja, Vildere, Konstantinova – ja pāri kvalificējas); 6.–7.11. Mamaja Džeksonvilā un Konstantinova Fortvērtā; 7.–8.11. Ēbere BVNE turnīrā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-22T16:47+03:00",
-    "text": "VolleyballLife: pievienoti 9 ieraksti (Līva Ēbere: gala vieta 9. vieta; Evelīna Krieva: 1 uzvaras, 3 zaudējumi; Karlīna Kazaka: 1 uzvaras, 3 zaudējumi); nākamie turnīri: 0"
-   },
    {
     "at": "2026-10-22T16:49+03:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-30T04:58+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-10-30T05:14+02:00",
+    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:58 UTC veiksmīgs; update.py – nekas jauns; LSU rudens kalendārā 31.10.–1.11. pretinieki nav nosaukti; skolu kalendāri (Southern Miss, UTEP, Stetson, TCU) šajā sesijā nav nolasāmi (PROVENANCE_REQUIRED). Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
    }
   ]
  },
