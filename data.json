@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-30T05:14+02:00",
+  "updatedAt": "2026-10-30T17:01+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri: 6.–8.11. AVCA pāru čempionāts Hantsvilā (Ēbere, Cabule, Mamaja, Vildere, Konstantinova – ja pāri kvalificējas); 6.–7.11. Mamaja Džeksonvilā un Konstantinova Fortvērtā; 7.–8.11. Ēbere BVNE turnīrā.",
+  "summary": "Monika Mamaja: gala vieta 20. vieta",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-22T16:49+03:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
-   },
    {
     "at": "2026-10-22T17:39+03:00",
     "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions (šodien manuāli palaists, veiksmīgi; plānotais 02:15 UTC sāks darboties no 23.10.), update.py atkārtoti – nekā jauna; skolu kalendāri (USC, Stetson, TCU, FIU, UTEP, Coastal nolasīti; Tulane, Southern Miss un FIU/Stetson ziņu arhīvi nebija pieejami) un Sportacentrs. Pievienoti trūkstošie USC (Ēbere) turnīri: Surf City 24.–25.10., BVNE 7.–8.11.; Ēbere un Mamaja pievienotas AVCA čempionātam 6.–8.11. Atvērts: Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-30T05:14+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:58 UTC veiksmīgs; update.py – nekas jauns; LSU rudens kalendārā 31.10.–1.11. pretinieki nav nosaukti; skolu kalendāri (Southern Miss, UTEP, Stetson, TCU) šajā sesijā nav nolasāmi (PROVENANCE_REQUIRED). Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
+   },
+   {
+    "at": "2026-10-30T17:01+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: gala vieta 20. vieta); nākamie turnīri: 1"
    }
   ]
  },
@@ -1317,6 +1317,21 @@
    "result": "",
    "stats": "",
    "source": "https://volleyballlife.com/event/38962",
+   "time": "23:59"
+  },
+  {
+   "id": "r-monika-mamaja-2026-10-25-vbl-39262-144135",
+   "player": "monika-mamaja",
+   "date": "2026-10-25",
+   "sport": "beach",
+   "event": "2026 AVCA East Qualifier for Beach National Championship (Women's Collegiate Pairs), Hickory Point",
+   "round": "GOLD Bid divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Lucie Nosalkova",
+   "score": "20. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/39262",
    "time": "23:59"
   }
  ],
