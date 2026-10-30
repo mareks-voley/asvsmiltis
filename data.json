@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-30T17:01+02:00",
+  "updatedAt": "2026-10-31T01:42+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Monika Mamaja: gala vieta 20. vieta",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-22T17:39+03:00",
-    "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions (šodien manuāli palaists, veiksmīgi; plānotais 02:15 UTC sāks darboties no 23.10.), update.py atkārtoti – nekā jauna; skolu kalendāri (USC, Stetson, TCU, FIU, UTEP, Coastal nolasīti; Tulane, Southern Miss un FIU/Stetson ziņu arhīvi nebija pieejami) un Sportacentrs. Pievienoti trūkstošie USC (Ēbere) turnīri: Surf City 24.–25.10., BVNE 7.–8.11.; Ēbere un Mamaja pievienotas AVCA čempionātam 6.–8.11. Atvērts: Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
-   },
    {
     "at": "2026-10-23T05:45+03:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-30T17:01+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: gala vieta 20. vieta); nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-10-31T01:42+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ]
  },
