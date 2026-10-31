@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-31T05:14+02:00",
+  "updatedAt": "2026-10-31T19:39+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Šodien un rīt (31.10.–1.11.) LSU Fall Ball turnīrā Batonrūžā spēlē Bonija Runce un Kitija Martini Ādamsone (Southern Miss); 6.–8.11. AVCA pāru čempionāts Hantsvilā.",
+  "summary": "Bonija Runce: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-23T17:17+03:00",
-    "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions 02:45 UTC veiksmīgi, update.py atkārtoti – nekā jauna, Southern Miss kalendārs (tikai pavasara sezona), meklēšana pēc Southern Miss/UTEP/Stetson rudens turnīriem – nekas jauns. Problēma: Claude rīta uzdevums jau 3. dienu (21.–23.10.) atjaunināja tikai priekšskatījumu, bet nepublicēja uz GitHub; lapā bija vakardienas kopsavilkums. Labots: rīta kopsavilkums un žurnāla ieraksts pārnesti lapā; update.py vairs neatstāj vakardienas kopsavilkumu; check.py brīdina, ja nav rīta publikācijas; rīta uzdevuma prompts – obligāts push ar pārbaudi un rezerves ceļu. Atvērts: Ādamsonei, Runcei, Krievai, Kazakai nav publicētu rudens turnīru; Mamajas Stetson turnīra (16.–17.10.) rezultāti nav publicēti."
-   },
    {
     "at": "2026-10-24T05:44+03:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-31T05:14+02:00",
     "text": "Pārbaude: GitHub Actions 31.10. veiksmīgs, update.py jaunu ierakstu nav, check.py bez kļūdām; AVCA lapā tiešās vietas čempionātā ir Tulane (2), USC, Stetson, TCU, bet FIU un Southern Miss nav – Vilderes dalība vēl neskaidra (ieraksts atstāts ar piezīmi). UTEP (Krieva, Kazaka) rudens turnīri joprojām nav publicēti. Skolu Sidearm lapas WebFetch nav pieejamas (PROVENANCE_REQUIRED)."
+   },
+   {
+    "at": "2026-10-31T19:39+02:00",
+    "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1333,6 +1333,36 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/39262",
    "time": "23:59"
+  },
+  {
+   "id": "r-bonija-runce-2026-10-31-vbl-m1715073",
+   "player": "bonija-runce",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "TAMU-CC 7. pāris",
+   "partner": "Annabelle LaBure",
+   "score": "21-18, 20-22, 15-13",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "11:30"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-31-vbl-m1715076",
+   "player": "kitija-adamsone",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "TAMU-CC 2. pāris",
+   "partner": "Margarita Grigoreva",
+   "score": "15-21, 13-17",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "11:30"
   }
  ],
  "upcoming": [
