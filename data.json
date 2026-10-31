@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-31T01:42+02:00",
+  "updatedAt": "2026-10-31T04:56+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 31.10.: Bonija Runce (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility); Kitija Martini Ādamsone (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-23T05:45+03:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
-   },
    {
     "at": "2026-10-23T05:52+03:00",
     "text": "Rīta atjauninājums: update.py – jaunu VBL rezultātu nav. Nolasīti: USC kalendārs+ziņas, Stetson kalendārs, Southern Miss kalendārs (rāda tikai pavasara 2026 sezonu)+arhīvs (jaunākā ziņa 23.07.), FIU kalendārs (Tavaresa 24.–25.10. apstiprināta), TCU kalendārs+ziņas, Coastal kalendārs (rāda 2025 sezonu), UTEP kalendārs (rāda pavasara 2026 sezonu), Sportacentrs. Visi 30 dienu kalendāra ieraksti jau bija `upcoming`; nekas jauns nepievienots. Neizdevās (WebFetch client_error, atkārtots mēģinājums neizdevās): tulanegreenwave.com schedule un archives, gohatters.com archives, fiusports.com archives, goccusports.com archives, utepminers.com archives. Southern Miss un UTEP rudens kalendāri nav publicēti (arī WebSearch neatrada) – Ādamsonei, Runcei, Krievai, Kazakai nav tuvāko turnīru."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-31T01:42+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-10-31T04:56+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
    }
   ]
  },
@@ -1336,6 +1336,34 @@
   }
  ],
  "upcoming": [
+  {
+   "id": "u-vbl-41898-bonija-runce",
+   "players": [
+    "bonija-runce"
+   ],
+   "team": "USM 7. pāris",
+   "date": "2026-10-31",
+   "endDate": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
+   "opponent": "",
+   "location": "LSU Beach Facility",
+   "source": "https://volleyballlife.com/event/41898"
+  },
+  {
+   "id": "u-vbl-41898-kitija-adamsone",
+   "players": [
+    "kitija-adamsone"
+   ],
+   "team": "USM 2. pāris",
+   "date": "2026-10-31",
+   "endDate": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
+   "opponent": "",
+   "location": "LSU Beach Facility",
+   "source": "https://volleyballlife.com/event/41898"
+  },
   {
    "id": "u-avca-pairs-2026-11-06-loreta-cabule",
    "players": [
