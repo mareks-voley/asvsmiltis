@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-10-31T22:42+02:00",
+  "updatedAt": "2026-11-01T01:40+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Bonija Runce: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi",
+  "summary": "Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-24T05:50+03:00",
-    "text": "Rīta atjauninājums: update.py – jaunu VBL rezultātu nav (3 tuvākie turnīri). Nolasīti: Tulane kalendārs (2026-27; 24.–25.10. Hantsvila, 6.–8.11., 20.11. – viss jau `upcoming`), FIU kalendārs (2026-27; Tavaresa 24.–25.10. un AVCA 6.–8.11. – jau `upcoming`), TCU rudens kalendārs (/schedule/text: 2.10. Texas, 16.10. skrimidžs, 6.11. Texas mājās + AVCA pāri – jau `upcoming`; rezultāti nav publicēti), Southern Miss kalendārs (tikai 2026 pavasaris)+arhīvs (jaunākā ziņa 23.07.), Coastal kalendārs (tikai 2025), UTEP kalendārs (tikai 2026 pavasaris), USC ziņas (jaunākā 23.07.), TCU ziņas/arhīvs (nekā par rudeni), Sportacentrs (jaunākā par latvietēm 12.10.). Nekas jauns nepievienots. Neizdevās (WebFetch client_error, atkārtots mēģinājums neizdevās): usctrojans.com schedule, gohatters.com schedule un archives, gofrogs.com schedule (nolasīts /schedule/text), tulanegreenwave.com archives, fiusports.com archives, goccusports.com archives, utepminers.com archives. Southern Miss, UTEP un Coastal rudens kalendāri joprojām nav publicēti – Runcei, Ādamsonei, Krievai, Kazakai, Rītai nav tuvāko turnīru."
-   },
    {
     "at": "2026-10-24T06:50+03:00",
     "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions 02:44 UTC veiksmīgi, update.py atkārtoti – nekā jauna, skolu lapas (WebFetch uz prompta URL → PROVENANCE_REQUIRED; meklēšana pēc rudens turnīriem – nekā jauna). Problēma: rīta uzdevums jau 4. dienu (21.–24.10.) atjaunināja tikai priekšskatījumu, push nebija. Labots: rīta kopsavilkums un žurnāla ieraksts pārnesti lapā no priekšskatījuma; rīta uzdevuma promptā priekšskatījuma solis izņemts, push ar MCP rezerves ceļu un hash ziņā. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai, Rītai nav publicētu rudens turnīru; šodien sākas 4 turnīri (Ēbere, Cabule, Vildere, Mamaja)."
@@ -125,6 +121,10 @@
    {
     "at": "2026-10-31T22:42+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-01T01:40+02:00",
+    "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1393,6 +1393,51 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "14:30"
+  },
+  {
+   "id": "r-bonija-runce-2026-10-31-vbl-m1721983",
+   "player": "bonija-runce",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "HCU 6. pāris",
+   "partner": "Annabelle LaBure",
+   "score": "21-19, 21-16",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "16:30"
+  },
+  {
+   "id": "r-bonija-runce-2026-10-31-vbl-m1722287",
+   "player": "bonija-runce",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "HCU 6. pāris",
+   "partner": "Annabelle LaBure",
+   "score": "21-19, 21-16",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "16:30"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-10-31-vbl-m1722284",
+   "player": "kitija-adamsone",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "HCU 2. pāris",
+   "partner": "Margarita Grigoreva",
+   "score": "21-16, 15-21, 9-15",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "16:30"
   }
  ],
  "upcoming": [
