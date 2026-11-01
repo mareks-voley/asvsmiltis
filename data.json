@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-01T19:40+02:00",
+  "updatedAt": "2026-11-02T01:40+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Bonija Runce: 1 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 31.10.: Bonija Runce (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility); Kitija Martini Ādamsone (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-24T20:36+03:00",
-    "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi; Marta Vildere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-24T23:36+03:00",
     "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 1 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-01T19:40+02:00",
     "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 1 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-02T01:40+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
    }
   ]
  },
