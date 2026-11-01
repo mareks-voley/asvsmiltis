@@ -256,6 +256,11 @@ def main():
                         rid = f"r-{pid}-{mdate}-vbl-m{m.get('id')}"
                         if rid in res_ids:
                             continue
+                        score_txt = ", ".join(f"{a}-{b}" for a, b in games)
+                        opp_lv = lv_team(opp).lower()
+                        if any(o.get("player") == pid and o.get("date") == mdate and (o.get("opponent") or "").lower() == opp_lv
+                               and o.get("score") == score_txt for o in d["results"]):
+                            continue  # VBL pārveidoja maču ar jaunu id (2026-10-31 m1721983 → m1722287) – tas pats mačs
                         r = {
                             "id": rid, "player": pid, "date": mdate, "sport": "beach",
                             "event": event + (f", {loc}" if loc else ""),

@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-01T01:40+02:00",
+  "updatedAt": "2026-11-01T05:09+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi",
+  "summary": "31.10. LSU Fall Ball Batonrūžā: Bonija Runce ar Annabelle LaBure – 2 uzvaras (pret TAMU-CC un HCU), 1 zaudējums (pret LSU); Kitija Martini Ādamsone – 3 zaudējumi (pret HCU tikai trešajā setā 9-15). Turnīrs turpinās 1.11.; nākamā nedēļā AVCA čempionāts un BVNE.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-24T06:50+03:00",
-    "text": "Pārbaude: check.py (arī publicētā lapa), GitHub Actions 02:44 UTC veiksmīgi, update.py atkārtoti – nekā jauna, skolu lapas (WebFetch uz prompta URL → PROVENANCE_REQUIRED; meklēšana pēc rudens turnīriem – nekā jauna). Problēma: rīta uzdevums jau 4. dienu (21.–24.10.) atjaunināja tikai priekšskatījumu, push nebija. Labots: rīta kopsavilkums un žurnāla ieraksts pārnesti lapā no priekšskatījuma; rīta uzdevuma promptā priekšskatījuma solis izņemts, push ar MCP rezerves ceļu un hash ziņā. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai, Rītai nav publicētu rudens turnīru; šodien sākas 4 turnīri (Ēbere, Cabule, Vildere, Mamaja)."
-   },
    {
     "at": "2026-10-24T18:18+03:00",
     "text": "VolleyballLife: pievienoti 7 ieraksti (Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 4 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-01T01:40+02:00",
     "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-01T05:09+02:00",
+    "text": "Pārbaude: GitHub Actions 31.10. 23:40 un 1.11. 02:57 UTC sarkans – Runcei dubults mačs pret HCU 6. pāri (VBL pārveidoja maču ar jaunu id); dublikāts izņemts, kopsavilkums salabots (bija \"2 uzvaras, 0 zaudējumi\"), update.py vairs nepievieno maču ar to pašu pretinieku un rezultātu tajā pašā dienā. UTEP (Krieva, Kazaka) rudens turnīri joprojām nav publicēti; skolu lapas WebFetch nav pieejamas."
    }
   ]
  },
@@ -1396,21 +1396,6 @@
   },
   {
    "id": "r-bonija-runce-2026-10-31-vbl-m1721983",
-   "player": "bonija-runce",
-   "date": "2026-10-31",
-   "sport": "beach",
-   "event": "LSU Fall Ball 2026, LSU Beach Facility",
-   "round": "Womens Open divīzija · grupu turnīrs",
-   "opponent": "HCU 6. pāris",
-   "partner": "Annabelle LaBure",
-   "score": "21-19, 21-16",
-   "result": "W",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/41898",
-   "time": "16:30"
-  },
-  {
-   "id": "r-bonija-runce-2026-10-31-vbl-m1722287",
    "player": "bonija-runce",
    "date": "2026-10-31",
    "sport": "beach",
