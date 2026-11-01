@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-01T05:09+02:00",
+  "updatedAt": "2026-11-01T19:40+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "31.10. LSU Fall Ball Batonrūžā: Bonija Runce ar Annabelle LaBure – 2 uzvaras (pret TAMU-CC un HCU), 1 zaudējums (pret LSU); Kitija Martini Ādamsone – 3 zaudējumi (pret HCU tikai trešajā setā 9-15). Turnīrs turpinās 1.11.; nākamā nedēļā AVCA čempionāts un BVNE.",
+  "summary": "Bonija Runce: 1 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-24T18:18+03:00",
-    "text": "VolleyballLife: pievienoti 7 ieraksti (Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 4 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-24T20:36+03:00",
     "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi; Marta Vildere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-01T05:09+02:00",
     "text": "Pārbaude: GitHub Actions 31.10. 23:40 un 1.11. 02:57 UTC sarkans – Runcei dubults mačs pret HCU 6. pāri (VBL pārveidoja maču ar jaunu id); dublikāts izņemts, kopsavilkums salabots (bija \"2 uzvaras, 0 zaudējumi\"), update.py vairs nepievieno maču ar to pašu pretinieku un rezultātu tajā pašā dienā. UTEP (Krieva, Kazaka) rudens turnīri joprojām nav publicēti; skolu lapas WebFetch nav pieejamas."
+   },
+   {
+    "at": "2026-11-01T19:40+02:00",
+    "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 1 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
    }
   ]
  },
@@ -1423,6 +1423,51 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "16:30"
+  },
+  {
+   "id": "r-bonija-runce-2026-11-01-vbl-m444777",
+   "player": "bonija-runce",
+   "date": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · izslēgšanas spēles",
+   "opponent": "TAMU-CC 10. pāris",
+   "partner": "Annabelle LaBure",
+   "score": "19-21, 16-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "09:00"
+  },
+  {
+   "id": "r-bonija-runce-2026-11-01-vbl-m445658",
+   "player": "bonija-runce",
+   "date": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · izslēgšanas spēles",
+   "opponent": "SLU 7. pāris",
+   "partner": "Annabelle LaBure",
+   "score": "21-13, 21-10",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "11:00"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-11-01-vbl-m444746",
+   "player": "kitija-adamsone",
+   "date": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · izslēgšanas spēles",
+   "opponent": "HCU 1. pāris",
+   "partner": "Margarita Grigoreva",
+   "score": "21-17, 21-17",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "10:00"
   }
  ],
  "upcoming": [
@@ -1433,7 +1478,7 @@
    ],
    "team": "USM 7. pāris",
    "date": "2026-10-31",
-   "endDate": "2026-11-01",
+   "endDate": "2026-11-02",
    "sport": "beach",
    "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
    "opponent": "",
@@ -1447,7 +1492,7 @@
    ],
    "team": "USM 2. pāris",
    "date": "2026-10-31",
-   "endDate": "2026-11-01",
+   "endDate": "2026-11-02",
    "sport": "beach",
    "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
    "opponent": "",
