@@ -1,19 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-02T01:40+02:00",
+  "updatedAt": "2026-11-02T05:16+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 31.10.: Bonija Runce (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility); Kitija Martini Ādamsone (LSU Fall Ball 2026 (Womens Open divīzija), LSU Beach Facility).",
+  "summary": "Svētdien LSU Fall Ball turnīrā Kitija Martini Ādamsone/Margarita Grigoreva uzvarēja HCU 1. pāri (21-17, 21-17) un LSU 2. pāri (12-21, 21-10, 15-12), tad zaudēja LSU 3. pārim (16-21, 17-21). Bonija Runce/Annabelle LaBure zaudēja TAMU-CC 10. pārim (19-21, 16-21) un uzvarēja SLU 7. pāri (21-13, 21-10). Nākamie turnīri sākas 6.11.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-24T23:36+03:00",
-    "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 1 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
-   {
-    "at": "2026-10-25T02:33+03:00",
-    "text": "VolleyballLife: pievienoti 3 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi; Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-25T04:44+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Loreta Cabule: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +117,14 @@
    {
     "at": "2026-11-02T01:40+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-02T05:16+02:00",
+    "text": "VolleyballLife: pievienoti 2 ieraksti (Kitija Martini Ādamsone: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-02T05:16+02:00",
+    "text": "Pārbaude: Martini Ādamsonei pievienoti 2 trūkstošie svētdienas mači (W pret LSU 2. pāri, L pret LSU 3. pāri; VBL sastāvs tikai tabulas 1. mačam) un update.py to turpmāk nosaka pats; salabots kopsavilkums (rādīja \"nākamie 31.10.\"). LSU Fall Ball gala vietas VBL vēl nav. Krieva/Kazaka bez turnīra; skolu lapas nav pieejamas (izņemot LSU), Cabules dalība AVCA čempionātā neapstiprināta (Tulane sūta 2 pārus, vārdi nav zināmi)."
    }
   ]
  },
@@ -1468,6 +1468,36 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "10:00"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-11-01-vbl-m444747",
+   "player": "kitija-adamsone",
+   "date": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · izslēgšanas spēles",
+   "opponent": "LSU 2. pāris",
+   "partner": "Margarita Grigoreva",
+   "score": "12-21, 21-10, 15-12",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "11:00"
+  },
+  {
+   "id": "r-kitija-adamsone-2026-11-01-vbl-m444749",
+   "player": "kitija-adamsone",
+   "date": "2026-11-01",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija · izslēgšanas spēles",
+   "opponent": "LSU 3. pāris",
+   "partner": "Margarita Grigoreva",
+   "score": "16-21, 17-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "14:00"
   }
  ],
  "upcoming": [

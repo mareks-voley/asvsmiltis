@@ -113,7 +113,8 @@ def team_id(side):
 
 
 def next_event_text(d, names, today):
-    fut = [u for u in d.get("upcoming", []) if (u.get("endDate") or u.get("date", "")) >= today]
+    # tikai turnīri, kas vēl NAV sākušies (jau notiekošs turnīrs nav "nākamais")
+    fut = [u for u in d.get("upcoming", []) if u.get("date", "") > today]
     if not fut:
         return ""
     first = min(u["date"] for u in fut)
@@ -234,7 +235,19 @@ def main():
                         elif core:
                             partner = common_partner  # komandas nosaukumā ir viņas vārds – viņa ir pamatsastāvā
                         else:
-                            continue  # nav zināms, vai viņa spēlēja
+                            # VBL bieži ieraksta sastāvu tikai pirmajam izslēgšanas mačam. Vienas tabulas ("dienas")
+                            # ietvaros pāris nemainās, tāpēc ņem šīs tabulas sastāvu, ja tas ir viennozīmīgs un ar viņu.
+                            same = []
+                            for m1 in walk_matches(day):
+                                for lu in m1.get("lineups") or []:
+                                    if lu.get("teamId") == tid:
+                                        for pos in lu.get("positions") or []:
+                                            same.append(frozenset(pos.get("players") or []))
+                            if len(set(same)) == 1 and same[0] & my_ids:
+                                others = [pl_by_id.get(i, "") for i in same[0] - my_ids]
+                                partner = lv_name(others[0]) if others else ""
+                            else:
+                                continue  # nav zināms, vai viņa spēlēja
                         home = hid == tid
                         games = [(g.get("home"), g.get("away")) if home else (g.get("away"), g.get("home"))
                                  for g in m.get("games", [])]

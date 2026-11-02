@@ -219,6 +219,16 @@ def main():
         except Exception as e:  # noqa: BLE001
             W(f"Neizdevās nolasīt publicēto lapu {SITE}: {e}")
 
+    # kopsavilkums nedrīkst nosaukt jau sākušos turnīru par "nākamo" (2026-11-02)
+    m_next = re.search(r"Nākamie turnīri (\d{1,2})\.(\d{1,2})\.", (d.get("meta") or {}).get("summary") or "")
+    if m_next:
+        today_s = datetime.date.today()
+        try:
+            nd = datetime.date(today_s.year, int(m_next.group(2)), int(m_next.group(1)))
+            if nd < today_s and (today_s - nd).days < 180:
+                W(f"Kopsavilkumā 'Nākamie turnīri' datums {nd} jau pagājis")
+        except ValueError:
+            pass
     return finish(errors, warnings, as_json, d)
 
 
