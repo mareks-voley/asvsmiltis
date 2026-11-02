@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-02T05:16+02:00",
+  "updatedAt": "2026-11-03T01:43+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Svētdien LSU Fall Ball turnīrā Kitija Martini Ādamsone/Margarita Grigoreva uzvarēja HCU 1. pāri (21-17, 21-17) un LSU 2. pāri (12-21, 21-10, 15-12), tad zaudēja LSU 3. pārim (16-21, 17-21). Bonija Runce/Annabelle LaBure zaudēja TAMU-CC 10. pārim (19-21, 16-21) un uzvarēja SLU 7. pāri (21-13, 21-10). Nākamie turnīri sākas 6.11.",
+  "summary": "Bonija Runce: gala vieta 21. vieta",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-25T04:44+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Loreta Cabule: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-25T15:28+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-02T05:16+02:00",
     "text": "Pārbaude: Martini Ādamsonei pievienoti 2 trūkstošie svētdienas mači (W pret LSU 2. pāri, L pret LSU 3. pāri; VBL sastāvs tikai tabulas 1. mačam) un update.py to turpmāk nosaka pats; salabots kopsavilkums (rādīja \"nākamie 31.10.\"). LSU Fall Ball gala vietas VBL vēl nav. Krieva/Kazaka bez turnīra; skolu lapas nav pieejamas (izņemot LSU), Cabules dalība AVCA čempionātā neapstiprināta (Tulane sūta 2 pārus, vārdi nav zināmi)."
+   },
+   {
+    "at": "2026-11-03T01:43+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Bonija Runce: gala vieta 21. vieta); nākamie turnīri: 1"
    }
   ]
  },
@@ -1498,6 +1498,21 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "14:00"
+  },
+  {
+   "id": "r-bonija-runce-2026-10-31-vbl-41898-152774",
+   "player": "bonija-runce",
+   "date": "2026-10-31",
+   "sport": "beach",
+   "event": "LSU Fall Ball 2026, LSU Beach Facility",
+   "round": "Womens Open divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Annabelle LaBure",
+   "score": "21. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/41898",
+   "time": "23:59"
   }
  ],
  "upcoming": [
