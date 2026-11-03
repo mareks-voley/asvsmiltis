@@ -5,8 +5,7 @@ Lasa katras spēlētājas VolleyballLife profilu, pievieno:
   * nākamos turnīrus, kuros viņa ir pieteikta  -> data.json "upcoming"
   * katra pabeigtā turnīra mačus ar rezultātiem  -> data.json "results"
   * gala vietu turnīrā                           -> data.json "results"
-Spēles tiek ņemtas tikai tad, ja pārim ir tieši viena partnere (citādi nav
-skaidrs, kurā pārī viņa spēlēja). Esošie ieraksti netiek mainīti.
+Partneri nosaka pēc mača sastāva (lineups). Esošie ieraksti netiek mainīti.
 
 Palaišana:  python3 update.py [ceļš/uz/data.json]
 """
@@ -139,6 +138,7 @@ def main():
 
     res_ids = {r["id"] for r in d["results"]}
     added, new_up, notes, errors = [], {}, [], []
+    done_up = set()  # VolleyballLife pabeigti turnīri: tos no "upcoming" izņem uzreiz
     hydrated = {}
 
     def hydrate(td):
@@ -176,6 +176,8 @@ def main():
             # Turnīra laikā "finish" ir tikai pagaidu vieta (piem. 29.), to nedrīkst rādīt kā gala vietu.
             complete = t.get("complete") is True  # tikai VolleyballLife apstiprināta gala vieta
             finished = bool(complete)
+            if finished:
+                done_up.add(f"u-vbl-{t['id']}-{pid}")
 
             # --- nākamais / notiekošs turnīrs ---
             if not finished:
@@ -297,14 +299,21 @@ def main():
             pl_id = f"r-{pid}-{date}-vbl-{t['id']}-{t['tdId']}"
             if isinstance(fin, int) and h and sum(1 for x in h.get("teams", []) if x.get("finish") == fin) > 1:
                 fin = None  # vairākām komandām tā pati vieta (turnīrs bez kopvērtējuma) – vietu nerādām
+            # profila vieta nesakrīt ar divīzijas komandas vietu (LSU Fall Ball: profils 21, divīzija 5, tabulas Gold/Silver/Bronze)
+            # – turnīram nav viena kopvērtējuma, tāpēc vietu nerādām
+            my_team = next((x for x in (h or {}).get("teams", []) if x.get("id") == t.get("teamId")), None)
+            if isinstance(fin, int) and my_team and isinstance(my_team.get("finish"), int) and my_team["finish"] != fin:
+                fin = None
             if isinstance(fin, int) and finished and pl_id not in res_ids:
                 if partner is None:
                     note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi, nav mača sastāvu)"
                     if note not in notes:
                         notes.append(note)
                     continue
+                # gala vietas datums = viņas pēdējā mača diena (nevis turnīra sākums), lai vieta ir aiz pēdējā mača
+                last = max([x["date"] for x in d["results"] if x["player"] == pid and start <= x["date"] <= end and x.get("result")] or [end])
                 r = {
-                    "id": pl_id, "player": pid, "date": date, "sport": "beach",
+                    "id": pl_id, "player": pid, "date": last, "sport": "beach",
                     "event": event + (f", {loc}" if loc else ""),
                     "round": (div_name(division) + ", " if division else "") + "gala vieta",
                     "opponent": "", "partner": partner, "score": f"{fin}. vieta", "result": "",
@@ -313,7 +322,7 @@ def main():
                 d["results"].append(r); res_ids.add(pl_id); added.append(r)
 
     # nākamie turnīri: nepievieno, ja tai pašai spēlētājai tajā datumā jau ir ieraksts
-    up = {u["id"]: u for u in d.get("upcoming", [])}
+    up = {u["id"]: u for u in d.get("upcoming", []) if u["id"] not in done_up or u["id"] in new_up}
     for uid, u in new_up.items():
         dup = any(o["id"] != uid and set(o.get("players", [])) & set(u["players"]) and o["date"] == u["date"]
                   for o in up.values())

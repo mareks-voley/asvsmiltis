@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-03T01:43+02:00",
+  "updatedAt": "2026-11-03T05:15+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Bonija Runce: gala vieta 21. vieta",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.–8.11.: AVCA nacionālais čempionāts Hantsvilā (pāri vēl nav zināmi), Mamajai arī North Florida turnīrs Džeksonvilā, Konstantinovai TCU mači mājās, Ēberei no 7.11. BVNE Santa Monikā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-25T15:28+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-10-25T16:37+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-03T01:43+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Bonija Runce: gala vieta 21. vieta); nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-03T05:15+02:00",
+    "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav. Izņemta Runces \"21. vieta\" LSU Fall Ball (VBL dati pretrunīgi: profils 21, divīzija 5; turnīram nav kopvērtējuma, un vieta bija datēta pirms pēdējā mača) un beidzies LSU Fall Ball ieraksts nākamajos. update.py un check.py salaboti. Skolu lapas nebija pieejamas; AVCA lapa: dalība 6.–8.11. skolu līmenī Tulane, USC, Stetson, TCU ir, FIU tiešo vietu sarakstā nav. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
    }
   ]
  },
@@ -1498,52 +1498,9 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "14:00"
-  },
-  {
-   "id": "r-bonija-runce-2026-10-31-vbl-41898-152774",
-   "player": "bonija-runce",
-   "date": "2026-10-31",
-   "sport": "beach",
-   "event": "LSU Fall Ball 2026, LSU Beach Facility",
-   "round": "Womens Open divīzija, gala vieta",
-   "opponent": "",
-   "partner": "Annabelle LaBure",
-   "score": "21. vieta",
-   "result": "",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/41898",
-   "time": "23:59"
   }
  ],
  "upcoming": [
-  {
-   "id": "u-vbl-41898-bonija-runce",
-   "players": [
-    "bonija-runce"
-   ],
-   "team": "USM 7. pāris",
-   "date": "2026-10-31",
-   "endDate": "2026-11-02",
-   "sport": "beach",
-   "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
-   "opponent": "",
-   "location": "LSU Beach Facility",
-   "source": "https://volleyballlife.com/event/41898"
-  },
-  {
-   "id": "u-vbl-41898-kitija-adamsone",
-   "players": [
-    "kitija-adamsone"
-   ],
-   "team": "USM 2. pāris",
-   "date": "2026-10-31",
-   "endDate": "2026-11-02",
-   "sport": "beach",
-   "event": "LSU Fall Ball 2026 (Womens Open divīzija)",
-   "opponent": "",
-   "location": "LSU Beach Facility",
-   "source": "https://volleyballlife.com/event/41898"
-  },
   {
    "id": "u-avca-pairs-2026-11-06-loreta-cabule",
    "players": [

@@ -200,6 +200,14 @@ def main():
     if missing:
         W("Nav neviena tuvākā turnīra 30 dienās: " + ", ".join(missing) + " — pārbaudi skolu kalendārus")
 
+    # --- gala vieta nedrīkst būt datēta pirms tās pašas spēlētājas pēdējā mača tajā turnīrā ---
+    for r in d.get("results", []):
+        if PLACE_RE.match(r.get("score") or ""):
+            later = [x for x in d["results"] if x.get("player") == r.get("player") and x.get("event") == r.get("event")
+                     and x.get("result") and x.get("date", "") > r.get("date", "")]
+            if later:
+                E(f"Rezultāts {r.get('id')}: gala vieta datēta pirms pēdējā mača ({later[0].get('date')})")
+
     # --- gala vieta turnīram, kas vēl notiek (VolleyballLife pagaidu vieta) ---
     running = {u.get("source") for u in d.get("upcoming", []) if (u.get("endDate") or u.get("date") or "") >= today.isoformat() and u.get("source")}
     for r in d.get("results", []):
