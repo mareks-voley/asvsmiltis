@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-03T05:15+02:00",
+  "updatedAt": "2026-11-04T05:00+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.–8.11.: AVCA nacionālais čempionāts Hantsvilā (pāri vēl nav zināmi), Mamajai arī North Florida turnīrs Džeksonvilā, Konstantinovai TCU mači mājās, Ēberei no 7.11. BVNE Santa Monikā.",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-25T16:37+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Marta Vildere: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-10-25T19:37+02:00",
     "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 2 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-03T05:15+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav. Izņemta Runces \"21. vieta\" LSU Fall Ball (VBL dati pretrunīgi: profils 21, divīzija 5; turnīram nav kopvērtējuma, un vieta bija datēta pirms pēdējā mača) un beidzies LSU Fall Ball ieraksts nākamajos. update.py un check.py salaboti. Skolu lapas nebija pieejamas; AVCA lapa: dalība 6.–8.11. skolu līmenī Tulane, USC, Stetson, TCU ir, FIU tiešo vietu sarakstā nav. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
+   },
+   {
+    "at": "2026-11-04T05:00+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ]
  },
