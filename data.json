@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-04T05:00+02:00",
+  "updatedAt": "2026-11-04T05:14+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Marta Vildere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Deniela Konstantinova (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Līva Ēbere (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule, Marta Vildere, Deniela Konstantinova, Līva Ēbere, Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-25T19:37+02:00",
-    "text": "VolleyballLife: pievienoti 5 ieraksti (Līva Ēbere: 0 uzvaras, 2 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi; Monika Mamaja: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-10-25T22:36+02:00",
     "text": "VolleyballLife: pievienoti 7 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi; Loreta Cabule: 1 uzvaras, 0 zaudējumi, gala vieta 1. vieta; Kitija Martini Ādamsone: 1 uzvaras, 0 zaudējumi, gala vieta 13. vieta); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-04T05:00+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-04T05:14+02:00",
+    "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav, kļūdu datos nav. Saīsināts kopsavilkums (viens turnīrs vairs neatkārtojas katrai spēlētājai) un update.py to turpmāk dara pats. AVCA lapa: čempionāts 6.–8.11. Hantsvilā notiek, pāru vārdi nav publicēti. Skolu lapas (izņemot UTEP, kur tikai pavasara kalendārs) nebija pieejamas. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
    }
   ]
  },

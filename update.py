@@ -119,10 +119,14 @@ def next_event_text(d, names, today):
     first = min(u["date"] for u in fut)
     evs = [u for u in fut if u["date"] == first]
     y, m, dd = first.split("-")
-    bits = []
+    # viens turnīrs = viens teksta gabals: vārdi kopā, nevis turnīrs atkārtots katrai spēlētājai
+    groups = {}
     for u in evs:
-        who = ", ".join(names.get(p, p) for p in u.get("players", []))
-        bits.append(f"{who} ({u.get('event', '')}, {u.get('location', '')})")
+        groups.setdefault((u.get("event", ""), u.get("location", "")), []).extend(u.get("players", []))
+    bits = []
+    for (event, loc), pl in groups.items():
+        who = ", ".join(names.get(p, p) for p in dict.fromkeys(pl))
+        bits.append(f"{who} ({event}, {loc})")
     return f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
 
 
