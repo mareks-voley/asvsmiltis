@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-06T05:30+02:00",
+  "updatedAt": "2026-11-07T01:44+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Šodien sākas Monikas Mamajas turnīrs Džeksonvilā un Denielas Konstantinovas mači pret Texas Fortvērtā, 7.11. spēlēs Līva Ēbere Santamonikā.",
+  "summary": "Deniela Konstantinova: 0 uzvaras, 1 zaudējumi",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-26T06:50+02:00",
-    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:47 UTC veiksmīgs (VBL jaunu datu nav, update.py atkārtoti – nekas jauns); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 6. dienu pēc kārtas nav push (un 25.–26.10. arī priekšskatījums nav atjaunots). Kopsavilkums uzrakstīts no VBL rezultātiem. Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP, Coastal) neatrada. Atvērts: rīta uzdevuma prompta labojums (aģentam liegts to mainīt), gala vietas Ēberei/Mamajai/Vilderei – kad VBL atzīmēs turnīru kā pabeigtu."
-   },
    {
     "at": "2026-10-27T01:37+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: gala vieta 13. vieta); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-06T05:30+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav. AVCA pāru čempionāta (6.–8.11.) dalībnieku sarakstā VolleyballLife (64 pāri) nav nevienas no desmit latvietēm, tāpēc 5 ieraksti izņemti no tuvākajām spēlēm (Cabule, Vildere, Konstantinova, Ēbere, Mamaja). Stetson un TCU kalendāri apstiprina North Florida turnīru un mačus pret Texas 6.–7.11. USC, Southern Miss un FIU lapas nebija pieejamas, Coastal un UTEP rāda tikai pavasara sezonu. Vilderei, Runcei, Martini Ādamsonei, Krievai un Kazakai tuvāko turnīru nav."
+   },
+   {
+    "at": "2026-11-07T01:44+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Deniela Konstantinova: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 2"
    }
   ]
  },
@@ -1498,6 +1498,21 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/41898",
    "time": "14:00"
+  },
+  {
+   "id": "r-deniela-konstantinova-2026-11-06-vbl-m1728477",
+   "player": "deniela-konstantinova",
+   "date": "2026-11-06",
+   "sport": "beach",
+   "event": "TCU Beach Fall Tournament 26, Texas Christian Beach - TCU",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "University of Texas 1. pāris",
+   "partner": "Mabyn Thomas",
+   "score": "21-13, 25-27, 14-16",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/42616",
+   "time": "15:00"
   }
  ],
  "upcoming": [
