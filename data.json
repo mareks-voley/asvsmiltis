@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-05T05:14+02:00",
+  "updatedAt": "2026-11-06T04:59+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 6.11.: Loreta Cabule, Marta Vildere, Deniela Konstantinova, Līva Ēbere, Monika Mamaja (AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta), Hantsvila, Alabama); Monika Mamaja (North Florida rudens turnīrs, Džeksonvila, Florida); Deniela Konstantinova (Rudens mači, Fortvērta, Teksasa (mājās)).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 7.11.: Līva Ēbere (BVNE Collegiate Preseason, Santa Monika, Kalifornija (North Beach)).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-26T02:17+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Marta Vildere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-26T02:19+02:00",
     "text": "VolleyballLife: pievienoti 27 ieraksti (Līva Ēbere: 4 uzvaras, 2 zaudējumi; Loreta Cabule: 6 uzvaras, 0 zaudējumi; Monika Mamaja: 3 uzvaras, 2 zaudējumi; Kitija Martini Ādamsone: 3 uzvaras, 2 zaudējumi; Marta Vildere: 2 uzvaras, 3 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-05T05:14+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav, kļūdu datos nav. USC un TCU kalendāri apstiprina šīs nedēļas nogales turnīrus (AVCA čempionāts 6.–8.11., BVNE 7.–8.11., TCU mājās pret Texas 6.–7.11.); izmaiņas tuvāko spēļu sarakstā nebija vajadzīgas. AVCA sarakstā ir Tulane, USC, Stetson, TCU, bet FIU tiešo vietu nav; pāru vārdi nav publicēti, tāpēc piezīme par dalību paliek. Tulane, Stetson, Southern Miss, FIU, Coastal lapas nebija pieejamas, UTEP tikai pavasara kalendārs. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
+   },
+   {
+    "at": "2026-11-06T04:59+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ]
  },
