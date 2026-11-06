@@ -167,6 +167,8 @@ def main():
     useen = set()
     for u in d.get("upcoming", []):
         uid = u.get("id", "?")
+        if "nav apstiprināta" in (u.get("event") or "") and (u.get("date") or "9") <= (today + datetime.timedelta(days=2)).isoformat():
+            W(f"{uid}: dalība vēl 'nav apstiprināta', bet turnīrs sākas: pārbaudi VBL dalībnieku sarakstu (division/<id>/hydrate, teams[].players) un izņem vai apstiprini")
         if uid in useen:
             E(f"Nākamās spēles id atkārtojas: {uid}")
         useen.add(uid)

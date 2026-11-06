@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-06T04:59+02:00",
+  "updatedAt": "2026-11-06T05:30+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 7.11.: Līva Ēbere (BVNE Collegiate Preseason, Santa Monika, Kalifornija (North Beach)).",
+  "summary": "Šonakt jaunu rezultātu nebija. Šodien sākas Monikas Mamajas turnīrs Džeksonvilā un Denielas Konstantinovas mači pret Texas Fortvērtā, 7.11. spēlēs Līva Ēbere Santamonikā.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-26T02:19+02:00",
-    "text": "VolleyballLife: pievienoti 27 ieraksti (Līva Ēbere: 4 uzvaras, 2 zaudējumi; Loreta Cabule: 6 uzvaras, 0 zaudējumi; Monika Mamaja: 3 uzvaras, 2 zaudējumi; Kitija Martini Ādamsone: 3 uzvaras, 2 zaudējumi; Marta Vildere: 2 uzvaras, 3 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-26T06:50+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:47 UTC veiksmīgs (VBL jaunu datu nav, update.py atkārtoti – nekas jauns); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 6. dienu pēc kārtas nav push (un 25.–26.10. arī priekšskatījums nav atjaunots). Kopsavilkums uzrakstīts no VBL rezultātiem. Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP, Coastal) neatrada. Atvērts: rīta uzdevuma prompta labojums (aģentam liegts to mainīt), gala vietas Ēberei/Mamajai/Vilderei – kad VBL atzīmēs turnīru kā pabeigtu."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-06T04:59+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-06T05:30+02:00",
+    "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav. AVCA pāru čempionāta (6.–8.11.) dalībnieku sarakstā VolleyballLife (64 pāri) nav nevienas no desmit latvietēm, tāpēc 5 ieraksti izņemti no tuvākajām spēlēm (Cabule, Vildere, Konstantinova, Ēbere, Mamaja). Stetson un TCU kalendāri apstiprina North Florida turnīru un mačus pret Texas 6.–7.11. USC, Southern Miss un FIU lapas nebija pieejamas, Coastal un UTEP rāda tikai pavasara sezonu. Vilderei, Runcei, Martini Ādamsonei, Krievai un Kazakai tuvāko turnīru nav."
    }
   ]
  },
@@ -1501,76 +1501,6 @@
   }
  ],
  "upcoming": [
-  {
-   "id": "u-avca-pairs-2026-11-06-loreta-cabule",
-   "players": [
-    "loreta-cabule"
-   ],
-   "team": "Tulane",
-   "date": "2026-11-06",
-   "endDate": "2026-11-08",
-   "sport": "beach",
-   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-avca-pairs-2026-11-06-marta-vildere",
-   "players": [
-    "marta-vildere"
-   ],
-   "team": "FIU",
-   "date": "2026-11-06",
-   "endDate": "2026-11-08",
-   "sport": "beach",
-   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://fiusports.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-avca-pairs-2026-11-06-deniela-konstantinova",
-   "players": [
-    "deniela-konstantinova"
-   ],
-   "team": "TCU",
-   "date": "2026-11-06",
-   "endDate": "2026-11-08",
-   "sport": "beach",
-   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-avca-pairs-2026-11-06-liva-ebere",
-   "players": [
-    "liva-ebere"
-   ],
-   "team": "USC",
-   "date": "2026-11-06",
-   "endDate": "2026-11-08",
-   "sport": "beach",
-   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-avca-pairs-2026-11-06-monika-mamaja",
-   "players": [
-    "monika-mamaja"
-   ],
-   "team": "Stetson",
-   "date": "2026-11-06",
-   "endDate": "2026-11-08",
-   "sport": "beach",
-   "event": "AVCA pāru nacionālais čempionāts (dalība pāriem vēl nav apstiprināta)",
-   "opponent": "",
-   "location": "Hantsvila, Alabama",
-   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
-  },
   {
    "id": "u-stetson-2026-11-06",
    "players": [
