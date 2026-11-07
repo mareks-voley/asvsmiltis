@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-07T22:44+02:00",
+  "updatedAt": "2026-11-08T01:41+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "7.11. Līva Ēbere: 2 uzvaras, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 1 zaudējums.",
+  "summary": "7.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 2 zaudējumi.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-29T08:40+02:00",
-    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:57 UTC veiksmīgs, update.py atkārtoti – nekas jauns; VBL un skolu avoti (WebSearch, LSU kalendārs) jaunu rezultātu/turnīru neuzrāda. Rīta Claude uzdevums 05:47 'SUCCEEDED', bet 9. dienu nav push un šodien arī priekšskatījums nav atjaunots. Cēlonis atrasts (rīta uzdevuma 28.10. žurnāls): tā sesijai nav piekļuves repo (git proxy 403 'not in this session's authorized repository set'). Rīta prompts pārrakstīts: ja push bloķēts – obligāti priekšskatījums, ko pārbaude pārnes uz main. Atvērts: īpašniekam jāpiešķir rīta uzdevumam piekļuve repo; Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
-   },
    {
     "at": "2026-10-29T09:01+02:00",
     "text": "Pārbaude: otrā rīta pārbaude (vienotais rīta uzdevums) – check.py --live bez kļūdām; GitHub Actions 02:57 UTC veiksmīgs; update.py – nekas jauns; Southern Miss kalendārs rāda tikai pavasara sezonu, LSU rudens turnīrs 31.10.–1.11. bez komandu saraksta (nav pievienots); UTEP rudens turnīru nav atrasts. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-07T22:44+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-08T01:41+02:00",
+    "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Bonija Runce: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
    }
   ]
  },
@@ -1603,6 +1603,36 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/37773",
    "time": "11:00"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-07-vbl-m1730897",
+   "player": "liva-ebere",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · grupu turnīrs",
+   "opponent": "Cal Poly 3. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-14, 21-11",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "14:00"
+  },
+  {
+   "id": "r-bonija-runce-2026-11-07-vbl-m1729413",
+   "player": "bonija-runce",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "UAB Fall Pairs Tournament 11/7/2026, University of Alabama, Birmingham",
+   "round": "Pairs event divīzija · grupu turnīrs",
+   "opponent": "GSU 7. pāris",
+   "partner": "Izabella Beech",
+   "score": "13-21, 13-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/42155",
+   "time": "14:00"
   }
  ],
  "upcoming": [
