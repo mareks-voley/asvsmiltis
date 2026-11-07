@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-07T05:09+02:00",
+  "updatedAt": "2026-11-07T19:42+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "6.11. Deniela Konstantinova (ar Mabyn Thomas) TCU rudens turnīrā Fortvērtā zaudēja abus mačus pret Teksasas universitāti: 21-13, 25-27, 14-16 un 21-14, 15-21, 10-15. 7.–8.11. Līvai Ēberei BVNE turnīrs Santa Monikā, Monikai Mamajai turpinās North Florida turnīrs; 20.11. Loretai Cabulei Tulane pāru turnīrs.",
+  "summary": "7.11. Līva Ēbere: 1 uzvara, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 1 zaudējums.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-28T04:56+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-29T04:57+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-07T05:09+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā (pēdējais palaidums 04:58 veiksmīgs). Kopsavilkumā Konstantinovai bija tikai 1 zaudējums no 2 (6.11. pret Teksasas 1. un 2. pāri) – salabots; rīta atjauninājums turpmāk kopsavilkumā ņem visus dienas mačus. Stetson un FIU lapas nebija pieejamas, Mamajas North Florida turnīra rezultātu vēl nav. Vilderei, Runcei, Martini Ādamsonei, Krievai un Kazakai tuvāko turnīru nav."
+   },
+   {
+    "at": "2026-11-07T19:42+02:00",
+    "text": "VolleyballLife: pievienoti 4 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Bonija Runce: 0 uzvaras, 1 zaudējumi; Deniela Konstantinova: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
    }
   ]
  },
@@ -1528,6 +1528,66 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/42616",
    "time": "17:00"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-07-vbl-m1730257",
+   "player": "liva-ebere",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · grupu turnīrs",
+   "opponent": "Long Beach State 1. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-7, 19-18",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "09:00"
+  },
+  {
+   "id": "r-bonija-runce-2026-11-07-vbl-m1729322",
+   "player": "bonija-runce",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "UAB Fall Pairs Tournament 11/7/2026, University of Alabama, Birmingham",
+   "round": "Pairs event divīzija · grupu turnīrs",
+   "opponent": "GSU 4. pāris",
+   "partner": "Izabella Beech",
+   "score": "11-21, 17-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/42155",
+   "time": "10:00"
+  },
+  {
+   "id": "r-deniela-konstantinova-2026-11-07-vbl-m1726419",
+   "player": "deniela-konstantinova",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "TCU Beach Fall Tournament 26, Texas Christian Beach - TCU",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "University of Texas 3. pāris",
+   "partner": "Mabyn Thomas",
+   "score": "13-21, 17-21",
+   "result": "L",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/42616",
+   "time": "09:00"
+  },
+  {
+   "id": "r-deniela-konstantinova-2026-11-07-vbl-m1726423",
+   "player": "deniela-konstantinova",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "TCU Beach Fall Tournament 26, Texas Christian Beach - TCU",
+   "round": "Womens Open divīzija · grupu turnīrs",
+   "opponent": "University of Texas 4. pāris",
+   "partner": "Mabyn Thomas",
+   "score": "21-13, 21-18",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/42616",
+   "time": "11:00"
   }
  ],
  "upcoming": [
@@ -1572,6 +1632,20 @@
    "opponent": "",
    "location": "Santa Monika, Kalifornija (North Beach)",
    "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-vbl-42155-bonija-runce",
+   "players": [
+    "bonija-runce"
+   ],
+   "team": "USM 2. pāris",
+   "date": "2026-11-07",
+   "endDate": "",
+   "sport": "beach",
+   "event": "UAB Fall Pairs Tournament 11/7/2026 (Pairs event divīzija)",
+   "opponent": "",
+   "location": "University of Alabama, Birmingham",
+   "source": "https://volleyballlife.com/event/42155"
   },
   {
    "id": "u-tulane-2026-11-20",
