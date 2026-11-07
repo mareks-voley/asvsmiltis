@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-07T04:58+02:00",
+  "updatedAt": "2026-11-07T05:09+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Deniela Konstantinova: 0 uzvaras, 1 zaudējumi",
+  "summary": "6.11. Deniela Konstantinova (ar Mabyn Thomas) TCU rudens turnīrā Fortvērtā zaudēja abus mačus pret Teksasas universitāti: 21-13, 25-27, 14-16 un 21-14, 15-21, 10-15. 7.–8.11. Līvai Ēberei BVNE turnīrs Santa Monikā, Monikai Mamajai turpinās North Florida turnīrs; 20.11. Loretai Cabulei Tulane pāru turnīrs.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-27T06:55+02:00",
-    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:45 UTC veiksmīgs (VBL jaunu datu nav; nakts palaidumā pievienota Ēberes 13. vieta Surf City); rīta Claude uzdevums 05:47 'SUCCEEDED', bet 7. dienu pēc kārtas nav push (priekšskatījums joprojām 24.10.). Skolu lapas WebFetch → PROVENANCE_REQUIRED, WebSearch jaunu rudens kalendāru (Southern Miss, UTEP) neatrada. Labots: kopsavilkums; rīta uzdevuma prompts pārrakstīts (push uzreiz pēc update.py, skolu lapas tikai caur WebSearch); check.py brīdina par apstājušos rīta uzdevumu. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
-   },
    {
     "at": "2026-10-28T04:56+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-07T04:58+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Deniela Konstantinova: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
+   },
+   {
+    "at": "2026-11-07T05:09+02:00",
+    "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā (pēdējais palaidums 04:58 veiksmīgs). Kopsavilkumā Konstantinovai bija tikai 1 zaudējums no 2 (6.11. pret Teksasas 1. un 2. pāri) – salabots; rīta atjauninājums turpmāk kopsavilkumā ņem visus dienas mačus. Stetson un FIU lapas nebija pieejamas, Mamajas North Florida turnīra rezultātu vēl nav. Vilderei, Runcei, Martini Ādamsonei, Krievai un Kazakai tuvāko turnīru nav."
    }
   ]
  },

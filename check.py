@@ -239,6 +239,21 @@ def main():
                 W(f"Kopsavilkumā 'Nākamie turnīri' datums {nd} jau pagājis")
         except ValueError:
             pass
+    # kopsavilkuma "N uzvaras, M zaudējumi" jāsakrīt ar spēlētājas jaunākās dienas rezultātiem (2026-11-07)
+    summ = (d.get("meta") or {}).get("summary") or ""
+    pname = {p["id"]: p.get("name", "") for p in d.get("players", [])}
+    for pid, nm in pname.items():
+        m = re.search(re.escape(nm) + r": (\d+) uzvar\w*, (\d+) zaudējum\w*", summ)
+        if not m:
+            continue
+        mine = [r for r in d.get("results", []) if r.get("player") == pid and r.get("result") in ("W", "L")]
+        if not mine:
+            continue
+        last = max(r["date"] for r in mine)
+        w = sum(1 for r in mine if r["date"] == last and r["result"] == "W")
+        l = sum(1 for r in mine if r["date"] == last and r["result"] == "L")
+        if (int(m.group(1)), int(m.group(2))) != (w, l):
+            W(f"Kopsavilkumā {nm}: {m.group(1)}-{m.group(2)}, bet datos {last}: {w} uzvaras, {l} zaudējumi")
     return finish(errors, warnings, as_json, d)
 
 

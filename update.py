@@ -130,6 +130,29 @@ def next_event_text(d, names, today):
     return f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
 
 
+def day_summary(d, names, added):
+    """Kopsavilkums par VISIEM jaunāko pievienoto dienu rezultātiem (ne tikai šī palaiduma).
+    Turnīru dienās Action palaižas ik pēc 3 h; agrāk kopsavilkumā bija tikai pēdējā
+    palaiduma mači (piem. 7.11.: '0 uzvaras, 1 zaudējumi', lai gan dienā bija 2 zaudējumi)."""
+    last = max(r["date"] for r in added)
+    rs = [r for r in d["results"] if r.get("date") == last]
+    who = {}
+    for r in sorted(rs, key=lambda r: r.get("time") or ""):
+        who.setdefault(names.get(r["player"], r["player"]), []).append(r)
+    parts = []
+    for n, lst in who.items():
+        w = sum(1 for r in lst if r["result"] == "W"); l = sum(1 for r in lst if r["result"] == "L")
+        pl = [r["score"] for r in lst if not r["result"]]
+        bits = []
+        if w or l:
+            bits.append(f"{w} {'uzvara' if w == 1 else 'uzvaras'}, {l} {'zaudējums' if l == 1 else 'zaudējumi'}")
+        if pl:
+            bits.append("gala vieta " + pl[0])
+        parts.append(n + ": " + ", ".join(bits))
+    dd = last[8:10].lstrip("0") + "." + last[5:7].lstrip("0") + "."
+    return dd + " " + "; ".join(parts) + "."
+
+
 def main():
     path = sys.argv[1] if len(sys.argv) > 1 else "data.json"
     d = json.load(open(path, encoding="utf-8"))
@@ -363,7 +386,7 @@ def main():
     meta.setdefault("log", []).append({"at": meta["updatedAt"], "text": text})
     meta["log"] = meta["log"][-30:]
     if added:
-        meta["summary"] = "; ".join(parts)
+        meta["summary"] = day_summary(d, names, added)
     elif not touched_today:
         # neatstāj vakardienas kopsavilkumu: ieliek "nekā jauna" + nākamo turnīru
         meta["summary"] = "Šonakt jaunu rezultātu nebija." + next_event_text(d, names, today)
