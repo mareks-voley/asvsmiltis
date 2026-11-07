@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-07T19:42+02:00",
+  "updatedAt": "2026-11-07T22:44+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "7.11. Līva Ēbere: 1 uzvara, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 1 zaudējums.",
+  "summary": "7.11. Līva Ēbere: 2 uzvaras, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 1 zaudējums.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-29T04:57+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-29T08:40+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:57 UTC veiksmīgs, update.py atkārtoti – nekas jauns; VBL un skolu avoti (WebSearch, LSU kalendārs) jaunu rezultātu/turnīru neuzrāda. Rīta Claude uzdevums 05:47 'SUCCEEDED', bet 9. dienu nav push un šodien arī priekšskatījums nav atjaunots. Cēlonis atrasts (rīta uzdevuma 28.10. žurnāls): tā sesijai nav piekļuves repo (git proxy 403 'not in this session's authorized repository set'). Rīta prompts pārrakstīts: ja push bloķēts – obligāti priekšskatījums, ko pārbaude pārnes uz main. Atvērts: īpašniekam jāpiešķir rīta uzdevumam piekļuve repo; Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-07T19:42+02:00",
     "text": "VolleyballLife: pievienoti 4 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Bonija Runce: 0 uzvaras, 1 zaudējumi; Deniela Konstantinova: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-07T22:44+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
    }
   ]
  },
@@ -1587,6 +1587,21 @@
    "result": "W",
    "stats": "",
    "source": "https://volleyballlife.com/event/42616",
+   "time": "11:00"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-07-vbl-m1730689",
+   "player": "liva-ebere",
+   "date": "2026-11-07",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · grupu turnīrs",
+   "opponent": "Cal Poly 4. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-18, 21-17",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
    "time": "11:00"
   }
  ],
