@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-08T05:11+02:00",
+  "updatedAt": "2026-11-08T07:54+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "7.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi (BVNE turnīrs); Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 3 zaudējumi (UAB turnīrs). Ēberei BVNE turnīrs turpinās 8.11.; nākamais – Loretas Cabules Tulane pāru turnīrs 20.11.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-30T04:58+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
-   },
    {
     "at": "2026-10-30T05:14+02:00",
     "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:58 UTC veiksmīgs; update.py – nekas jauns; LSU rudens kalendārā 31.10.–1.11. pretinieki nav nosaukti; skolu kalendāri (Southern Miss, UTEP, Stetson, TCU) šajā sesijā nav nolasāmi (PROVENANCE_REQUIRED). Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-08T05:11+02:00",
     "text": "Pārbaude: GitHub Actions 02:59 UTC sarkans – atgriezās kļūdaina Runces '21. vieta' LSU Fall Ball (izņemta 3.11.); izņemta vēlreiz un ierakstīta meta.removedIds, lai neatgrieztos; izņemti beigušies turnīri (Stetson North Florida, TCU, UAB 6.–7.11.). update.py nerāda vietu, ja VBL divīzijas dati tukši; Action vairs nepublicē datus, kas ievieš jaunu kļūdu. Skolu lapas: Stetson, FIU, Coastal nolasītas (jaunu latviešu rezultātu nav), USC un Southern Miss nav nolasāmas. Atvērts: Mamajas North Florida turnīra rezultāti nav atrasti; Ādamsonei, Vilderei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
+   },
+   {
+    "at": "2026-11-08T07:54+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 4"
    }
   ],
   "removedIds": [
@@ -1655,6 +1655,20 @@
  ],
  "upcoming": [
   {
+   "id": "u-vbl-42616-deniela-konstantinova",
+   "players": [
+    "deniela-konstantinova"
+   ],
+   "team": "TCU 1. pāris",
+   "date": "2026-11-06",
+   "endDate": "2026-11-07",
+   "sport": "beach",
+   "event": "TCU Beach Fall Tournament 26 (Womens Open divīzija)",
+   "opponent": "",
+   "location": "Texas Christian Beach - TCU",
+   "source": "https://volleyballlife.com/event/42616"
+  },
+  {
    "id": "u-usc-2026-11-07",
    "players": [
     "liva-ebere"
@@ -1667,6 +1681,20 @@
    "opponent": "",
    "location": "Santa Monika, Kalifornija (North Beach)",
    "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
+  },
+  {
+   "id": "u-vbl-42155-bonija-runce",
+   "players": [
+    "bonija-runce"
+   ],
+   "team": "USM 2. pāris",
+   "date": "2026-11-07",
+   "endDate": "",
+   "sport": "beach",
+   "event": "UAB Fall Pairs Tournament 11/7/2026 (Pairs event divīzija)",
+   "opponent": "",
+   "location": "University of Alabama, Birmingham",
+   "source": "https://volleyballlife.com/event/42155"
   },
   {
    "id": "u-tulane-2026-11-20",
