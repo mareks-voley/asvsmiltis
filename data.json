@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-08T22:44+02:00",
+  "updatedAt": "2026-11-09T01:42+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "8.11. Līva Ēbere: 2 uzvaras, 0 zaudējumi.",
+  "summary": "8.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-30T17:01+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: gala vieta 20. vieta); nākamie turnīri: 1"
-   },
    {
     "at": "2026-10-31T01:42+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-08T22:44+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-09T01:42+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
    }
   ],
   "removedIds": [
@@ -1681,23 +1681,24 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/37773",
    "time": "11:10"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-08-vbl-m446393",
+   "player": "liva-ebere",
+   "date": "2026-11-08",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · izslēgšanas spēles",
+   "opponent": "USC 2. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-18, 21-14",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "12:15"
   }
  ],
  "upcoming": [
-  {
-   "id": "u-vbl-42616-deniela-konstantinova",
-   "players": [
-    "deniela-konstantinova"
-   ],
-   "team": "TCU 1. pāris",
-   "date": "2026-11-06",
-   "endDate": "2026-11-07",
-   "sport": "beach",
-   "event": "TCU Beach Fall Tournament 26 (Womens Open divīzija)",
-   "opponent": "",
-   "location": "Texas Christian Beach - TCU",
-   "source": "https://volleyballlife.com/event/42616"
-  },
   {
    "id": "u-usc-2026-11-07",
    "players": [
@@ -1711,20 +1712,6 @@
    "opponent": "",
    "location": "Santa Monika, Kalifornija (North Beach)",
    "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-vbl-42155-bonija-runce",
-   "players": [
-    "bonija-runce"
-   ],
-   "team": "USM 2. pāris",
-   "date": "2026-11-07",
-   "endDate": "",
-   "sport": "beach",
-   "event": "UAB Fall Pairs Tournament 11/7/2026 (Pairs event divīzija)",
-   "opponent": "",
-   "location": "University of Alabama, Birmingham",
-   "source": "https://volleyballlife.com/event/42155"
   },
   {
    "id": "u-tulane-2026-11-20",
