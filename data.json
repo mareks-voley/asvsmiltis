@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-08T07:54+02:00",
+  "updatedAt": "2026-11-08T22:44+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "7.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi (BVNE turnīrs); Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 3 zaudējumi (UAB turnīrs). Ēberei BVNE turnīrs turpinās 8.11.; nākamais – Loretas Cabules Tulane pāru turnīrs 20.11.",
+  "summary": "8.11. Līva Ēbere: 2 uzvaras, 0 zaudējumi.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-30T05:14+02:00",
-    "text": "Pārbaude: check.py --live bez kļūdām; GitHub Actions 02:58 UTC veiksmīgs; update.py – nekas jauns; LSU rudens kalendārā 31.10.–1.11. pretinieki nav nosaukti; skolu kalendāri (Southern Miss, UTEP, Stetson, TCU) šajā sesijā nav nolasāmi (PROVENANCE_REQUIRED). Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
-   },
    {
     "at": "2026-10-30T17:01+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Monika Mamaja: gala vieta 20. vieta); nākamie turnīri: 1"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-08T07:54+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-08T22:44+02:00",
+    "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 2 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
    }
   ],
   "removedIds": [
@@ -1651,6 +1651,36 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/42155",
    "time": "12:00"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-08-vbl-m446391",
+   "player": "liva-ebere",
+   "date": "2026-11-08",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · izslēgšanas spēles",
+   "opponent": "Long Beach State 3. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-13, 21-15",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "10:05"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-08-vbl-m446392",
+   "player": "liva-ebere",
+   "date": "2026-11-08",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija · izslēgšanas spēles",
+   "opponent": "Cal Poly 1. pāris",
+   "partner": "Madison Goellner",
+   "score": "21-15, 19-21, 15-5",
+   "result": "W",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "11:10"
   }
  ],
  "upcoming": [
