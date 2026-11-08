@@ -23,7 +23,14 @@ jobs:
         with:
           python-version: "3.12"
       - name: Atjaunināt data.json no VolleyballLife
-        run: python3 update.py data.json
+        run: |
+          cp data.json .old.json
+          python3 update.py data.json
+          # ja atjauninājums ievieš JAUNU check.py kļūdu, kļūdainos datus nepublicē (2026-11-08: Runces vieta atgriezās)
+          python3 check.py .old.json --json > .old_check.json || true
+          python3 check.py data.json --json > .new_check.json || true
+          python3 -c "import json,sys; o=set(json.load(open('.old_check.json'))['errors']); n=set(json.load(open('.new_check.json'))['errors']); new=n-o; [print('JAUNA KĻŪDA:', e) for e in new]; sys.exit(1 if new else 0)" || { cp .old.json data.json; rm -f .old.json .old_check.json .new_check.json; exit 1; }
+          rm -f .old.json .old_check.json .new_check.json
       - name: Saglabāt izmaiņas
         run: |
           git config user.name "asvsmiltis-bot"

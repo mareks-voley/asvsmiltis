@@ -254,6 +254,16 @@ def main():
         l = sum(1 for r in mine if r["date"] == last and r["result"] == "L")
         if (int(m.group(1)), int(m.group(2))) != (w, l):
             W(f"Kopsavilkumā {nm}: {m.group(1)}-{m.group(2)}, bet datos {last}: {w} uzvaras, {l} zaudējumi")
+    # apzināti izņemti ieraksti (meta.removedIds) nedrīkst atgriezties datos (2026-11-08)
+    rem = set((d.get("meta") or {}).get("removedIds") or [])
+    for r in d.get("results", []):
+        if r.get("id") in rem:
+            E(f"Rezultāts {r['id']} ir meta.removedIds sarakstā (apzināti izņemts), bet atkal datos")
+    # beigušies turnīri nedrīkst palikt "upcoming" (2026-11-08)
+    today_u = datetime.date.today().isoformat()
+    for u in d.get("upcoming", []):
+        if (u.get("endDate") or u.get("date") or "9999") < today_u:
+            W(f"Nākamais turnīrs {u.get('id')} jau beidzies ({u.get('endDate') or u.get('date')})")
     return finish(errors, warnings, as_json, d)
 
 

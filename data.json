@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-08T04:59+02:00",
+  "updatedAt": "2026-11-08T05:11+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "7.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi; Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 3 zaudējumi.",
+  "summary": "7.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi (BVNE turnīrs); Deniela Konstantinova: 1 uzvara, 1 zaudējums; Bonija Runce: 0 uzvaras, 3 zaudējumi (UAB turnīrs). Ēberei BVNE turnīrs turpinās 8.11.; nākamais – Loretas Cabules Tulane pāru turnīrs 20.11.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-29T09:06+02:00",
-    "text": "Pārbaude: īpašnieka testa palaidums (viens Claude uzdevums) – check.py --live bez kļūdām; GitHub Actions šodien veiksmīgs; update.py – nekas jauns; USC un TCU kalendāri WebFetch nav nolasāmi (client_error), WebSearch jaunu rezultātu neuzrāda. Atvērts: Runcei, Ādamsonei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
-   },
    {
     "at": "2026-10-30T04:58+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
@@ -125,7 +121,14 @@
    {
     "at": "2026-11-08T04:59+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 0 uzvaras, 1 zaudējumi, gala vieta 21. vieta); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-08T05:11+02:00",
+    "text": "Pārbaude: GitHub Actions 02:59 UTC sarkans – atgriezās kļūdaina Runces '21. vieta' LSU Fall Ball (izņemta 3.11.); izņemta vēlreiz un ierakstīta meta.removedIds, lai neatgrieztos; izņemti beigušies turnīri (Stetson North Florida, TCU, UAB 6.–7.11.). update.py nerāda vietu, ja VBL divīzijas dati tukši; Action vairs nepublicē datus, kas ievieš jaunu kļūdu. Skolu lapas: Stetson, FIU, Coastal nolasītas (jaunu latviešu rezultātu nav), USC un Southern Miss nav nolasāmas. Atvērts: Mamajas North Florida turnīra rezultāti nav atrasti; Ādamsonei, Vilderei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
    }
+  ],
+  "removedIds": [
+   "r-bonija-runce-2026-10-31-vbl-41898-152774"
   ]
  },
  "players": [
@@ -1635,21 +1638,6 @@
    "time": "14:00"
   },
   {
-   "id": "r-bonija-runce-2026-10-31-vbl-41898-152774",
-   "player": "bonija-runce",
-   "date": "2026-10-31",
-   "sport": "beach",
-   "event": "LSU Fall Ball 2026, LSU Beach Facility",
-   "round": "Womens Open divīzija, gala vieta",
-   "opponent": "",
-   "partner": "Annabelle LaBure",
-   "score": "21. vieta",
-   "result": "",
-   "stats": "",
-   "source": "https://volleyballlife.com/event/41898",
-   "time": "23:59"
-  },
-  {
    "id": "r-bonija-runce-2026-11-07-vbl-m1729339",
    "player": "bonija-runce",
    "date": "2026-11-07",
@@ -1667,34 +1655,6 @@
  ],
  "upcoming": [
   {
-   "id": "u-stetson-2026-11-06",
-   "players": [
-    "monika-mamaja"
-   ],
-   "team": "Stetson",
-   "date": "2026-11-06",
-   "endDate": "2026-11-07",
-   "sport": "beach",
-   "event": "North Florida rudens turnīrs",
-   "opponent": "",
-   "location": "Džeksonvila, Florida",
-   "source": "https://gohatters.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-tcu-2026-11-06",
-   "players": [
-    "deniela-konstantinova"
-   ],
-   "team": "TCU",
-   "date": "2026-11-06",
-   "endDate": "2026-11-07",
-   "sport": "beach",
-   "event": "Rudens mači",
-   "opponent": "Texas",
-   "location": "Fortvērta, Teksasa (mājās)",
-   "source": "https://gofrogs.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
    "id": "u-usc-2026-11-07",
    "players": [
     "liva-ebere"
@@ -1707,20 +1667,6 @@
    "opponent": "",
    "location": "Santa Monika, Kalifornija (North Beach)",
    "source": "https://usctrojans.com/sports/womens-beach-volleyball/schedule"
-  },
-  {
-   "id": "u-vbl-42155-bonija-runce",
-   "players": [
-    "bonija-runce"
-   ],
-   "team": "USM 2. pāris",
-   "date": "2026-11-07",
-   "endDate": "",
-   "sport": "beach",
-   "event": "UAB Fall Pairs Tournament 11/7/2026 (Pairs event divīzija)",
-   "opponent": "",
-   "location": "University of Alabama, Birmingham",
-   "source": "https://volleyballlife.com/event/42155"
   },
   {
    "id": "u-tulane-2026-11-20",

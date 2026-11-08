@@ -164,6 +164,8 @@ def main():
     up_before = json.dumps(sorted(u["id"] for u in d.get("upcoming", [])))
 
     res_ids = {r["id"] for r in d["results"]}
+    # apzināti izņemti ieraksti (kļūdaini VBL dati) – update.py tos nekad nepievieno atpakaļ
+    removed_ids = set(meta.get("removedIds", []))
     added, new_up, notes, errors = [], {}, [], []
     done_up = set()  # VolleyballLife pabeigti turnīri: tos no "upcoming" izņem uzreiz
     hydrated = {}
@@ -296,7 +298,7 @@ def main():
                         st = m.get("startTime") or ""
                         mdate = st[:10] if DATE_RE.match(st[:10]) else (day.get("date") or date)[:10]
                         rid = f"r-{pid}-{mdate}-vbl-m{m.get('id')}"
-                        if rid in res_ids:
+                        if rid in res_ids or rid in removed_ids:
                             continue
                         score_txt = ", ".join(f"{a}-{b}" for a, b in games)
                         opp_lv = lv_team(opp).lower()
@@ -331,6 +333,12 @@ def main():
             my_team = next((x for x in (h or {}).get("teams", []) if x.get("id") == t.get("teamId")), None)
             if isinstance(fin, int) and my_team and isinstance(my_team.get("finish"), int) and my_team["finish"] != fin:
                 fin = None
+            # VBL vecākiem turnīriem hydrate atgriež tukšus datus (teams=[]) – tad vietu nevar pārbaudīt (2026-11-08:
+            # Runces LSU '21. vieta' atgriezās ar nepareizu datumu) – vietu nerādām
+            if isinstance(fin, int) and my_team is None:
+                fin = None
+            if pl_id in removed_ids:
+                fin = None  # aģents šo ierakstu apzināti izņēmis (meta.removedIds) – neatjaunot
             if isinstance(fin, int) and finished and pl_id not in res_ids:
                 if partner is None:
                     note = f"{names.get(pid, pid)}: {event} – pāris nav nosakāms (pieteikti {len(partners)} vārdi, nav mača sastāvu)"
