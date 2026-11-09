@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-09T01:42+02:00",
+  "updatedAt": "2026-11-09T04:58+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "8.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi.",
+  "summary": "8.11. Līva Ēbere: 3 uzvaras, 0 zaudējumi, gala vieta 1. vieta.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-31T01:42+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
-   },
    {
     "at": "2026-10-31T04:56+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-09T01:42+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
+   },
+   {
+    "at": "2026-11-09T04:58+02:00",
+    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: gala vieta 1. vieta); nākamie turnīri: 3"
    }
   ],
   "removedIds": [
@@ -1696,6 +1696,21 @@
    "stats": "",
    "source": "https://volleyballlife.com/event/37773",
    "time": "12:15"
+  },
+  {
+   "id": "r-liva-ebere-2026-11-08-vbl-37773-138366",
+   "player": "liva-ebere",
+   "date": "2026-11-08",
+   "sport": "beach",
+   "event": "BVNE Collegiate Pre Season 2026, North Beach, Santa Monica",
+   "round": "Collegiate AAA divīzija, gala vieta",
+   "opponent": "",
+   "partner": "Madison Goellner",
+   "score": "1. vieta",
+   "result": "",
+   "stats": "",
+   "source": "https://volleyballlife.com/event/37773",
+   "time": "23:59"
   }
  ],
  "upcoming": [
