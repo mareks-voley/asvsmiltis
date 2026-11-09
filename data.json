@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-09T05:10+02:00",
+  "updatedAt": "2026-11-10T01:46+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Līva Ēbere ar Madison Goellner uzvarēja BVNE Collegiate Pre Season turnīrā Santamonikā (Collegiate AAA divīzija): svētdien 3 uzvaras, pēdējā mačā 21-18, 21-14 pret USC 2. pāri – 1. vieta. Nākamais turnīrs 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda).",
+  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-31T05:14+02:00",
-    "text": "Pārbaude: GitHub Actions 31.10. veiksmīgs, update.py jaunu ierakstu nav, check.py bez kļūdām; AVCA lapā tiešās vietas čempionātā ir Tulane (2), USC, Stetson, TCU, bet FIU un Southern Miss nav – Vilderes dalība vēl neskaidra (ieraksts atstāts ar piezīmi). UTEP (Krieva, Kazaka) rudens turnīri joprojām nav publicēti. Skolu Sidearm lapas WebFetch nav pieejamas (PROVENANCE_REQUIRED)."
-   },
    {
     "at": "2026-10-31T19:39+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 1 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-09T05:10+02:00",
     "text": "Pārbaude: VolleyballLife un skolu lapas pārbaudītas (Tulane kalendārs apstiprina 20.11.; citas skolas nav lasāmas vai rāda vecu sezonu). Ēberes BVNE 1. vieta apstiprināta, beigušais USC turnīrs izņemts no nākamajiem, kopsavilkums pārrakstīts. 7 meitenēm nākamajās 30 dienās turnīru nav zināmu."
+   },
+   {
+    "at": "2026-11-10T01:46+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ],
   "removedIds": [
