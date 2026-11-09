@@ -364,7 +364,12 @@ def main():
         if not dup:
             up[uid] = u
     cutoff = (now.date() - datetime.timedelta(days=1)).isoformat()
-    d["upcoming"] = sorted([u for u in up.values() if (u.get("endDate") or u["date"]) >= cutoff], key=lambda u: u["date"])
+    # turnīrs, kurā spēlētājai jau ir apstiprināta gala vieta, vairs nav "nākamais" (arī skolu kalendāra ieraksti)
+    def has_final_place(u):
+        return any(r["player"] in u.get("players", []) and not r.get("result") and "vieta" in (r.get("score") or "")
+                   and u["date"] <= r["date"] <= (u.get("endDate") or u["date"]) for r in d["results"])
+    d["upcoming"] = sorted([u for u in up.values() if (u.get("endDate") or u["date"]) >= cutoff and not has_final_place(u)],
+                           key=lambda u: u["date"])
 
     # kopsavilkums un žurnāls
     who = {}
@@ -377,7 +382,8 @@ def main():
         bit = n + ": " + (f"{w} uzvaras, {l} zaudējumi" if (w or l) else "") + ((", " if (w or l) else "") + "gala vieta " + pl[0] if pl else "")
         parts.append(bit)
     text = ("VolleyballLife: pievienoti " + str(len(added)) + " ieraksti (" + "; ".join(parts) + ")") if added else "VolleyballLife: jaunu rezultātu nav"
-    text += f"; nākamie turnīri: {len(new_up)}"
+    # žurnālā tikai tiešām gaidāmie: VBL daži pagājuši turnīri paliek bez "complete"
+    text += f"; nākamie turnīri: {sum(1 for u in d['upcoming'] if (u.get('endDate') or u['date']) >= today)}"
     if errors:
         text += "; kļūdas: " + "; ".join(errors[:3])
     today = now.date().isoformat()

@@ -264,6 +264,13 @@ def main():
     for u in d.get("upcoming", []):
         if (u.get("endDate") or u.get("date") or "9999") < today_u:
             W(f"Nākamais turnīrs {u.get('id')} jau beidzies ({u.get('endDate') or u.get('date')})")
+    # turnīrs ar gala vietu nedrīkst palikt "upcoming" (2026-11-09)
+    for u in d.get("upcoming", []):
+        end_u = u.get("endDate") or u.get("date") or ""
+        for r in d.get("results", []):
+            if r.get("player") in u.get("players", []) and not r.get("result") and "vieta" in (r.get("score") or "") \
+                    and u.get("date", "") <= r.get("date", "") <= end_u:
+                E(f"Nākamais turnīrs {u.get('id')} jau beidzies: {r.get('id')} ir gala vieta")
     return finish(errors, warnings, as_json, d)
 
 
