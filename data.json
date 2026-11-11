@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-11T04:59+02:00",
+  "updatedAt": "2026-11-11T05:08+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-01T01:40+02:00",
-    "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-11-01T05:09+02:00",
     "text": "Pārbaude: GitHub Actions 31.10. 23:40 un 1.11. 02:57 UTC sarkans – Runcei dubults mačs pret HCU 6. pāri (VBL pārveidoja maču ar jaunu id); dublikāts izņemts, kopsavilkums salabots (bija \"2 uzvaras, 0 zaudējumi\"), update.py vairs nepievieno maču ar to pašu pretinieku un rezultātu tajā pašā dienā. UTEP (Krieva, Kazaka) rudens turnīri joprojām nav publicēti; skolu lapas WebFetch nav pieejamas."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-11T04:59+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-11T05:08+02:00",
+    "text": "Pārbaude: VolleyballLife (jaunu rezultātu nav), GitHub Actions (veiksmīgi), lapa tiešsaistē un skolu ziņas (meklēšana) pārbaudītas. Jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Pārējām meitenēm rudens sezona, šķiet, beigusies. Labojumi nebija vajadzīgi."
    }
   ],
   "removedIds": [
