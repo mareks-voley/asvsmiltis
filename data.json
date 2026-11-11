@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-10T05:09+02:00",
+  "updatedAt": "2026-11-11T04:59+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-10-31T22:42+02:00",
-    "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 0 uzvaras, 1 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-11-01T01:40+02:00",
     "text": "VolleyballLife: pievienoti 3 ieraksti (Bonija Runce: 2 uzvaras, 0 zaudējumi; Kitija Martini Ādamsone: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-10T05:09+02:00",
     "text": "Pārbaude: VolleyballLife (jaunu rezultātu nav), GitHub Actions (veiksmīgi) un skolu lapas pārbaudītas. Tulane kalendārs apstiprina Cabules turnīru 20.11. Elmvudā; USC, TCU, Stetson lapas nebija lasāmas, Southern Miss rudens kalendārs nav publicēts. Pārējām 8 meitenēm rudens sezona, šķiet, beigusies – turnīru 30 dienās nav zināmu. Labojumi nebija vajadzīgi."
+   },
+   {
+    "at": "2026-11-11T04:59+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ],
   "removedIds": [
