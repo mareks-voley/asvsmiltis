@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-12T05:13+02:00",
+  "updatedAt": "2026-11-13T05:08+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-02T01:40+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 3"
-   },
    {
     "at": "2026-11-02T05:16+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Kitija Martini Ādamsone: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-12T05:13+02:00",
     "text": "Pārbaude: VolleyballLife (jaunu rezultātu nav), GitHub Actions (veiksmīgi), lapa tiešsaistē un skolu ziņas (meklēšana) pārbaudītas; skolu kalendāri nebija pieejami (PROVENANCE_REQUIRED). Jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Labojumi nebija vajadzīgi."
+   },
+   {
+    "at": "2026-11-13T05:08+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ],
   "removedIds": [
