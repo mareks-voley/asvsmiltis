@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-13T05:08+02:00",
+  "updatedAt": "2026-11-13T05:10+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-02T05:16+02:00",
-    "text": "VolleyballLife: pievienoti 2 ieraksti (Kitija Martini Ādamsone: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 3"
-   },
    {
     "at": "2026-11-02T05:16+02:00",
     "text": "Pārbaude: Martini Ādamsonei pievienoti 2 trūkstošie svētdienas mači (W pret LSU 2. pāri, L pret LSU 3. pāri; VBL sastāvs tikai tabulas 1. mačam) un update.py to turpmāk nosaka pats; salabots kopsavilkums (rādīja \"nākamie 31.10.\"). LSU Fall Ball gala vietas VBL vēl nav. Krieva/Kazaka bez turnīra; skolu lapas nav pieejamas (izņemot LSU), Cabules dalība AVCA čempionātā neapstiprināta (Tulane sūta 2 pārus, vārdi nav zināmi)."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-13T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-13T05:10+02:00",
+    "text": "Pārbaude: GitHub Actions šodien līdz 05:08 nebija palaidies (GitHub nokavēšanās) – palaists ar roku, veiksmīgi; VolleyballLife jaunu rezultātu nav; skolu lapas (Stetson, USC, TCU, Tulane) pārbaudītas – jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Automātiskā atjauninājuma laiks pārcelts uz 01:40 UTC."
    }
   ],
   "removedIds": [
