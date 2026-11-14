@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-14T05:08+02:00",
+  "updatedAt": "2026-11-14T05:19+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-03T01:43+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Bonija Runce: gala vieta 21. vieta); nākamie turnīri: 1"
-   },
    {
     "at": "2026-11-03T05:15+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav. Izņemta Runces \"21. vieta\" LSU Fall Ball (VBL dati pretrunīgi: profils 21, divīzija 5; turnīram nav kopvērtējuma, un vieta bija datēta pirms pēdējā mača) un beidzies LSU Fall Ball ieraksts nākamajos. update.py un check.py salaboti. Skolu lapas nebija pieejamas; AVCA lapa: dalība 6.–8.11. skolu līmenī Tulane, USC, Stetson, TCU ir, FIU tiešo vietu sarakstā nav. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-14T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-14T05:19+02:00",
+    "text": "Pārbaude: GitHub Actions 01:40 grafiks sākās tikai 03:11 UTC (vakardienas 23:15 palaidums izpalika) – palaists arī ar roku, abi veiksmīgi; VolleyballLife jaunu rezultātu nav; skolu kalendāri šodien nebija pieejami (USC, Tulane – piekļuves kļūda). Jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Pievienots rezerves automātiskais atjauninājums 00:50 UTC."
    }
   ],
   "removedIds": [
