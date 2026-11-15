@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-15T01:53+02:00",
+  "updatedAt": "2026-11-15T05:19+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
   "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-04T05:00+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
-   },
    {
     "at": "2026-11-04T05:14+02:00",
     "text": "Pārbaude: VolleyballLife un GitHub Actions kārtībā, jaunu rezultātu nav, kļūdu datos nav. Saīsināts kopsavilkums (viens turnīrs vairs neatkārtojas katrai spēlētājai) un update.py to turpmāk dara pats. AVCA lapa: čempionāts 6.–8.11. Hantsvilā notiek, pāru vārdi nav publicēti. Skolu lapas (izņemot UTEP, kur tikai pavasara kalendārs) nebija pieejamas. Krievai, Kazakai, Runcei un Martini Ādamsonei tuvāko turnīru nav."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-15T01:53+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-15T05:19+02:00",
+    "text": "Pārbaude: GitHub Actions 00:50 un 01:40 grafiki līdz 05:18 nesākās (lapu atjaunoja turnīru dienas palaidums 01:53) – palaists ar roku, veiksmīgi; VolleyballLife jaunu rezultātu nav; Tulane lapa apstiprina Cabules Tulane pāru turnīru 20.11. Elmvudā; UTEP rudenī turnīru nav; USC, TCU, Southern Miss kalendāri nebija pieejami. Pievienots vēl viens rezerves atjauninājums 23:23 UTC."
    }
   ],
   "removedIds": [
