@@ -114,8 +114,16 @@ def team_id(side):
 def next_event_text(d, names, today):
     # tikai turnīri, kas vēl NAV sākušies (jau notiekošs turnīrs nav "nākamais")
     fut = [u for u in d.get("upcoming", []) if u.get("date", "") > today]
+    # šodien sākas (vai notiek) – rādām atsevišķi, lai rīta kopsavilkums nav tukšs
+    now = [u for u in d.get("upcoming", []) if u.get("date", "") <= today <= (u.get("endDate") or u.get("date", ""))]
+    pre = ""
+    if now:
+        g = {}
+        for u in now:
+            g.setdefault((u.get("event", ""), u.get("location", "")), []).extend(u.get("players", []))
+        pre = " Šodien: " + "; ".join(", ".join(names.get(p, p) for p in dict.fromkeys(pl)) + f" ({ev}, {loc})" for (ev, loc), pl in g.items()) + "."
     if not fut:
-        return ""
+        return pre
     first = min(u["date"] for u in fut)
     evs = [u for u in fut if u["date"] == first]
     y, m, dd = first.split("-")
@@ -127,7 +135,7 @@ def next_event_text(d, names, today):
     for (event, loc), pl in groups.items():
         who = ", ".join(names.get(p, p) for p in dict.fromkeys(pl))
         bits.append(f"{who} ({event}, {loc})")
-    return f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
+    return pre + f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
 
 
 def day_summary(d, names, added):

@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-20T05:08+02:00",
+  "updatedAt": "2026-11-20T05:09+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija.",
+  "summary": "Šonakt jaunu rezultātu nebija. Šodien (20.11.) Loreta Cabule spēlē Tulane pāru turnīrā Elmvudā, Luiziānā; pārējām spēlētājām rudens sezona beigusies.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-07T22:44+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-11-08T01:41+02:00",
     "text": "VolleyballLife: pievienoti 2 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Bonija Runce: 0 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-20T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-20T05:09+02:00",
+    "text": "Pārbaude: plānotais GitHub Actions palaidums līdz 03:08 UTC atkal nebija sācies – palaists ar roku, veiksmīgi, VolleyballLife jaunu rezultātu nav; Cabules Tulane pāru turnīrs 20.11. paliek; kopsavilkumā pievienots šodienas turnīrs (update.py tagad raksta arī 'Šodien: …'). Kļūdu nav."
    }
   ],
   "removedIds": [
