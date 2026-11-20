@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-19T05:22+02:00",
+  "updatedAt": "2026-11-20T05:08+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Nākamie turnīri 20.11.: Loreta Cabule (Tulane pāru turnīrs, Elmvuda, Luiziāna).",
+  "summary": "Šonakt jaunu rezultātu nebija.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-07T19:42+02:00",
-    "text": "VolleyballLife: pievienoti 4 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi; Bonija Runce: 0 uzvaras, 1 zaudējumi; Deniela Konstantinova: 1 uzvaras, 1 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-11-07T22:44+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-19T05:22+02:00",
     "text": "Pārbaude: plānotais GitHub Actions palaidums līdz 03:07 UTC nebija sācies – palaists ar roku, veiksmīgi, VolleyballLife jaunu rezultātu nav; Tulane lapā apstiprināts Cabules pāru turnīrs 20.11. (Elmvuda); citām spēlētājām rudens sezonā turnīru vairs nav. Kļūdu nav."
+   },
+   {
+    "at": "2026-11-20T05:08+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
    }
   ],
   "removedIds": [
