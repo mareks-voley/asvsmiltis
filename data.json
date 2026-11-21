@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-21T05:08+02:00",
+  "updatedAt": "2026-11-21T05:09+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija.",
+  "summary": "20.11. Loreta Cabule Tulane pāru turnīrā Elmvudā uzvarēja visos 3 mačos (pret UNO 4. un 6. pāriem). Tuvāko 30 dienu kalendāros turnīru nav – rudens sezona beigusies.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-08T05:11+02:00",
-    "text": "Pārbaude: GitHub Actions 02:59 UTC sarkans – atgriezās kļūdaina Runces '21. vieta' LSU Fall Ball (izņemta 3.11.); izņemta vēlreiz un ierakstīta meta.removedIds, lai neatgrieztos; izņemti beigušies turnīri (Stetson North Florida, TCU, UAB 6.–7.11.). update.py nerāda vietu, ja VBL divīzijas dati tukši; Action vairs nepublicē datus, kas ievieš jaunu kļūdu. Skolu lapas: Stetson, FIU, Coastal nolasītas (jaunu latviešu rezultātu nav), USC un Southern Miss nav nolasāmas. Atvērts: Mamajas North Florida turnīra rezultāti nav atrasti; Ādamsonei, Vilderei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
-   },
    {
     "at": "2026-11-08T07:54+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 4"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-21T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-11-21T05:09+02:00",
+    "text": "Pārbaude: Actions līdz 03:08 UTC nebija sācies – palaists ar roku, veiksmīgi, jaunu rezultātu nav; kopsavilkumā atjaunoti Cabules 20.11. rezultāti (3 uzvaras), ko vakara palaidums pievienoja, bet rīta palaidums pārrakstīja ar 'nekā jauna' – update.py un check.py salaboti; beidzies Tulane turnīrs izņemts no tuvākajiem. Kļūdu nav. Tuvākajos 30 dienās turnīru nav (starpsezona)."
    }
   ],
   "removedIds": [
@@ -1758,20 +1758,5 @@
    "time": "12:45"
   }
  ],
- "upcoming": [
-  {
-   "id": "u-tulane-2026-11-20",
-   "players": [
-    "loreta-cabule"
-   ],
-   "team": "Tulane",
-   "date": "2026-11-20",
-   "endDate": "",
-   "sport": "beach",
-   "event": "Tulane pāru turnīrs",
-   "opponent": "",
-   "location": "Elmvuda, Luiziāna",
-   "source": "https://tulanegreenwave.com/sports/womens-beach-volleyball/schedule"
-  }
- ]
+ "upcoming": []
 }

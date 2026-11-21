@@ -138,11 +138,12 @@ def next_event_text(d, names, today):
     return pre + f" Nākamie turnīri {int(dd)}.{int(m)}.: " + "; ".join(bits) + "."
 
 
-def day_summary(d, names, added):
+def day_summary(d, names, added, last=None):
     """Kopsavilkums par VISIEM jaunāko pievienoto dienu rezultātiem (ne tikai šī palaiduma).
     Turnīru dienās Action palaižas ik pēc 3 h; agrāk kopsavilkumā bija tikai pēdējā
     palaiduma mači (piem. 7.11.: '0 uzvaras, 1 zaudējumi', lai gan dienā bija 2 zaudējumi)."""
-    last = max(r["date"] for r in added)
+    if last is None:
+        last = max(r["date"] for r in added)
     rs = [r for r in d["results"] if r.get("date") == last]
     who = {}
     for r in sorted(rs, key=lambda r: r.get("time") or ""):
@@ -410,8 +411,15 @@ def main():
     if added:
         meta["summary"] = day_summary(d, names, added)
     elif not touched_today:
-        # neatstāj vakardienas kopsavilkumu: ieliek "nekā jauna" + nākamo turnīru
-        meta["summary"] = "Šonakt jaunu rezultātu nebija." + next_event_text(d, names, today)
+        # 21.11.: vakardienas (ASV) rezultāti, kas pievienoti VAKARĀ pēc rīta pārbaudes, vēl nav
+        # rādīti rīta kopsavilkumā – tos rāda, nevis "Šonakt jaunu rezultātu nebija."
+        yday = (now.date() - datetime.timedelta(days=1)).isoformat()
+        recent = max((r.get("date", "") for r in d.get("results", [])), default="")
+        if recent >= yday:
+            meta["summary"] = day_summary(d, names, None, last=recent) + next_event_text(d, names, today)
+        else:
+            # neatstāj vakardienas kopsavilkumu: ieliek "nekā jauna" + nākamo turnīru
+            meta["summary"] = "Šonakt jaunu rezultātu nebija." + next_event_text(d, names, today)
     json.dump(d, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print(text)
     for n in notes:

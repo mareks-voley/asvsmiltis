@@ -254,6 +254,12 @@ def main():
         l = sum(1 for r in mine if r["date"] == last and r["result"] == "L")
         if (int(m.group(1)), int(m.group(2))) != (w, l):
             W(f"Kopsavilkumā {nm}: {m.group(1)}-{m.group(2)}, bet datos {last}: {w} uzvaras, {l} zaudējumi")
+    # "Šonakt jaunu rezultātu nebija", lai gan vakardienas rezultāti pievienoti vakarā pēc rīta pārbaudes (2026-11-21)
+    if summ.startswith("Šonakt jaunu rezultātu nebija"):
+        yd = (datetime.date.today() - datetime.timedelta(days=1)).isoformat()
+        fresh = sorted({pname.get(r.get("player"), r.get("player")) for r in d.get("results", []) if r.get("date", "") >= yd})
+        if fresh:
+            W("Kopsavilkumā 'Šonakt jaunu rezultātu nebija', bet ir rezultāti no " + yd + " vai vēlāk: " + ", ".join(fresh))
     # apzināti izņemti ieraksti (meta.removedIds) nedrīkst atgriezties datos (2026-11-08)
     rem = set((d.get("meta") or {}).get("removedIds") or [])
     for r in d.get("results", []):
