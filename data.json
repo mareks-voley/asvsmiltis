@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-20T23:47+02:00",
+  "updatedAt": "2026-11-21T05:08+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "20.11. Loreta Cabule: 3 uzvaras, 0 zaudējumi.",
+  "summary": "Šonakt jaunu rezultātu nebija.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-08T04:59+02:00",
-    "text": "VolleyballLife: pievienoti 2 ieraksti (Bonija Runce: 0 uzvaras, 1 zaudējumi, gala vieta 21. vieta); nākamie turnīri: 4"
-   },
    {
     "at": "2026-11-08T05:11+02:00",
     "text": "Pārbaude: GitHub Actions 02:59 UTC sarkans – atgriezās kļūdaina Runces '21. vieta' LSU Fall Ball (izņemta 3.11.); izņemta vēlreiz un ierakstīta meta.removedIds, lai neatgrieztos; izņemti beigušies turnīri (Stetson North Florida, TCU, UAB 6.–7.11.). update.py nerāda vietu, ja VBL divīzijas dati tukši; Action vairs nepublicē datus, kas ievieš jaunu kļūdu. Skolu lapas: Stetson, FIU, Coastal nolasītas (jaunu latviešu rezultātu nav), USC un Southern Miss nav nolasāmas. Atvērts: Mamajas North Florida turnīra rezultāti nav atrasti; Ādamsonei, Vilderei, Krievai, Kazakai nav zināmu turnīru 30 dienās."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-20T23:47+02:00",
     "text": "VolleyballLife: pievienoti 3 ieraksti (Loreta Cabule: 3 uzvaras, 0 zaudējumi); nākamie turnīri: 1"
+   },
+   {
+    "at": "2026-11-21T05:08+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
    }
   ],
   "removedIds": [
