@@ -265,6 +265,9 @@ def main():
     for r in d.get("results", []):
         if r.get("id") in rem:
             E(f"Rezultāts {r['id']} ir meta.removedIds sarakstā (apzināti izņemts), bet atkal datos")
+    for u in d.get("upcoming", []):
+        if u.get("id") in rem:
+            E(f"Nākamais turnīrs {u['id']} ir meta.removedIds sarakstā (apzināti izņemts), bet atkal datos")
     # beigušies turnīri nedrīkst palikt "upcoming" (2026-11-08)
     today_u = datetime.date.today().isoformat()
     for u in d.get("upcoming", []):

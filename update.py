@@ -368,6 +368,8 @@ def main():
     # nākamie turnīri: nepievieno, ja tai pašai spēlētājai tajā datumā jau ir ieraksts
     up = {u["id"]: u for u in d.get("upcoming", []) if u["id"] not in done_up or u["id"] in new_up}
     for uid, u in new_up.items():
+        if uid in removed_ids:
+            continue  # aģents šo nākamo turnīru apzināti izņēmis (meta.removedIds) – neatjaunot (2026-11-22)
         dup = any(o["id"] != uid and set(o.get("players", [])) & set(u["players"]) and o["date"] == u["date"]
                   for o in up.values())
         if not dup:

@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-22T05:08+02:00",
+  "updatedAt": "2026-11-22T05:20+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija.",
+  "summary": "Šonakt jaunu rezultātu nebija. Tuvāko 30 dienu kalendāros turnīru nav – rudens sezona beigusies, pavasara 2027 kalendāri vēl nav publicēti.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-09T01:42+02:00",
-    "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: 1 uzvaras, 0 zaudējumi); nākamie turnīri: 4"
-   },
    {
     "at": "2026-11-09T04:58+02:00",
     "text": "VolleyballLife: pievienoti 1 ieraksti (Līva Ēbere: gala vieta 1. vieta); nākamie turnīri: 3"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-22T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-11-22T05:20+02:00",
+    "text": "Pārbaude: Actions 03:08 UTC veiksmīgs, jaunu rezultātu nav; beidzies Tulane 20.11. turnīrs (vakar izņemts, bet rīta palaidums to atjaunoja) tagad izņemts no tuvākajiem – update.py turpmāk ievēro meta.removedIds arī nākamajiem turnīriem; skolu pavasara 2027 kalendāri vēl nav publicēti, 30 dienās turnīru nav. Kļūdu nav."
    }
   ],
   "removedIds": [
