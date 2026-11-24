@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-24T05:08+02:00",
+  "updatedAt": "2026-11-24T05:09+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija.",
+  "summary": "Šonakt jaunu rezultātu nebija. Rudens sezona beigusies; pavasara 2027 kalendāri skolās vēl nav publicēti.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-10T05:09+02:00",
-    "text": "Pārbaude: VolleyballLife (jaunu rezultātu nav), GitHub Actions (veiksmīgi) un skolu lapas pārbaudītas. Tulane kalendārs apstiprina Cabules turnīru 20.11. Elmvudā; USC, TCU, Stetson lapas nebija lasāmas, Southern Miss rudens kalendārs nav publicēts. Pārējām 8 meitenēm rudens sezona, šķiet, beigusies – turnīru 30 dienās nav zināmu. Labojumi nebija vajadzīgi."
-   },
    {
     "at": "2026-11-11T04:59+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-24T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-11-24T05:09+02:00",
+    "text": "Pārbaude: plānotais Actions palaidums līdz 03:08 UTC nebija sācies – palaists ar roku, veiksmīgs, jaunu rezultātu nav; skolu 2027 pavasara kalendāri vēl nav publicēti, tuvāko turnīru nav. Kļūdu nav."
    }
   ],
   "removedIds": [
