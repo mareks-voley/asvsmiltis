@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-25T05:08+02:00",
+  "updatedAt": "2026-11-25T05:12+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija.",
+  "summary": "Šonakt jaunu rezultātu nebija. Rudens turnīri beigušies; tuvāko turnīru nav – 2027. gada pavasara kalendāri vēl nav publicēti.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-11T05:08+02:00",
-    "text": "Pārbaude: VolleyballLife (jaunu rezultātu nav), GitHub Actions (veiksmīgi), lapa tiešsaistē un skolu ziņas (meklēšana) pārbaudītas. Jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Pārējām meitenēm rudens sezona, šķiet, beigusies. Labojumi nebija vajadzīgi."
-   },
    {
     "at": "2026-11-12T05:00+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-25T05:08+02:00",
     "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
+   },
+   {
+    "at": "2026-11-25T05:12+02:00",
+    "text": "Pārbaude: plānotais Actions palaidums līdz 03:08 UTC nebija sācies – palaists ar roku, veiksmīgs, jaunu rezultātu nav; tuvāko turnīru nav (starpsezona). Kļūdu nav."
    }
   ],
   "removedIds": [
