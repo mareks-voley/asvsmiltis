@@ -1,15 +1,11 @@
 {
  "meta": {
-  "updatedAt": "2026-11-26T05:12+02:00",
+  "updatedAt": "2026-11-27T05:08+02:00",
   "season": "2026/27",
   "seasonStart": "2026-08-01",
-  "summary": "Šonakt jaunu rezultātu nebija. Rudens turnīri beigušies – tuvāko 30 dienu laikā turnīru nav.",
+  "summary": "Šonakt jaunu rezultātu nebija.",
   "nextCheck": "katru rītu ap 6:00 pēc Rīgas laika",
   "log": [
-   {
-    "at": "2026-11-13T05:08+02:00",
-    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 1"
-   },
    {
     "at": "2026-11-13T05:10+02:00",
     "text": "Pārbaude: GitHub Actions šodien līdz 05:08 nebija palaidies (GitHub nokavēšanās) – palaists ar roku, veiksmīgi; VolleyballLife jaunu rezultātu nav; skolu lapas (Stetson, USC, TCU, Tulane) pārbaudītas – jaunu rezultātu vai turnīru nav; nākamais – Cabules Tulane pāru turnīrs 20.11. Automātiskā atjauninājuma laiks pārcelts uz 01:40 UTC."
@@ -125,6 +121,10 @@
    {
     "at": "2026-11-26T05:12+02:00",
     "text": "Pārbaude: plānotais Actions palaidums līdz 03:08 UTC nebija sācies – palaists ar roku, veiksmīgs, jaunu rezultātu nav; tuvāko turnīru nav (starpsezona, Pateicības diena). Kļūdu nav."
+   },
+   {
+    "at": "2026-11-27T05:08+02:00",
+    "text": "VolleyballLife: jaunu rezultātu nav; nākamie turnīri: 0"
    }
   ],
   "removedIds": [
